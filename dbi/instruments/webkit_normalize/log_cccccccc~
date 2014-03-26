@@ -1,0 +1,336 @@
+[*] Starting hooking
+[*] Pid:249
+[*] Base address 0xa8300000 - 0xa8747000
+[*] Hooking finished
+CSSRule::parentStyleSheet obj 0x2bfcb8 r4 0x31c9c8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0xb51c58 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0xb51c58
+CSSRule::parentStyleSheet obj 0x89caa0 r4 0xb51c58 r0 0xa8718c58 r3 0xa8718c78
+CSSStyleSheet::insertRule obj 0x5c1780 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x5bcbd8 r4 0x5c1780 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x424f20 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x4a19e8 r4 0x424f20 r0 0xa8718950 r3 0xa8718970
+CSSStyle::~CSSStyle this 0x5c1780
+CSSStyleSheet::insertRule obj 0x5c1780 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x424f20
+CSSRule::parentStyleSheet obj 0x44beb8 r4 0x5c1780 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x90f3d0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5c1780
+CSSRule::parentStyleSheet obj 0x558b28 r4 0x90f3d0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x464818 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x90f3d0
+CSSRule::parentStyleSheet obj 0x662660 r4 0x464818 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x85c2f0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x856168 r4 0x85c2f0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4fcfc8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x464818
+CSSStyle::~CSSStyle this 0x85c2f0
+CSSRule::parentStyleSheet obj 0x544128 r4 0x4fcfc8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x721998 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4fcfc8
+CSSRule::parentStyleSheet obj 0x60cfb0 r4 0x721998 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x58d608 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x721998
+CSSRule::parentStyleSheet obj 0x443ab8 r4 0x58d608 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x85aee0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x804ba0 r4 0x85aee0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x592418 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x58d608
+CSSStyle::~CSSStyle this 0x85aee0
+CSSRule::parentStyleSheet obj 0x45f2b8 r4 0x592418 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x545350 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x592418
+CSSRule::parentStyleSheet obj 0x5d77f8 r4 0x545350 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x3d8270 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x545350
+CSSRule::parentStyleSheet obj 0xa54ea0 r4 0x3d8270 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x85a0b8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x680f28 r4 0x85a0b8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x57ad58 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x3d8270
+CSSStyle::~CSSStyle this 0x85a0b8
+CSSRule::parentStyleSheet obj 0x49cf48 r4 0x57ad58 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x501388 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x57ad58
+CSSRule::parentStyleSheet obj 0x60bc88 r4 0x501388 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x669120 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x501388
+CSSRule::parentStyleSheet obj 0x910548 r4 0x669120 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x3a9c40 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x674ef8 r4 0x3a9c40 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x42a7e0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x669120
+CSSStyle::~CSSStyle this 0x3a9c40
+CSSRule::parentStyleSheet obj 0x4f3648 r4 0x42a7e0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x741408 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x42a7e0
+CSSRule::parentStyleSheet obj 0x527d50 r4 0x741408 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x465c30 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x741408
+CSSRule::parentStyleSheet obj 0x419fe0 r4 0x465c30 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6ddad0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x7959c8 r4 0x6ddad0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x54fba0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x465c30
+CSSStyle::~CSSStyle this 0x6ddad0
+CSSRule::parentStyleSheet obj 0x5b9300 r4 0x54fba0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5fbd38 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x54fba0
+CSSRule::parentStyleSheet obj 0x674d68 r4 0x5fbd38 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6361b0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5fbd38
+CSSRule::parentStyleSheet obj 0x6c33d8 r4 0x6361b0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4f1f30 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x4f4b08 r4 0x4f1f30 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x405eb0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x6361b0
+CSSStyle::~CSSStyle this 0x4f1f30
+CSSRule::parentStyleSheet obj 0x801f88 r4 0x405eb0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x74d5a0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x405eb0
+CSSRule::parentStyleSheet obj 0x3f1568 r4 0x74d5a0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x757020 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x74d5a0
+CSSRule::parentStyleSheet obj 0x464ab8 r4 0x757020 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x501248 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x757020
+CSSRule::parentStyleSheet obj 0x5012b8 r4 0x501248 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x546a40 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x501248
+CSSRule::parentStyleSheet obj 0x488298 r4 0x546a40 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x692ae0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x625268 r4 0x692ae0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5f1918 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x546a40
+CSSStyle::~CSSStyle this 0x692ae0
+CSSRule::parentStyleSheet obj 0x458340 r4 0x5f1918 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x927c70 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5f1918
+CSSRule::parentStyleSheet obj 0x66d2c8 r4 0x927c70 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x77fbd0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x927c70
+CSSRule::parentStyleSheet obj 0x6581d8 r4 0x77fbd0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4efe08 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x41ab80 r4 0x4efe08 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4c1a68 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x77fbd0
+CSSStyle::~CSSStyle this 0x4efe08
+CSSRule::parentStyleSheet obj 0x43d700 r4 0x4c1a68 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x53da78 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4c1a68
+CSSRule::parentStyleSheet obj 0x64d160 r4 0x53da78 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5eea50 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x53da78
+CSSRule::parentStyleSheet obj 0x5805f0 r4 0x5eea50 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x75b440 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x52b380 r4 0x75b440 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x521a68 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5eea50
+CSSStyle::~CSSStyle this 0x75b440
+CSSRule::parentStyleSheet obj 0x438838 r4 0x521a68 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4c8978 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x521a68
+CSSRule::parentStyleSheet obj 0x4fb4a8 r4 0x4c8978 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x76dae8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4c8978
+CSSRule::parentStyleSheet obj 0x5fcad8 r4 0x76dae8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x689810 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x531468 r4 0x689810 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5dfa58 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x76dae8
+CSSStyle::~CSSStyle this 0x689810
+CSSRule::parentStyleSheet obj 0x5df908 r4 0x5dfa58 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x689810 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5dfa58
+CSSRule::parentStyleSheet obj 0x4153e0 r4 0x689810 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x3d5708 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x689810
+CSSRule::parentStyleSheet obj 0x4bbb48 r4 0x3d5708 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x59b5a0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x6265f0 r4 0x59b5a0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4920b0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x3d5708
+CSSStyle::~CSSStyle this 0x59b5a0
+CSSRule::parentStyleSheet obj 0x6d97f8 r4 0x4920b0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x87ae70 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4920b0
+CSSRule::parentStyleSheet obj 0x45bbb8 r4 0x87ae70 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x3efb18 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x87ae70
+CSSRule::parentStyleSheet obj 0x426608 r4 0x3efb18 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x724d20 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x3efb18
+CSSRule::parentStyleSheet obj 0x6a9758 r4 0x724d20 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5a2728 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x724d20
+CSSRule::parentStyleSheet obj 0x532248 r4 0x5a2728 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x75fd40 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x620fd0 r4 0x75fd40 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5f5788 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5a2728
+CSSStyle::~CSSStyle this 0x75fd40
+CSSRule::parentStyleSheet obj 0x458030 r4 0x5f5788 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x49ae20 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5f5788
+CSSRule::parentStyleSheet obj 0x5e5fa0 r4 0x49ae20 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4d1748 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x49ae20
+CSSRule::parentStyleSheet obj 0x680668 r4 0x4d1748 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5ca6f8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x5595e0 r4 0x5ca6f8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x79ed78 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4d1748
+CSSStyle::~CSSStyle this 0x5ca6f8
+CSSRule::parentStyleSheet obj 0x72a198 r4 0x79ed78 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x577958 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x79ed78
+CSSRule::parentStyleSheet obj 0x3c3468 r4 0x577958 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5c81d8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x577958
+CSSRule::parentStyleSheet obj 0x681d08 r4 0x5c81d8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x43f7a0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x5ef990 r4 0x43f7a0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6270d8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5c81d8
+CSSStyle::~CSSStyle this 0x43f7a0
+CSSRule::parentStyleSheet obj 0x632e30 r4 0x6270d8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x65b830 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x6270d8
+CSSRule::parentStyleSheet obj 0x6211d8 r4 0x65b830 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5cd278 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x65b830
+CSSRule::parentStyleSheet obj 0x4da7c8 r4 0x5cd278 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x437e18 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x60bca0 r4 0x437e18 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4a50a0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5cd278
+CSSStyle::~CSSStyle this 0x437e18
+CSSRule::parentStyleSheet obj 0x5dd6f8 r4 0x4a50a0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x56c5f8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4a50a0
+CSSRule::parentStyleSheet obj 0x527d78 r4 0x56c5f8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x530b00 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x56c5f8
+CSSRule::parentStyleSheet obj 0x628978 r4 0x530b00 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4fd110 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x47d598 r4 0x4fd110 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x499f88 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x530b00
+CSSStyle::~CSSStyle this 0x4fd110
+CSSRule::parentStyleSheet obj 0x54b798 r4 0x499f88 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x78d218 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x499f88
+CSSRule::parentStyleSheet obj 0x48ec38 r4 0x78d218 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4abda0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x78d218
+CSSRule::parentStyleSheet obj 0x60a240 r4 0x4abda0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6a15e0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x402f10 r4 0x6a15e0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x40ce38 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4abda0
+CSSStyle::~CSSStyle this 0x6a15e0
+CSSRule::parentStyleSheet obj 0x50d9f8 r4 0x40ce38 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x77fbd8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x40ce38
+CSSRule::parentStyleSheet obj 0x4be748 r4 0x77fbd8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5d97b8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x77fbd8
+CSSRule::parentStyleSheet obj 0x63f510 r4 0x5d97b8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x3c8598 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x49d998 r4 0x3c8598 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x66eb30 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x5d97b8
+CSSStyle::~CSSStyle this 0x3c8598
+CSSRule::parentStyleSheet obj 0x561890 r4 0x66eb30 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x468c40 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x66eb30
+CSSRule::parentStyleSheet obj 0x63c988 r4 0x468c40 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x44f330 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x468c40
+CSSRule::parentStyleSheet obj 0x54e560 r4 0x44f330 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x526478 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x48a3e8 r4 0x526478 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x55c180 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x44f330
+CSSStyle::~CSSStyle this 0x526478
+CSSRule::parentStyleSheet obj 0x4ed180 r4 0x55c180 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4147f0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x55c180
+CSSRule::parentStyleSheet obj 0x3c13f8 r4 0x4147f0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6efef8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4147f0
+CSSRule::parentStyleSheet obj 0x568428 r4 0x6efef8 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x54a0c0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x4bf938 r4 0x54a0c0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x65cdb0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x6efef8
+CSSStyle::~CSSStyle this 0x54a0c0
+CSSRule::parentStyleSheet obj 0x4343c0 r4 0x65cdb0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x7212e0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x65cdb0
+CSSRule::parentStyleSheet obj 0x55b728 r4 0x7212e0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x721078 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x7212e0
+CSSRule::parentStyleSheet obj 0x7c26a0 r4 0x721078 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x5af908 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x4521b8 r4 0x5af908 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x4ba410 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x721078
+CSSStyle::~CSSStyle this 0x5af908
+CSSRule::parentStyleSheet obj 0x4169d0 r4 0x4ba410 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x7da3d0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x4ba410
+CSSRule::parentStyleSheet obj 0x5e33d8 r4 0x7da3d0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x79e578 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x7da3d0
+CSSRule::parentStyleSheet obj 0x4cb740 r4 0x79e578 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x7da3d0 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSRule::parentStyleSheet obj 0x4bf0e0 r4 0x7da3d0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x7e4828 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x79e578
+CSSStyle::~CSSStyle this 0x7da3d0
+CSSRule::parentStyleSheet obj 0x648278 r4 0x7e4828 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6e6e28 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x7e4828
+CSSRule::parentStyleSheet obj 0x586128 r4 0x6e6e28 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x6761e8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0x6e6e28
+CSSRule::parentStyleSheet obj 0x5aee88 r4 0x6761e8 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x2bfcb8 r4 0x31c9c8 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x2bfcb8 r4 0x31c9c8 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x322ee8 r4 0x542a48 r0 0xa8718950 r3 0xa8718970
+CSSStyle::~CSSStyle this 0x31c9c8
+CSSStyle::~CSSStyle this 0x7935d0
+CSSStyle::~CSSStyle this 0x6761e8
+CSSRule::parentStyleSheet obj 0x322ee8 r4 0x542a48 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x322ee8 r4 0x542a48 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0xad35d8 string 0x455bd96c int 0 int 0x455bd978 result 0x0
+CSSStyle::~CSSStyle this 0xad35d8
+[*] Starting hooking
+[*] Pid:582
+[*] Base address 0xa8300000 - 0xa8747000
+[*] Hooking finished
+CSSRule::parentStyleSheet obj 0x9f12b8 r4 0x744a70 r0 0xa8718950 r3 0xa8718970
+CSSStyle::~CSSStyle this 0x460ff0
+CSSStyle::~CSSStyle this 0x601dd8
+CSSStyle::~CSSStyle this 0x558210
+CSSStyle::~CSSStyle this 0x983568
+CSSStyle::~CSSStyle this 0x9d13a8
+CSSStyle::~CSSStyle this 0x9ee7a0
+CSSStyle::~CSSStyle this 0x9f43d0
+CSSStyle::~CSSStyle this 0x9e3a30
+CSSStyle::~CSSStyle this 0x220fd0
+CSSStyle::~CSSStyle this 0x377858
+CSSStyle::~CSSStyle this 0x668870
+CSSStyle::~CSSStyle this 0x516bc8
+CSSStyle::~CSSStyle this 0x457dd0
+CSSStyle::~CSSStyle this 0x472ae0
+CSSRule::parentStyleSheet obj 0x9f12b8 r4 0x744a70 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x9f12b8 r4 0x744a70 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x9e84c8 r4 0x85ada0 r0 0xa8718950 r3 0xa8718970
+CSSStyle::~CSSStyle this 0x744a70
+CSSStyle::~CSSStyle this 0x30e9c0
+CSSRule::parentStyleSheet obj 0x9e84c8 r4 0x85ada0 r0 0xa8718950 r3 0xa8718970
+CSSRule::parentStyleSheet obj 0x9e84c8 r4 0x85ada0 r0 0xa8718950 r3 0xa8718970
+CSSStyleSheet::insertRule obj 0x95c7a0 string 0x455b696c int 0 int 0x455b6978 result 0x0
+CSSStyle::~CSSStyle this 0x95c7a0
