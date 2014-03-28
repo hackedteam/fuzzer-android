@@ -1,0 +1,10 @@
+import os
+import sys
+import string
+import struct
+
+
+with file('test.jpg', 'rb+') as fh:
+    patch1 = fh.read()
+    fh.seek(0xaa)
+    fh.write(struct.pack('>c', 0xaa))
