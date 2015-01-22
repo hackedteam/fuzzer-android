@@ -1,1 +1,0 @@
-replaced object is  WebCore::Text::create(WebCore::Document *, WebCore::String const&) 

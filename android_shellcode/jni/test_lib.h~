@@ -1,2 +1,0 @@
-int test(int a, char* s, int b);
-char* ya_strcpy(char* dst, char *src);

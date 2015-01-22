@@ -1,5 +1,0 @@
-.globl _start
-_start:
-	.code 16
-
-	
