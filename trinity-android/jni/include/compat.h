@@ -1,5 +1,22 @@
 #pragma once
 
+
+/* linux/nfc.h */
+#ifndef sockaddr_nfc
+#include <linux/nfc.h> // On android already define the sockaddr_nfc
+
+/*#include <bits/sockaddr.h>
+#include <linux/types.h>
+
+struct sockaddr_nfc {
+	sa_family_t sa_family;
+	__u32 dev_idx;
+	__u32 target_idx;
+	__u32 nfc_protocol;
+	};*/
+#endif
+
+
 /* bits/eventfd.h */
 #ifndef EFD_SEMAPHORE
 #define EFD_SEMAPHORE 1
@@ -616,20 +633,6 @@ enum kcmp_type {
 #define SO_IPRMDATA_MSG 0x0080          /* send/recv IPRM_DATA msgs */
 #define SO_MSGLIMIT     0x1000          /* get/set IUCV MSGLIMIT */
 #define SO_MSGSIZE      0x0800          /* get maximum msgsize */
-#endif
-
-/* linux/nfc.h */
-#ifndef sockaddr_nfc
-#include <linux/nfc.h>
-/*#include <bits/sockaddr.h>
-#include <linux/types.h>
-
-struct sockaddr_nfc {
-	sa_family_t sa_family;
-	__u32 dev_idx;
-	__u32 target_idx;
-	__u32 nfc_protocol;
-	}; */
 #endif
 
 /* linux/inotify.h */

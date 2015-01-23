@@ -59,7 +59,8 @@
 #endif
 
 #ifndef PAGE_MASK
-#define PAGE_MASK (~(page_size - 1))
+//#define PAGE_MASK (~(page_size - 1))
+#include <limits.h> // Avoid redefinition od PAGE_MASK
 #endif
 
 extern unsigned int page_size;
