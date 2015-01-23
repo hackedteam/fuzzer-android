@@ -1,10 +1,12 @@
 #!/bin/bash
 
+SDK_PATH="/home/diego/Scaricati/android-ndk-r10d/ndk-build"
+APP_PLATFORM="android-21"
+
 DEVEL=1
 CONFIGH="config.h"
-SDK="/home/diego/Scaricati/android-ndk-r10d/ndk-build -C tmpdir"
+SDK="$SDK_PATH -C tmpdir"
 TMP="tmpdir/jni/test.c"
-APP_PLATFORM="android-21"
 
 rm -rf tmpdir
 mkdir tmpdir
