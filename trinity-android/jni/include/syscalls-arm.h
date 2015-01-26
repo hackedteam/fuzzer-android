@@ -8,6 +8,8 @@
 #include "syscall.h"
 #include "syscalls/syscalls.h"
 
+
+
 struct syscalltable syscalls_arm[] = {
 
 /* 0 */		{ .entry = &syscall_restart_syscall },
@@ -23,7 +25,7 @@ struct syscalltable syscalls_arm[] = {
 /* 10 */	{ .entry = &syscall_unlink },
 		{ .entry = &syscall_execve },
 		{ .entry = &syscall_chdir },
-		{ .entry = &syscall_time },	/* used by libc4 */
+		{ .entry = &syscall_ni_syscall },	/* was sys_time used by libc4, OBSOLETE */
 		{ .entry = &syscall_mknod },
 /* 15 */	{ .entry = &syscall_chmod },
 		{ .entry = &syscall_lchown16 },
@@ -32,15 +34,15 @@ struct syscalltable syscalls_arm[] = {
 		{ .entry = &syscall_lseek },
 /* 20 */	{ .entry = &syscall_getpid },
 		{ .entry = &syscall_mount },
-		{ .entry = &syscall_oldumount },	/* used by libc4 */
+		{ .entry = &syscall_ni_syscall },	/* was sys_oldmount used by libc4, OBSOLETE */
 		{ .entry = &syscall_setuid16 },
 		{ .entry = &syscall_getuid16 },
-/* 25 */	{ .entry = &syscall_stime },
+/* 25 */	{ .entry = &syscall_ni_syscall },       /* was sys_stime, OBSOLETE */
 		{ .entry = &syscall_ptrace },
-		{ .entry = &syscall_alarm },	/* used by libc4 */
+		{ .entry = &syscall_ni_syscall },	/* was sys_alarm used by libc4, OBSOLETE */
 		{ .entry = &syscall_ni_syscall },		/* was sys_fstat */
 		{ .entry = &syscall_pause },
-/* 30 */	{ .entry = &syscall_utime },	/* used by libc4 */
+/* 30 */	{ .entry = &syscall_ni_syscall },	/* was sys_utime used by libc4, OBSOLETE */
 		{ .entry = &syscall_ni_syscall },		/* was sys_stty */
 		{ .entry = &syscall_ni_syscall },		/* was sys_getty */
 		{ .entry = &syscall_access },
@@ -111,8 +113,8 @@ struct syscalltable syscalls_arm[] = {
 		{ .entry = &syscall_ni_syscall },		/* was sys_profil */
 		{ .entry = &syscall_statfs },
 /* 100 */	{ .entry = &syscall_fstatfs },
-		{ .entry = &syscall_ni_syscall },		/* sys_ioperm */
-		{ .entry = &syscall_socketcall },
+                { .entry = &syscall_ni_syscall },		/* sys_ioperm */
+                { .entry = &syscall_ni_syscall },           /* was sys_socketcall, OBSOLETE */
 		{ .entry = &syscall_syslog },
 		{ .entry = &syscall_setitimer },
 /* 105 */	{ .entry = &syscall_getitimer },
@@ -127,7 +129,7 @@ struct syscalltable syscalls_arm[] = {
 		{ .entry = &syscall_wait4 },
 /* 115 */	{ .entry = &syscall_swapoff },
 		{ .entry = &syscall_sysinfo },
-		{ .entry = &syscall_ipc },
+                { .entry = &syscall_ni_syscall }, /* was sys_ipc, OBSOLETE */
 		{ .entry = &syscall_fsync },
 		{ .entry = &syscall_sigreturn },
 /* 120 */	{ .entry = &syscall_clone },
