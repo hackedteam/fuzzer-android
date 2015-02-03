@@ -14,8 +14,11 @@
 #include "base64.h"
 #include "time.h"
 
-static char * decode_argtype(char *sptr, unsigned long reg, enum argtype type)
+static char * decode_argtype(char *sptr, unsigned long reg, enum argtype type, unsigned int len)
 {
+        size_t s = 0;
+	char *enc_buf = NULL;
+
 	switch (type) {
 	case ARG_PATHNAME:
 		sptr += sprintf(sptr, "\"%s\"", (char *) reg);
@@ -39,8 +42,17 @@ static char * decode_argtype(char *sptr, unsigned long reg, enum argtype type)
 		/* Although generic sanitise has set this to a map struct,
 		 * common_set_mmap_ptr_len() will subsequently set it to the ->ptr
 		 * in the per syscall ->sanitise routine. */
-		sptr += sprintf(sptr, "%p", (void *) reg);
-		break;
+	         if(len) {
+		   s = base64_size(len);
+		   enc_buf = zmalloc(s+1);
+		   base64_encode_binary(enc_buf, (unsigned char *) reg, len);
+	         }
+		 
+		 sptr += sprintf(sptr, "%p", (void *) reg);
+		 if(enc_buf != NULL)
+		   free(enc_buf);
+		 
+		 break;
 
 	case ARG_OP:
 	case ARG_LIST:
@@ -72,27 +84,38 @@ static char * render_arg(struct syscallrecord *rec, char *sptr, unsigned int arg
 	const char *name = NULL;
 	unsigned long reg = 0;
 	enum argtype type = 0;
+	unsigned int len = 0;
 
 	switch (argnum) {
 	case 1:	type = entry->arg1type;
 		name = entry->arg1name;
 		reg = rec->a1;
+		if(type == ARG_MMAP)
+                  len = rec->a2;
 		break;
 	case 2:	type = entry->arg2type;
 		name = entry->arg2name;
 		reg = rec->a2;
+		if(type == ARG_MMAP)
+                  len = rec->a3;
 		break;
 	case 3:	type = entry->arg3type;
 		name = entry->arg3name;
 		reg = rec->a3;
+		if(type == ARG_MMAP)
+                  len = rec->a4;
 		break;
 	case 4:	type = entry->arg4type;
 		name = entry->arg4name;
 		reg = rec->a4;
+		if(type == ARG_MMAP)
+                  len = rec->a5;
 		break;
 	case 5:	type = entry->arg5type;
 		name = entry->arg5name;
 		reg = rec->a5;
+		if(type == ARG_MMAP)
+                  len = rec->a6;
 		break;
 	case 6:	type = entry->arg6type;
 		name = entry->arg6name;
@@ -105,7 +128,7 @@ static char * render_arg(struct syscallrecord *rec, char *sptr, unsigned int arg
 
 	sptr += sprintf(sptr, "%s=", name);
 
-	sptr = decode_argtype(sptr, reg, type);
+	sptr = decode_argtype(sptr, reg, type, len);
 
 	if (entry->decode != NULL) {
 		char *str;
