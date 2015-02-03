@@ -2,6 +2,7 @@
  * Routines to take a syscallrecord and turn it into an ascii representation.
  */
 #include <stdio.h>
+#include <math.h>
 #include "arch.h"	//PAGE_MASK
 #include "log.h"
 #include "params.h"	// logging, monochrome, quiet_level
@@ -10,6 +11,8 @@
 #include "syscall.h"
 #include "tables.h"
 #include "utils.h"
+#include "base64.h"
+#include "time.h"
 
 static char * decode_argtype(char *sptr, unsigned long reg, enum argtype type)
 {
