@@ -43,27 +43,31 @@ static void * _get_address(unsigned char null_allowed)
 		i = rand_range(1, 3);
 
 	switch (i) {
-	case 0: addr = NULL;
-		break;
-	case 1:	addr = (void *) KERNEL_ADDR;
-		break;
-	case 2:	addr = (void *)(unsigned long)rand64();
-		break;
+	case 0: 
+	  addr = NULL;
+	  break;
+	case 1:
+	  addr = (void *) KERNEL_ADDR;
+	  break;
+	case 2:	
+	  addr = (void *)(unsigned long)rand64();
+	  break;
 
-	case 3:	addr = get_writable_address(page_size);
-		break;
+	case 3:	
+	  addr = get_writable_address(page_size);
+	  break;
 	}
 	return addr;
 }
 
 void * get_address(void)
 {
-	return _get_address(TRUE);
+  return _get_address(TRUE);
 }
 
 void * get_non_null_address(void)
 {
-	return _get_address(FALSE);
+  return _get_address(FALSE);
 }
 
 static bool is_arg_address(enum argtype argtype)

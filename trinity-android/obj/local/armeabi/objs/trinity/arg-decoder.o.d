@@ -24,7 +24,26 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/limits.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/limits.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/syslimits.h \
- include/arch.h include/types.h include/arch-arm.h include/log.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/string.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/malloc.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/xlocale.h \
+ libxml/include/libxml/encoding.h libxml/include/libxml/xmlversion.h \
+ libxml/include/libxml/xmlexports.h libxml/include/libxml/tree.h \
+ libxml/include/libxml/xmlstring.h libxml/include/libxml/xmlregexp.h \
+ libxml/include/libxml/dict.h libxml/include/libxml/xmlmemory.h \
+ libxml/include/libxml/threads.h libxml/include/libxml/globals.h \
+ libxml/include/libxml/parser.h libxml/include/libxml/hash.h \
+ libxml/include/libxml/valid.h libxml/include/libxml/xmlerror.h \
+ libxml/include/libxml/list.h libxml/include/libxml/xmlautomata.h \
+ libxml/include/libxml/entities.h libxml/include/libxml/xmlIO.h \
+ libxml/include/libxml/SAX.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/stdlib.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/alloca.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/strings.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h \
+ libxml/include/libxml/xlink.h libxml/include/libxml/SAX2.h \
+ libxml/include/libxml/xmlwriter.h include/arch.h include/types.h \
+ include/arch-arm.h include/log.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/unistd.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/select.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/time.h \
@@ -35,9 +54,6 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm/errno.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/string.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/malloc.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/xlocale.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm/sigcontext.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/signal.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm/signal.h \
@@ -85,12 +101,9 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm/mman.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/mman.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/mman-common.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/stdlib.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/alloca.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/strings.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h \
  include/params.h include/pids.h include/tables.h include/base64.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/time.h
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/time.h \
+ include/struct_analyze.h
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/stdio.h:
 
@@ -140,6 +153,64 @@
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/syslimits.h:
 
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/string.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/malloc.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/xlocale.h:
+
+libxml/include/libxml/encoding.h:
+
+libxml/include/libxml/xmlversion.h:
+
+libxml/include/libxml/xmlexports.h:
+
+libxml/include/libxml/tree.h:
+
+libxml/include/libxml/xmlstring.h:
+
+libxml/include/libxml/xmlregexp.h:
+
+libxml/include/libxml/dict.h:
+
+libxml/include/libxml/xmlmemory.h:
+
+libxml/include/libxml/threads.h:
+
+libxml/include/libxml/globals.h:
+
+libxml/include/libxml/parser.h:
+
+libxml/include/libxml/hash.h:
+
+libxml/include/libxml/valid.h:
+
+libxml/include/libxml/xmlerror.h:
+
+libxml/include/libxml/list.h:
+
+libxml/include/libxml/xmlautomata.h:
+
+libxml/include/libxml/entities.h:
+
+libxml/include/libxml/xmlIO.h:
+
+libxml/include/libxml/SAX.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/stdlib.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/alloca.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/strings.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h:
+
+libxml/include/libxml/xlink.h:
+
+libxml/include/libxml/SAX2.h:
+
+libxml/include/libxml/xmlwriter.h:
+
 include/arch.h:
 
 include/types.h:
@@ -167,12 +238,6 @@ include/log.h:
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/errno.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/errno-base.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/string.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/malloc.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/xlocale.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm/sigcontext.h:
 
@@ -292,14 +357,6 @@ include/utils.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/asm-generic/mman-common.h:
 
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/stdlib.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/alloca.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/strings.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h:
-
 include/params.h:
 
 include/pids.h:
@@ -309,3 +366,5 @@ include/tables.h:
 include/base64.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/time.h:
+
+include/struct_analyze.h:

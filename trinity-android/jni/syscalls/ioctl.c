@@ -28,10 +28,10 @@ static void ioctl_mangle_cmd(struct syscallrecord *rec)
 static void ioctl_mangle_arg(struct syscallrecord *rec)
 {
 	/* the argument could mean anything, because ioctl sucks like that. */
-	if (rand_bool())
-		rec->a3 = rand32();
-	else
-		rec->a3 = (unsigned long) get_non_null_address();
+	//if (rand_bool())
+	//	rec->a3 = rand32();
+	//else
+        rec->a3 = (unsigned long) get_non_null_address();
 }
 
 static void generic_sanitise_ioctl(struct syscallrecord *rec)
@@ -69,6 +69,7 @@ struct syscallentry syscall_ioctl = {
 	.arg1type = ARG_FD,
 	.arg2name = "cmd",
 	.arg3name = "arg",
+	.arg3type = ARG_ADDRESS,
 	.sanitise = sanitise_ioctl,
 	.flags = NEED_ALARM | IGNORE_ENOSYS,
 };

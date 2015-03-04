@@ -62,6 +62,7 @@ struct shm_s {
 	int testfile_fds[MAX_TESTFILE_FDS];
 	int memfd_fds[MAX_MEMFD_FDS];
 	struct socketinfo sockets[NR_SOCKET_FDS];
+        char device_to_fuzz[256];
 	int current_fd;
 	unsigned int fd_lifetime;
 

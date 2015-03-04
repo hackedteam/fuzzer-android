@@ -41,23 +41,78 @@ struct syscallrecord {
 };
 
 enum argtype {
-	ARG_UNDEFINED,
-	ARG_FD,
-	ARG_LEN,
-	ARG_ADDRESS,
-	ARG_MODE_T,
-	ARG_NON_NULL_ADDRESS,
-	ARG_PID,
-	ARG_RANGE,
-	ARG_OP,
-	ARG_LIST,
-	ARG_CPU,
-	ARG_PATHNAME,
-	ARG_IOVEC,
-	ARG_IOVECLEN,
-	ARG_SOCKADDR,
-	ARG_SOCKADDRLEN,
-	ARG_MMAP,
+  ARG_UNDEFINED,
+  ARG_FD,
+  ARG_LEN,
+  ARG_ADDRESS,
+  ARG_MODE_T,
+  ARG_NON_NULL_ADDRESS,
+  ARG_PID,
+  ARG_RANGE,
+  ARG_OP,
+  ARG_LIST,
+  ARG_CPU,
+  ARG_PATHNAME,
+  ARG_IOVEC,
+  ARG_IOVECLEN,
+  ARG_SOCKADDR,
+  ARG_SOCKADDRLEN,
+  ARG_MMAP,
+};
+
+enum struct_argtype {
+
+  STRUCT_ARG_timespec = 1,
+  STRUCT_ARG_timeval,
+  STRUCT_ARG_timezone,
+  STRUCT_ARG_itimerspec,
+  STRUCT_ARG_itimerval,
+  STRUCT_ARG_sigevent,
+  STRUCT_ARG_stat64,
+  STRUCT_ARG_rlimit64,
+  STRUCT_ARG_msghdr,
+  STRUCT_ARG_iovec,
+  STRUCT_ARG_mmsghdr,
+  STRUCT_ARG_tms,
+  STRUCT_ARG_epoll_even,
+  STRUCT_ARG_getcpu_cache,
+  STRUCT_ARG_rlimi,
+  STRUCT_ARG_iocb,
+  STRUCT_ARG_perf_event_attr,
+  STRUCT_ARG_new_utsname,
+  STRUCT_ARG_stat,
+  STRUCT_ARG_linux_dirent64,
+  STRUCT_ARG_linux_dirent,
+  STRUCT_ARG_sembuf,
+  STRUCT_ARG_statfs64,
+  STRUCT_ARG_shmid_ds,
+  STRUCT_ARG_pollfd,
+  STRUCT_ARG_msgbu,
+  STRUCT_ARG_file_handle,
+  STRUCT_ARG_robust_list_head,
+  STRUCT_ARG_robust_list,
+  STRUCT_ARG_rusage,
+  STRUCT_ARG_ustat,
+  STRUCT_ARG_timex,
+  STRUCT_ARG_statfs,
+  STRUCT_ARG_msqid_ds,
+  STRUCT_ARG_ipc_per,
+  STRUCT_ARG_msg,
+  STRUCT_ARG_sysctl_args,
+  STRUCT_ARG_mq_attr,
+  STRUCT_ARG_io_event,
+  STRUCT_ARG_sched_param,
+  STRUCT_ARG_kexec_segment,
+  STRUCT_ARG_utimbuf,
+  STRUCT_ARG_sockaddr,
+  STRUCT_ARG_sel_arg_struct,
+  STRUCT_ARG_epoll_event,
+  STRUCT_ARG_rlimit,
+  STRUCT_ARG_msgbuf,
+  STRUCT_ARG___sysctl_args,
+  STRUCT_ARG_mmap_arg_struct,
+  STRUCT_ARG_siginfo
+
 };
 
 struct arglist {
@@ -68,6 +123,10 @@ struct arglist {
 struct errnos {
 	unsigned int num;
 	int values[32];
+};
+
+struct misc_arg_info {
+       enum struct_argtype struct_type;
 };
 
 struct syscallentry {
@@ -96,6 +155,13 @@ struct syscallentry {
 	const char *arg5name;
 	const char *arg6name;
 
+        struct misc_arg_info arg1misc;
+        struct misc_arg_info arg2misc;
+        struct misc_arg_info arg3misc;
+        struct misc_arg_info arg4misc;
+        struct misc_arg_info arg5misc;
+        struct misc_arg_info arg6misc;
+  
 	/* FIXME: At some point, if we grow more type specific parts here,
 	 * it may be worth union-ising this
 	 */

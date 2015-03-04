@@ -8,4 +8,5 @@ struct syscallentry syscall_times = {
 	.num_args = 1,
 	.arg1name = "tbuf",
 	.arg1type = ARG_ADDRESS,
+	.arg1misc.struct_type = STRUCT_ARG_tms,
 };

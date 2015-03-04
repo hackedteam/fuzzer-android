@@ -11,5 +11,6 @@ struct syscallentry syscall_clock_settime = {
 	.arg1name = "which_clock",
 	.arg2name = "tp",
 	.arg2type = ARG_ADDRESS,
+	.arg2misc.struct_type = STRUCT_ARG_timespec,
 	.rettype = RET_ZERO_SUCCESS,
 };

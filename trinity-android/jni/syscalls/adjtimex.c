@@ -19,4 +19,5 @@ struct syscallentry syscall_adjtimex = {
 	.num_args = 1,
 	.arg1name = "txc_p",
 	.arg1type = ARG_ADDRESS,
+	.arg1misc.struct_type = STRUCT_ARG_timex
 };

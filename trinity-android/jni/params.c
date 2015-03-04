@@ -21,6 +21,7 @@
 bool set_debug = FALSE;
 bool do_specific_syscall = FALSE;
 bool do_exclude_syscall = FALSE;
+bool use_specific_dev_fd = FALSE;
 
 bool do_32_arch = TRUE;
 bool do_64_arch = TRUE;
@@ -88,6 +89,7 @@ static void usage(void)
 	outputerr(" --syslog,-S: log important info to syslog. (useful if syslog is remote)\n");
 	outputerr(" --verbose,-v: increase output verbosity.\n");
 	outputerr(" --victims,-V: path to victim files.\n");
+	outputerr(" --driver,-R: fuzz a device driver in /dev.\n");
 	outputerr("\n");
 	outputerr(" -c#,@: target specific syscall (takes syscall name as parameter and optionally 32 or 64 as bit-width. Default:both).\n");
 	outputerr(" -N#: do # syscalls then exit.\n");
@@ -96,7 +98,7 @@ static void usage(void)
 	exit(EXIT_SUCCESS);
 }
 
-static const char paramstr[] = "a:b:c:C:dDg:hIl:LN:mP:E:pqr:s:T:SV:vx:X";
+static const char paramstr[] = "a:b:c:C:dDg:hIl:LN:mP:E:pqr:s:T:SV:vx:X:R:";
 
 static const struct option longopts[] = {
 	{ "arch", required_argument, NULL, 'a' },
@@ -124,6 +126,7 @@ static const struct option longopts[] = {
 	{ "syslog", no_argument, NULL, 'S' },
 	{ "verbose", no_argument, NULL, 'v' },
 	{ "victims", required_argument, NULL, 'V' },
+	{ "driver", required_argument, NULL, 'R' },
 	{ NULL, 0, NULL, 0 } };
 
 void parse_args(int argc, char *argv[])
@@ -257,6 +260,17 @@ void parse_args(int argc, char *argv[])
 			random_selection_num = strtol(optarg, NULL, 10);
 			break;
 
+			
+		case 'R':
+		  if(fuzz_device_driver(optarg) == FALSE) {
+		    outputerr("Unable to open the device driver!\n");
+		    exit(EXIT_FAILURE);
+		  }
+		  use_specific_dev_fd = TRUE;
+
+		  break;
+
+
 		/* Set seed */
 		case 's':
 			seed = strtol(optarg, NULL, 10);
@@ -275,7 +289,7 @@ void parse_args(int argc, char *argv[])
 				outputstd("Custom kernel taint mask has been specified: 0x%08x (%d).\n",
 					kernel_taint_mask, kernel_taint_mask);
 			break;
-
+ 
 		case 'v':
 			verbose = TRUE;
 			break;
@@ -290,6 +304,7 @@ void parse_args(int argc, char *argv[])
 			}
 			//FIXME: Later, allow for multiple victim files
 			break;
+
 
 		case 'x':
 			do_exclude_syscall = TRUE;

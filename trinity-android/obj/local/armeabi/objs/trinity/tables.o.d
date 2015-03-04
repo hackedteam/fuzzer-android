@@ -50,6 +50,11 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/alloca.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/strings.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/stat.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/stat.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/endian.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/endian.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/machine/endian.h \
  include/arch.h include/types.h include/arch-arm.h \
  include/arch-syscalls.h include/syscalls-arm.h include/sanitise.h \
  include/syscall.h include/locks.h \
@@ -58,11 +63,6 @@
  /home/diego/android-dev/fuzzer-android/trinity-android/jni/config.h \
  include/exit.h include/shm.h include/child.h include/epoll.h \
  include/fd.h include/list.h include/eventfd.h include/files.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/stat.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/stat.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/endian.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/endian.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/machine/endian.h \
  include/memfd.h include/net.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/socket.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/socket.h \
@@ -193,6 +193,16 @@
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/memory.h:
 
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/stat.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/stat.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/endian.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/endian.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/machine/endian.h:
+
 include/arch.h:
 
 include/types.h:
@@ -230,16 +240,6 @@ include/list.h:
 include/eventfd.h:
 
 include/files.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/stat.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/linux/stat.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/endian.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/sys/endian.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-21/arch-arm/usr/include/machine/endian.h:
 
 include/memfd.h:
 

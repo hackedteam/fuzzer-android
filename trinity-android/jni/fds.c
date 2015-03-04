@@ -28,6 +28,8 @@ static unsigned int num_fd_providers_enabled = 0;
 
 static struct fd_provider *fd_providers = NULL;
 
+bool use_specific_dev_fd;
+
 static void add_to_prov_list(const struct fd_provider *prov)
 {
 	struct fd_provider *newnode;
@@ -119,13 +121,21 @@ retry:
 	return fd;
 }
 
+static int get_specific_dev_fd(void) {
+  return(open(shm->device_to_fuzz, 0));
+}
+
 int get_random_fd(void)
 {
 	/* return the same fd as last time if we haven't over-used it yet. */
 regen:
 	if (shm->fd_lifetime == 0) {
-		shm->current_fd = get_new_random_fd();
-		shm->fd_lifetime = rand_range(5, max_children);
+	  if(use_specific_dev_fd == FALSE)
+	    shm->current_fd = get_new_random_fd();
+	  else
+	    shm->current_fd = get_specific_dev_fd();
+	  shm->fd_lifetime = rand_range(5, max_children);
+
 	} else
 		shm->fd_lifetime--;
 

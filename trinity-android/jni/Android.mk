@@ -1,6 +1,12 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE    := libxml/libxml2
+LOCAL_SRC_FILES := libxml/libxml2.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := trinity
 LOCAL_SRC_FILES := $(wildcard *.c) \
 	           $(wildcard children/*.c) \
@@ -15,6 +21,7 @@ CFLAGS += -Wformat=2 -Winit-self -Wnested-externs -Wpacked -Wshadow -Wswitch-enu
 CFLAGS += -Wwrite-strings -Wno-format-nonliteral -Wstrict-prototypes -Wmissing-prototypes
 CFLAGS += -Iinclude
 LDFLAGS += -rdynamic
-LOCAL_C_INCLUDES += include
+LOCAL_C_INCLUDES += include libxml/include
 LOCAL_C_INCLUDES += syscalls
+LOCAL_STATIC_LIBRARIES += libxml/libxml2
 include $(BUILD_EXECUTABLE)

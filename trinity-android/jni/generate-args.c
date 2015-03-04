@@ -47,13 +47,17 @@ static unsigned long handle_arg_address(struct syscallrecord *rec, unsigned int 
 	addr = find_previous_arg_address(rec, argnum);
 
 	switch (rand() % 4) {
-	case 0:	break;	/* return unmodified */
-	case 1:	addr++;
-		break;
-	case 2:	addr+= sizeof(int);
-		break;
-	case 3:	addr+= sizeof(long);
-		break;
+	case 0:
+	  break;	/* return unmodified */
+	case 1:	
+	  addr++;
+	  break;
+	case 2:
+	  addr+= sizeof(int);
+	  break;
+	case 3:
+	  addr+= sizeof(long);
+	  break;
 	}
 
 	return addr;

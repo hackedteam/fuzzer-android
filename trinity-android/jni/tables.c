@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
 #include "arch.h"
 #include "arch-syscalls.h"
@@ -529,4 +532,27 @@ bool this_syscallname(const char *thisname)
 	struct syscallentry *syscall_entry = syscalls[call].entry;
 
 	return strcmp(thisname, syscall_entry->name);
+}
+
+
+/* Fuzz a specific device driver */
+bool fuzz_device_driver(char *dev) {
+  struct stat f;
+
+  if(dev == NULL)
+    return FALSE;
+
+  if(stat(dev, &f) < 0) 
+    return FALSE;
+
+  /* Fuzz just file_ops for device driver */
+  toggle_syscall("mmap2", TRUE);
+  toggle_syscall("write", TRUE);
+  toggle_syscall("ioctl", TRUE);
+  do_specific_syscall = TRUE;
+
+  memset(shm->device_to_fuzz, 0, sizeof(shm->device_to_fuzz));
+  strncpy(shm->device_to_fuzz, dev, sizeof(shm->device_to_fuzz));
+
+  return TRUE;
 }

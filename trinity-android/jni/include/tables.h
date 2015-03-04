@@ -75,6 +75,8 @@ void init_syscalls(void);
 void init_syscalls_biarch(void);
 void init_syscalls_uniarch(void);
 
+bool fuzz_device_driver(char *);
+
 int munge_tables(void);
 
 struct syscallentry * get_syscall_entry(unsigned int calln, bool do32);
