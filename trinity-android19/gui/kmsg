@@ -1,0 +1,121 @@
+<7>[  286.991301] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  286.991332] 
+<6>[  287.074896] app_process (7802): undefined instruction: pc=b660b4e8
+<6>[  287.074927] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[  287.233724] app_process (7802): undefined instruction: pc=40b1c4e8
+<6>[  287.233755] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<7>[  287.492202] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  287.492232] 
+<3>[  287.551625] init: untracked pid 7799 exited
+<3>[  287.779001] init: untracked pid 7802 exited
+<3>[  287.804516] init: untracked pid 7683 exited
+<7>[  287.993682] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  287.993743] 
+<7>[  288.495467] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  288.495528] 
+<6>[  288.834396] Atmel MXT336S 3-004a: [P][0]: T[0][0] X[415],Y[585],COMP[0],SUM[8],AREA[3]
+<6>[  288.834549] set_freq_limit: 0x1 1134000, min 1134000, max 1728000
+<6>[  288.862353] Atmel MXT336S 3-004a: [R][0]: T[0][0] M[0]
+<6>[  288.873493] !@beginShutdownSequence
+<6>[  288.885518] !@normal
+<6>[  288.953090] set_freq_limit: 0x1 -1, min 384000, max 1728000
+<7>[  289.001861] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  289.001892] 
+<6>[  289.182755] !@systemVol:0
+<6>[  289.192797] !@LED File is not exist
+<6>[  289.197863] !@Sending shutdown broadcast...
+<3>[  289.464458] [CAMERA][cameraflash_file_cmd_store:1747] [value::0]
+<3>[  289.464550] [CAMERA][MIC2871YMK_set_flash:1603] [teddy][Torch flash]OFF
+<7>[  289.505356] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  289.505386] 
+<6>[  289.824294] msm_thermal: Debug Temp for Sensors (0 --- 42)(1 --- 53)(2 --- 47)(3 --- 45)(4 --- 45)(5 --- 46)(6 --- 59)(7 --- 46)(8 --- 46)(9 --- 64)
+<6>[  289.841690] !@Shutting down activity manager...
+<7>[  290.006683] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  290.006744] 
+<6>[  290.256432] !@Start shutdown radios
+<6>[  290.320402] !@before sleep
+<6>[  290.328002] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl: got wake lock
+<6>[  290.328032] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl, BCMNFC_WAKE_CTL (fa05, 0):
+<6>[  290.399877] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl: got wake lock
+<6>[  290.399908] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl, BCMNFC_WAKE_CTL (fa05, 0):
+<6>[  290.403540] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl, BCMNFC_WAKE_CTL (fa05, 1):
+<6>[  290.403570] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl: release wake lock, count_irq = 0
+<7>[  290.511704] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  290.511735] 
+<3>[  290.520280] wlan: [2728:E :SME] csrNeighborRoamIndicateDisconnect: 3258: Disconnect indication on session 0 in state 2 (sub-state 12)
+<3>[  290.520494] wlan: [2728:E :TL ]  ----> CRegion 0, hRSSI -75, Alpha 5
+<3>[  290.520616] wlan: [2728:E :TL ]  ----> CRegion 0, hRSSI -75, Alpha 5
+<3>[  290.520952] wlan: [2728:E :HDD] hdd_tdlsStatusUpdate: DEL_ALL_TDLS_PEER_IND staIdx 0 00:00:00
+<3>[  290.520982] 
+<3>[  290.521471] wlan: [2728:E :PE ] limDeactivateAndChangeTimer: 1386: Deactivated probe after hb timer
+<3>[  290.521623] wlan: [2728:E :PE ] limSendDisassocCnf: 3460: FT Preauth Session (dfbd0000,0) Cleanup
+<6>[  290.532794] wlan: disconnected
+<6>[  290.532824] wlan(0) 00:00:00 Standalone
+<6>[  290.533129] cfg80211: Calling CRDA for country: EU
+<4>[  290.576682] wpa_supplicant used greatest stack depth: 4916 bytes left
+<6>[  290.821272] !@after sleep
+<6>[  290.822035] !@[Phone off retry:290806] : 302239 radio=false radio2=true bluetooth=true nfc=false modem=true
+<6>[  290.824843] !@before sleep
+<6>[  290.883869] wlan: unloading driver v3.2.4.122_noLFR.1122
+<4>[  290.925133] MC_Thread used greatest stack depth: 4756 bytes left
+<7>[  291.012299] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  291.012330] 
+<6>[  291.163619] wlan: driver unloaded
+<6>[  291.325530] !@after sleep
+<6>[  291.329314] !@[Phone off retry:291313] : 302239 radio=false radio2=true bluetooth=true nfc=false modem=true
+<6>[  291.331817] !@before sleep
+<7>[  291.520036] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  291.520067] 
+<6>[  291.832412] !@after sleep
+<6>[  291.832931] !@[Phone off retry:291817] : 302239 radio=false radio2=true bluetooth=true nfc=false modem=true
+<6>[  291.835983] !@before sleep
+<6>[  291.903708] bcm2079x-i2c 17-0077: bcm2079x_dev_unlocked_ioctl, BCMNFC_POWER_CTL (fa01, 0):
+<7>[  292.020662] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  292.020692] 
+<6>[  292.336670] !@after sleep
+<6>[  292.337250] !@[Phone off retry:292321] : 302239 radio=false radio2=true bluetooth=true nfc=true modem=true
+<6>[  292.339142] !@before sleep
+<7>[  292.521257] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  292.521287] 
+<6>[  292.842392] !@after sleep
+<6>[  292.843003] !@[Phone off retry:292827] : 302239 radio=false radio2=true bluetooth=true nfc=true modem=true
+<6>[  292.846238] !@before sleep
+<7>[  293.022035] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  293.022066] 
+<6>[  293.346741] !@after sleep
+<6>[  293.347352] !@[Phone off retry:293331] : 302239 radio=false radio2=true bluetooth=true nfc=true modem=true
+<6>[  293.349580] !@before sleep
+<7>[  293.522691] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  293.522722] 
+<6>[  293.798412] !@Sync 9
+<6>[  293.850022] !@after sleep
+<6>[  293.850450] !@[Phone off retry:293834] : 302239 radio=false radio2=true bluetooth=true nfc=true modem=true
+<6>[  293.851579] !@before sleep
+<7>[  294.023439] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  294.023470] 
+<6>[  294.199633] binder: 947:1453 transaction failed 29189, size 184-0
+<6>[  294.199816] binder: 947:1453 transaction failed 29189, size 184-0
+<6>[  294.199908] binder: 947:1453 transaction failed 29189, size 184-0
+<6>[  294.352021] !@after sleep
+<6>[  294.352662] !@[Phone off retry:294336] : 302239 radio=false radio2=true bluetooth=true nfc=true modem=true
+<6>[  294.355745] !@Shutting down MountService
+<6>[  294.356691] !@Result code 0 from MountService.shutdown
+<6>[  294.357179] !@call oem shutdown...
+<6>[  294.357820] !@can't found class
+<6>[  294.358217] !@reboot : GlobalActions restart
+<7>[  294.524095] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[  294.524126] 
+<6>[  294.526049] SysRq : Emergency Remount R/O
+<6>[  294.596917] EXT4-fs (mmcblk0p24): re-mounted. Opts: (null)
+<6>[  294.608942] EXT4-fs (mmcblk0p22): re-mounted. Opts: (null)
+<6>[  294.611536] EXT4-fs (mmcblk0p19): re-mounted. Opts: (null)
+<6>[  294.619227] EXT4-fs (mmcblk0p10): re-mounted. Opts: (null)
+<6>[  294.627742] EXT4-fs (mmcblk0p20): re-mounted. Opts: (null)
+<4>[  294.627865] Emergency Remount complete
+<6>[  294.634060]  kernel_sec_set_normal_pwroff, value :1
+<3>[  294.638516] set_dload_mode <0> ( c0083cd0 )
+<0>[  294.638608] (sec_debug_set_upload_magic) 0
+<6>[  294.639462] mdp_shutdown: panel_next_off seq
+<6>[  294.639493] mdp_shutdown: panel_next_off seq
+<6>[  294.639523] mdp_shutdown: panel_next_off seq
+<6>[  294.639554] mipi_samsung_disp_send_cmd cmd = 0x3
