@@ -7,9 +7,11 @@
 
 
 struct ioctl {
-	const char *name;
-	unsigned int request;
-        enum ioctl_struct_type struct_argtype;
+  const char *name;
+  unsigned int request;
+  enum ioctl_struct_type struct_argtype;
+  int blacklisted;
+
 };
 
 #define DEV_CHAR  1
@@ -52,8 +54,8 @@ void pick_random_ioctl(const struct ioctl_group *, struct syscallrecord *rec);
 
 void dump_ioctls(void);
 
-#define IOCTL(_request, _argtype)				\
-	{ .request = _request, .name = #_request, .struct_argtype = _argtype}
+#define IOCTL(_request, _argtype, _blacklisted)					\
+  { .request = _request, .name = #_request, .struct_argtype = _argtype, .blacklisted = _blacklisted}
 
 #define REG_IOCTL_GROUP(_struct) \
 	static void __attribute__((constructor)) register_##_struct(void) { \

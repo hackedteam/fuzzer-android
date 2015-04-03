@@ -9,8 +9,8 @@
 #include "ioctls.h"
 
 static const struct ioctl btrfs_control_ioctls[] = {
-  IOCTL(BTRFS_IOC_SCAN_DEV, 0),
-  IOCTL(BTRFS_IOC_DEVICES_READY, 0),
+  IOCTL(BTRFS_IOC_SCAN_DEV, 0, 0),
+  IOCTL(BTRFS_IOC_DEVICES_READY, 0, 0),
 };
 
 static const char *const btrfs_control_devs[] = {

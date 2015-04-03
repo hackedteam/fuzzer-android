@@ -39,11 +39,11 @@ struct oz_binding_info {
 #define OZ_IOCTL_MAX		5
 
 static const struct ioctl ozwpan_ioctls[] = {
-  IOCTL(OZ_IOCTL_GET_PD_LIST, 0),
-  IOCTL(OZ_IOCTL_SET_ACTIVE_PD, 0),
-  IOCTL(OZ_IOCTL_GET_ACTIVE_PD, 0),
-  IOCTL(OZ_IOCTL_ADD_BINDING, 0),
-  IOCTL(OZ_IOCTL_REMOVE_BINDING, 0),
+  IOCTL(OZ_IOCTL_GET_PD_LIST, 0, 0),
+  IOCTL(OZ_IOCTL_SET_ACTIVE_PD, 0, 0),
+  IOCTL(OZ_IOCTL_GET_ACTIVE_PD, 0, 0),
+  IOCTL(OZ_IOCTL_ADD_BINDING, 0, 0),
+  IOCTL(OZ_IOCTL_REMOVE_BINDING, 0, 0),
 };
 
 static const char *const ozwpan_devs[] = {

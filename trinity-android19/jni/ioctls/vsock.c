@@ -6,7 +6,7 @@
 #include "ioctls.h"
 
 static const struct ioctl vsock_ioctls[] = {
-  IOCTL(IOCTL_VM_SOCKETS_GET_LOCAL_CID, 0),
+  IOCTL(IOCTL_VM_SOCKETS_GET_LOCAL_CID, 0, 0),
 };
 
 static const char *const vsock_devs[] = {

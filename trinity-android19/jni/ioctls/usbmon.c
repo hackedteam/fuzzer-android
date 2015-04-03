@@ -47,14 +47,14 @@ struct mon_bin_mfetch {
 };
 
 static const struct ioctl usbmon_ioctls[] = {
-  IOCTL(MON_IOCQ_URB_LEN, 0),
-  IOCTL(MON_IOCG_STATS, 0),
-  IOCTL(MON_IOCT_RING_SIZE, 0),
-  IOCTL(MON_IOCQ_RING_SIZE, 0),
-  IOCTL(MON_IOCX_GET, 0),
-  IOCTL(MON_IOCX_MFETCH, 0),
-  IOCTL(MON_IOCH_MFLUSH, 0),
-  IOCTL(MON_IOCX_GETX, 0),
+  IOCTL(MON_IOCQ_URB_LEN, 0, 0),
+  IOCTL(MON_IOCG_STATS, 0, 0),
+  IOCTL(MON_IOCT_RING_SIZE, 0, 0),
+  IOCTL(MON_IOCQ_RING_SIZE, 0, 0),
+  IOCTL(MON_IOCX_GET, 0, 0),
+  IOCTL(MON_IOCX_MFETCH, 0, 0),
+  IOCTL(MON_IOCH_MFLUSH, 0, 0),
+  IOCTL(MON_IOCX_GETX, 0, 0),
 };
 
 static const char *const usbmon_devs[] = {

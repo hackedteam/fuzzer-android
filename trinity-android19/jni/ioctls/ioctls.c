@@ -37,13 +37,22 @@ const struct ioctl_group *find_ioctl_group(int fd)
 	int i;
 	size_t j;
 
-	if (fstat(fd, &stbuf) < 0)
+	//printf("IIIIIIIIIIIIIIIN\n");
+
+	if (fstat(fd, &stbuf) < 0) {
+	  //printf("RETURN NULL\n");
 		return NULL;
+	}
+
+	//printf("IIIIIIIIIIIIIIIN 2\n");
 
 	if (stbuf.st_rdev == 0)
 		return NULL;
+	
+	//printf("IIIIIIIIIIIIIIIN 3\n");
 
 	devname = map_dev(stbuf.st_rdev, stbuf.st_mode);
+	//printf("dev %s\n", devname);
 	if (!devname)
 		return NULL;
 
@@ -88,22 +97,30 @@ const struct ioctl_group *get_random_ioctl_group(void)
 void pick_random_ioctl(const struct ioctl_group *grp, struct syscallrecord *rec)
 {
 	int ioctlnr;
-
-	ioctlnr = rand() % grp->ioctls_cnt;
+	int i;
+	
+	// avoid blacklisted ioctls
+	for(i=0;i<100;i++) {
+	  ioctlnr = rand() % grp->ioctls_cnt;
+	  if(!grp->ioctls[ioctlnr].blacklisted) break;
+	}
 
 	rec->is_ioctl_call = TRUE;
 	rec->a2 = grp->ioctls[ioctlnr].request;
 	rec->ioctl_struct_type = grp->ioctls[ioctlnr].struct_argtype;
+
+	//rec->a2 = grp->ioctls[39].request;
+	//rec->ioctl_struct_type = grp->ioctls[39].struct_argtype;
 }
 
 void dump_ioctls(void)
 {
-	int i;
-	size_t j;
+  int i;
+  size_t j;
 
 	for (i=0; i < grps_cnt; ++i) {
-		if (grps[i]->name)
-			outputerr("- %s:\n", grps[i]->name);
+	  if (grps[i]->name)
+	    outputerr("- %s:\n", grps[i]->name);
 		else if (grps[i]->devtype) {
 			if (grps[i]->devtype == DEV_MISC)
 				outputerr("- misc devices");

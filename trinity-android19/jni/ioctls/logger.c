@@ -63,10 +63,10 @@ struct logger_entry {
 #include "ioctls.h"
 
 static const struct ioctl logger_ioctls[] = {
-  IOCTL(LOGGER_GET_LOG_BUF_SIZE, 0),
-  IOCTL(LOGGER_GET_LOG_LEN, 0),
-  IOCTL(LOGGER_GET_NEXT_ENTRY_LEN, 0),
-  IOCTL(LOGGER_FLUSH_LOG, 0),
+  IOCTL(LOGGER_GET_LOG_BUF_SIZE, 0, 0),
+  IOCTL(LOGGER_GET_LOG_LEN, 0, 0),
+  IOCTL(LOGGER_GET_NEXT_ENTRY_LEN, 0, 0),
+  IOCTL(LOGGER_FLUSH_LOG, 0, 0),
 };
 
 static const char *const logger_miscdevs[] = {

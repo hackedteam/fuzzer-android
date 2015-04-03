@@ -546,7 +546,7 @@ bool fuzz_device_driver(char *dev) {
     return FALSE;
 
   /* Fuzz just file_ops for device driver */
-  toggle_syscall("mmap2", TRUE);
+  //toggle_syscall("mmap2", TRUE);
   //toggle_syscall("write", TRUE);
   toggle_syscall("ioctl", TRUE);
   do_specific_syscall = TRUE;

@@ -302,7 +302,7 @@ static void periodic_work(void)
   periodic_counter++;
   if (periodic_counter < 10)
     return;
-  
+
   /* Every ten iterations. */
   if (!(periodic_counter % 10))
     check_parent_pid();
@@ -311,8 +311,11 @@ static void periodic_work(void)
   if (!(periodic_counter % 100))
     dirty_random_mapping();
   
-  if (periodic_counter == 1000) {
+  if (periodic_counter == 10000) {
     periodic_counter = 0;
+    close_logfile(&this_child->logfile);
+    open_child_logfile(this_child);
+
   }
 }
 

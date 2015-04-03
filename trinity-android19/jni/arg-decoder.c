@@ -5,6 +5,13 @@
 #include <time.h>
 #include <math.h>
 #include <string.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <dirent.h>
 #include <libxml/encoding.h>
 #include <libxml/xmlwriter.h>
 #include "arch.h"	//PAGE_MASK
@@ -22,6 +29,37 @@
 #define MY_ENCODING "ISO-8859-1"
 
 xmlTextWriterPtr writer = NULL;
+int xmlwriter_fd = 0;
+
+
+static int get_writer_fd(void) {
+  DIR *dp;
+  struct dirent *ep;
+  char str[256];
+  char buf[256];
+  char log[256];
+
+  int pid = getpid(); 
+  sprintf(str, "/proc/%d/fd", pid);
+
+  dp = opendir(str);
+  if (dp != NULL) {
+    while (ep = readdir (dp)) {
+      memset(str, 0, sizeof(str));
+      memset(buf, 0, sizeof(buf));
+      memset(log, 0, sizeof(log));
+      sprintf(str, "/proc/%d/fd/%s", pid, ep->d_name);
+      readlink(str, buf, sizeof(buf));
+      sprintf(log, "/data/local/tmp/log-child%d.xml", this_child->num);
+      if(!strcmp(buf,log)) {
+	printf("LOG %s %s\n", log, ep->d_name);
+	return atoi(ep->d_name);
+      }
+    }
+  }
+
+  return 0;
+}
 
 static char * decode_argtype(char *sptr, unsigned long reg, enum argtype type, const char *arg_name, struct misc_arg_info *arg_misc, bool is_ioctl_call, enum ioctl_struct_type ioctl_struct_type)
 {
@@ -236,12 +274,16 @@ static unsigned int render_syscall_prefix(struct syscallrecord *rec, char *buffe
 	char log_xml[256];
 	int reset = 0;
 
-	if(!(this_child->sys_counter % 1000)) {
+	if(!(this_child->sys_counter % 10000)) {
 	  this_child->sys_counter = 0;
 	  reset = 1;
 	}
 
 	if(writer == NULL || reset) {
+	  if(writer != NULL) {
+	    xmlTextWriterEndDocument(writer);
+	    xmlFreeTextWriter(writer);
+	  }
 	  reset = 0;
 	  memset(log_xml, 0, sizeof(log_xml));
 	  snprintf(log_xml, sizeof(log_xml), "/data/local/tmp/log-child%d.xml", this_child->num);
@@ -251,7 +293,13 @@ static unsigned int render_syscall_prefix(struct syscallrecord *rec, char *buffe
 	    printf("testXmlwriterFilename: Error at xmlTextWriterStartDocument\n");
 	    return;
 	  }
-	}
+
+	  xmlwriter_fd = get_writer_fd();
+	  if(!xmlwriter_fd) {
+	    printf("ERROR writer fd!\n");
+	    sleep(2);
+	    }
+	  }
 
 	rc = xmlTextWriterStartElement(writer, BAD_CAST "SYSCALL");
 	if (rc < 0) {
@@ -294,7 +342,9 @@ static unsigned int render_syscall_prefix(struct syscallrecord *rec, char *buffe
 
 	xmlTextWriterFlush(writer);
 	fflush(NULL);
-
+	if(xmlwriter_fd) {
+	  fsync(xmlwriter_fd);
+	}
 
 	return sptr - bufferstart;
 }
@@ -303,7 +353,9 @@ static void flushbuffer(char *buffer, FILE *fd)
 {
 	fprintf(fd, "%s", buffer);
 	fflush(fd);
+	//fsync(fileno(fd));
 }
+
 
 static unsigned int render_syscall_postfix(struct syscallrecord *rec, char *bufferstart)
 {

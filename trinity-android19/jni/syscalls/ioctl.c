@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <linux/ioctl.h>
 #include <linux/major.h>
+#include "child.h"
 #include "ioctls.h"
 #include "maps.h"
 #include "random.h"
@@ -46,12 +47,20 @@ static void sanitise_ioctl(struct syscallrecord *rec)
 {
 	const struct ioctl_group *grp;
 
-	if (rand() % 100 == 0)
-		grp = get_random_ioctl_group();
-	else
-		grp = find_ioctl_group(rec->a1);
+	if (rand() % 100 == 0) {
+	  // printf("GROUP Rand child %d\n", this_child->num);
+	  grp = get_random_ioctl_group();
+	}
+	else {
+	  //printf("GROUP spec child %d\n", this_child->num);
+	  grp = find_ioctl_group(rec->a1);
+	}
+
+	//printf("GROUP %s\n", *(grp->devs));
+	//sleep(5);
 
 	if (grp) {
+	  
 		ioctl_mangle_arg(rec);
 
 		grp->sanitise(grp, rec);

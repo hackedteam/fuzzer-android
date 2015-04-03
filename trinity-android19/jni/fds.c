@@ -123,21 +123,26 @@ int get_random_fd(void)
 	/* return the same fd as last time if we haven't over-used it yet. */
 regen:
 	if (shm->fd_lifetime == 0) {
+
+	  if(shm->current_fd != 0)
+	    close(shm->current_fd);
+
 	  if(use_specific_dev_fd == FALSE)
 	    shm->current_fd = get_new_random_fd();
-	  else
+	  else {	    
 	    shm->current_fd = get_specific_dev_fd();
-	  //shm->fd_lifetime = rand_range(5, max_children);
-	  shm->fd_lifetime = 100000;
+	  }
+	    //shm->fd_lifetime = rand_range(5, max_children);
+	    shm->fd_lifetime = 100000;
+	  
+	  } else {
+	    shm->fd_lifetime--;
+	  }
 
-
-	} else
-		shm->fd_lifetime--;
-
-	if (shm->current_fd == 0) {
+	  if (shm->current_fd == 0) {
 		shm->fd_lifetime = 0;
 		goto regen;
-	}
+	  }
 
 	return shm->current_fd;
 }

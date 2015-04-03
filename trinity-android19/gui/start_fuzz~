@@ -7,7 +7,7 @@ trap ctrl_c INT
 
 function ctrl_c() {
     tput cnorm -- normal
-    pkill -9 kmsg_monitor >/dev/null
+    pkill -9 kmsg_monitor 2>/dev/null
     kill_trinity
     clear
     exit
@@ -78,6 +78,7 @@ last_crash=0
 trinity_faults=0
 trinity_has_crashed=0
 
+
 # function to print centered
 function print_centered {
     str="$1"
@@ -89,6 +90,52 @@ function print_centered {
     printf "$str"
 }
 
+# print gui
+function print_gui {
+    
+    ###################
+    # print gui ####
+    ###################
+
+    printf "\033c"
+    tput civis -- invisible
+    print_centered "$title" 0 26
+    print_centered "$target_bar" 1 0
+    print_centered "$target_bar2" 2 16
+    print_centered "$target_emp" 3 5
+    print_centered "$target1" 4 14
+    print_centered "$target22" 5 14
+    print_centered "$target2" 6 14
+    
+    # get current horizontal coords
+    final_y=$tmp_y
+
+    print_centered "$target3" 7 14
+    print_centered "$target4" 8 14
+    print_centered "$target5" 9 5
+    print_centered "$fuzzer_bar" 10 16
+    print_centered "$fuzzer_bar2" 11 27
+    print_centered "$target_emp2" 12 8
+    print_centered "$stat1" 13 39
+    print_centered "$stat2" 14 39
+    print_centered "$stat3" 15 39
+    print_centered "$stat4" 16 17
+    print_centered "$stat5" 17 17
+    print_centered "$stat6" 18 17
+    print_centered "$stat7" 19 17
+    print_centered "$target_emp3" 20 8
+    print_centered "$fuzzer_bar3" 21 16
+    print_centered "$target_emp" 22 5
+    print_centered "$time1" 23 14
+    print_centered "$time2" 24 14
+    print_centered "$target5" 25 5
+    print_centered "$target_emp" 26 5
+    print_centered "$credit1" 27 14
+    print_centered "$credit2" 28 14
+    print_centered "$target5" 29 5
+}
+
+
 # start function
 function check_device {
     ping_device
@@ -97,7 +144,7 @@ function check_device {
 	exit
     fi
     echo "Device correctly connected!"
-    su=$(adb shell su -c id)
+    su=$(adb -s $DEVICE shell su -c id 2> /dev/null)
     if [[ $su == *"root"* ]]
     then
 	echo "Root ok"
@@ -106,10 +153,10 @@ function check_device {
 	exit
     fi
     
-    adb shell "su -c rm -rf /data/local/tmp/*" > /dev/null
-    adb push trinity /data/local/tmp/trinity 2> /dev/null
-    adb push trinity_wrp /data/local/tmp/trinity_wrp 2> /dev/null
-    adb shell chmod 777 /data/local/tmp/trinity*
+    adb -s $DEVICE shell "su -c rm -rf /data/local/tmp/*" 2> /dev/null
+    adb -s $DEVICE push trinity /data/local/tmp/trinity 2> /dev/null
+    adb -s $DEVICE push trinity_wrp /data/local/tmp/trinity_wrp 2> /dev/null
+    adb -s $DEVICE shell "su -c chmod 777 /data/local/tmp/trinity*" 2> /dev/null
 
 }
 
@@ -133,15 +180,15 @@ function parse_cmd {
 # run trinity on the device
 function run_trinity {
  
-    adb shell /data/local/tmp/trinity_wrp "$CMD" 1> /dev/null &
+    adb -s $DEVICE shell /data/local/tmp/trinity_wrp "$CMD" 1> /dev/null &
    
 }
 
 
 # kill trinity
 function kill_trinity {
-    t_pid=$(adb shell ps | grep trinity | head -n1 | tr -s ' ' | cut -d " " -f2)
-    adb shell su -c "kill -9 $t_pid" > /dev/null
+    t_pid=$(adb -s $DEVICE shell ps | grep trinity | head -n1 | tr -s ' ' | cut -d " " -f2 2> /dev/null)
+    adb -s $DEVICE shell su -c "kill -9 $t_pid" > /dev/null
 }
 
 
@@ -151,8 +198,6 @@ function kill_trinity {
 
 # device info
 function update_device {
-    
-    get_device
     tput cup 4 $(($final_y+19))
     echo "                                                 "
     tput cup 4 $(($final_y+19))
@@ -161,7 +206,7 @@ function update_device {
 
 # kernel version
 function update_kernel_version {
-    get_kernel_version
+
     tput cup 5 $(($final_y+19))
     echo "                                                 "
     tput cup 5 $(($final_y+19))
@@ -339,19 +384,21 @@ function update_last_crash_time {
 
 # get device info
 function get_device {
-    device=$(adb shell getprop ro.product.model)
-    device="${device::-1} - $(adb shell getprop ro.build.fingerprint | cut -d ":" -f2)"
+    device=$(adb -s $DEVICE shell getprop ro.product.model 2> /dev/null)
+    if [ ! -z "$device" ]; then
+	device="${device::-1} - $(adb -s $DEVICE shell getprop ro.build.fingerprint | cut -d ":" -f2 2> /dev/null)"
+    fi
 }
 
 # get kernel info
 function get_kernel_version {
-    kernel_version="$(adb shell cat /proc/version | cut -d " " -f3) $(adb shell cat /proc/version | rev | cut -d " " -f1-5 | rev)"
+    kernel_version="$(adb -s $DEVICE shell cat /proc/version | cut -d " " -f3) $(adb -s $DEVICE shell cat /proc/version | rev | cut -d " " -f1-5 | rev 2> /dev/null)"
 }
 
 # get free memory 
 function get_free_mem {
-    tmp_free="$(adb shell cat /proc/meminfo | grep MemFree | tr -s ' ' | cut -d " " -f2)"
-    tmp_tot="$(adb shell cat /proc/meminfo | grep MemTotal | tr -s ' ' | cut -d " " -f2)"
+    tmp_free="$(adb -s $DEVICE shell cat /proc/meminfo | grep MemFree | tr -s ' ' | cut -d " " -f2 2> /dev/null)"
+    tmp_tot="$(adb -s $DEVICE shell cat /proc/meminfo | grep MemTotal | tr -s ' ' | cut -d " " -f2 2> /dev/null)"
 
     if [ ! -z $tmp_free ]; then
 	free_mem_mb=$(($tmp_free / 1024))
@@ -363,12 +410,12 @@ function get_free_mem {
 
 # get battery state
 function get_battery {
-    battery_per="$(adb shell dumpsys battery | grep level | tr -s ' ' | cut -d " " -f3)"
+    battery_per="$(adb -s $DEVICE shell dumpsys battery | grep level | tr -s ' ' | cut -d " " -f3 2> /dev/null)"
 }
 
 # get cpu load
 function get_cpu_load {
-    tmp_str="$(adb shell dumpsys cpuinfo | tail -n1)"
+    tmp_str="$(adb -s $DEVICE shell dumpsys cpuinfo | tail -n1 2> /dev/null)"
     tmp_total=$(echo "$tmp_str" | tr -s ' ' | cut -d " " -f1)
     tmp_user=$(echo "$tmp_str" | tr -s ' ' | cut -d " " -f3)
     tmp_kernel=$(echo "$tmp_str" | tr -s ' ' | cut -d " " -f6)
@@ -380,7 +427,7 @@ function get_cpu_load {
 
 # get total syscalls
 function get_tot_syscalls {
-    str=$(adb shell su -c "cat /data/local/tmp/trinity.log" | grep watchdog | grep iterations | tail -n1)
+    str=$(adb -s $DEVICE shell su -c "cat /data/local/tmp/trinity.log" | grep watchdog | grep iterations | tail -n1 2> /dev/null)
 
     if [ "$str" == "$last_syscalls_str" ]; then
 	return
@@ -405,7 +452,7 @@ function get_tot_syscalls {
 
 # ping the device using adb
 function ping_device {
-    tmp=$(adb devices | grep $DEVICE)
+    tmp=$(adb -s $DEVICE devices | grep $DEVICE 2> /dev/null)
     if [ -z "$tmp" ]; then
         is_online=0
     else
@@ -432,17 +479,17 @@ function save_testcase {
     global_ok_sys=$(($global_ok_sys + $ok_sys))
 
     mkdir "crashes/crash$crashes"
-    adb shell su -c "chmod 777 /data/local/tmp/*">/dev/null 
-    for i in $(adb shell ls /data/local/tmp/*log*); do
+    adb -s $DEVICE shell su -c "chmod 777 /data/local/tmp/*">/dev/null 
+    for i in $(adb -s $DEVICE shell ls /data/local/tmp/*log* 2> /dev/null); do
 	i=`echo -e $i | tr -d "\r\n"`;
-	adb pull $i "crashes/crash$crashes" 2>/dev/null
+	adb -s $DEVICE pull $i "crashes/crash$crashes" 2>/dev/null
     done;
-    adb shell su -c "cat /proc/last_kmsg">"crashes/crash$crashes/last_kmsg"
+    adb -s $DEVICE shell su -c "cat /proc/last_kmsg">"crashes/crash$crashes/last_kmsg" 2> /dev/null
     cp kmsg "crashes/crash$crashes"
-    adb shell "rm -rf /data/local/tmp/*" > /dev/null
-    adb push trinity /data/local/tmp/trinity 2> /dev/null
-    adb push trinity_wrp /data/local/tmp/trinity_wrp 2> /dev/null
-    adb shell chmod 777 /data/local/tmp/* 2> /dev/null
+    adb -s $DEVICE shell "rm -rf /data/local/tmp/*" 2> /dev/null
+    adb -s $DEVICE push trinity /data/local/tmp/trinity 2> /dev/null
+    adb -s $DEVICE push trinity_wrp /data/local/tmp/trinity_wrp 2> /dev/null
+    adb -s $DEVICE shell "chmod 777 /data/local/tmp/*" 2> /dev/null
 }
 
 # save kernel log
@@ -454,7 +501,7 @@ function start_kernel_log {
 # check the fuzzer status
 function check_trinity {
     trinity_has_crashed=0
-    status=$(adb shell ps | grep trinity)
+    status=$(adb -s $DEVICE shell ps | grep trinity 2> /dev/null)
     if [ -z "$status" ]; then
 	trinity_faults=$(($trinity_faults + 1))
 	trinity_has_crashed=1
@@ -510,48 +557,13 @@ final_y=0
 start_cols=$(tput cols)
 start_kernel_log
 start_time=$(date +%s)
+
+get_device
+get_kernel_version
+
 while [ 1 ]; do
 
-    ###################
-    # print gui ####
-    ###################
-
-    printf "\033c"
-    tput civis -- invisible
-    print_centered "$title" 0 26
-    print_centered "$target_bar" 1 0
-    print_centered "$target_bar2" 2 16
-    print_centered "$target_emp" 3 5
-    print_centered "$target1" 4 14
-    print_centered "$target22" 5 14
-    print_centered "$target2" 6 14
-    
-    # get current horizontal coords
-    final_y=$tmp_y
-
-    print_centered "$target3" 7 14
-    print_centered "$target4" 8 14
-    print_centered "$target5" 9 5
-    print_centered "$fuzzer_bar" 10 16
-    print_centered "$fuzzer_bar2" 11 27
-    print_centered "$target_emp2" 12 8
-    print_centered "$stat1" 13 39
-    print_centered "$stat2" 14 39
-    print_centered "$stat3" 15 39
-    print_centered "$stat4" 16 17
-    print_centered "$stat5" 17 17
-    print_centered "$stat6" 18 17
-    print_centered "$stat7" 19 17
-    print_centered "$target_emp3" 20 8
-    print_centered "$fuzzer_bar3" 21 16
-    print_centered "$target_emp" 22 5
-    print_centered "$time1" 23 14
-    print_centered "$time2" 24 14
-    print_centered "$target5" 25 5
-    print_centered "$target_emp" 26 5
-    print_centered "$credit1" 27 14
-    print_centered "$credit2" 28 14
-    print_centered "$target5" 29 5
+    print_gui
     
     #########
     # update the contents
@@ -574,30 +586,42 @@ while [ 1 ]; do
 	    restarted=$(($restarted + 1))
 	    last_crash=$(date +%s)
 
+	    print_gui
+	    	    
+	    update_device
+	    update_kernel_version
+	    update_mode "$mode"
+	    update_target "$target"
+
 	    update_mem 1
 	    update_cpu 1
 	    update_battery 1
 	    update_current 1
+	    update_tot_sys
+	    update_fail_sys
+	    update_ok_sys
+	    update_fuzzer_faults
 	    update_tot_crash
 	    update_oops
 	    update_restart
+	    update_start_time
 	    update_last_crash_time
 	    wait_for_device	    
 
-	    #save_testcase
-	    #start_kernel_log
-	    #run_trinity
+	    save_testcase
+	    start_kernel_log
+	    run_trinity
 	fi
 
-	#if [ $(($n%20)) -eq 0 ]; then
-	#    check_trinity
-	#    if [ $trinity_has_crashed -eq 1 ]; then
-	#trinity_has_crashed=0
-	#	update_current 2
-	#	run_trinity
-	#	sleep 5
-	#    fi
-	#fi
+	if [ $(($n%20)) -eq 0 ]; then
+	    check_trinity
+	    if [ $trinity_has_crashed -eq 1 ]; then
+		trinity_has_crashed=0
+		update_current 2
+		run_trinity
+		sleep 5
+	    fi
+	fi
 
 	update_mem 
 	update_cpu 
@@ -609,7 +633,7 @@ while [ 1 ]; do
 	update_tot_sys
 	update_fail_sys
 	update_ok_sys
-	#update_fuzzer_faults
+	update_fuzzer_faults
 	update_tot_crash
 	update_oops
 	update_restart
@@ -629,6 +653,8 @@ while [ 1 ]; do
 	fi
 	
 	if [ $(($n%120)) -eq 0 ]; then
+	    adb -s $DEVICE shell su -c "chmod 777 /data/local/tmp/trinity*" 2> /dev/null
+	    adb -s $DEVICE shell su -c "rm /data/local/tmp/trinity-child0.log"
 	    break
 	fi
     done;

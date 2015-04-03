@@ -68,6 +68,7 @@ void open_child_logfile(struct childdata *child)
 	free(logfilename);
 
 	child->logdirty = FALSE;
+
 }
 
 void close_logfile(FILE **filehandle)

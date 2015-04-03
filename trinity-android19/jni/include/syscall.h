@@ -21,8 +21,37 @@ enum ioctl_struct_type {
   STRUCT_qseecom_qseos_version_req,
   STRUCT_qseecom_qseos_app_load_query,
   // MSM_VIDC_ENC
-  STRUCT_venc_ioctl_msg
-
+  STRUCT_venc_ioctl_msg,
+  // MSM_KGSL
+  STRUCT_kgsl_device_getproperty,
+  STRUCT_kgsl_device_waittimestamp_ctxtid,
+  STRUCT_kgsl_device_waittimestamp,
+  STRUCT_kgsl_ringbuffer_issueibcmds,
+  STRUCT_kgsl_cmdstream_readtimestamp,
+  STRUCT_kgsl_cmdstream_freememontimestamp,
+  STRUCT_kgsl_drawctxt_create,
+  STRUCT_kgsl_drawctxt_destroy,
+  STRUCT_kgsl_map_user_mem,
+  STRUCT_kgsl_cmdstream_readtimestamp_ctxtid,
+  STRUCT_kgsl_cmdstream_freememontimestamp_ctxtid,
+  STRUCT_kgsl_sharedmem_from_pmem,
+  STRUCT_kgsl_sharedmem_free,
+  STRUCT_kgsl_cff_user_event,
+  STRUCT_kgsl_bind_gmem_shadow,
+  STRUCT_kgsl_sharedmem_from_vmalloc,
+  STRUCT_kgsl_drawctxt_set_bin_base_offset,
+  STRUCT_kgsl_cmdwindow_write,
+  STRUCT_kgsl_gpumem_alloc,
+  STRUCT_kgsl_cff_syncmem,
+  STRUCT_kgsl_timestamp_event,
+  STRUCT_kgsl_gpumem_alloc_id,
+  STRUCT_kgsl_gpumem_free_id,
+  STRUCT_kgsl_gpumem_get_info,
+  STRUCT_kgsl_gpumem_sync_cache,
+  STRUCT_kgsl_perfcounter_get,
+  STRUCT_kgsl_perfcounter_put,
+  STRUCT_kgsl_perfcounter_query,
+  STRUCT_kgsl_perfcounter_read
 };  
 
 enum syscallstate {

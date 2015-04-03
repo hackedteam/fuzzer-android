@@ -8,7 +8,7 @@
 #include "ioctls.h"
 
 static const struct ioctl msr_ioctls[] = {
-  IOCTL(X86_IOC_RDMSR_REGS, 0),
+  IOCTL(X86_IOC_RDMSR_REGS, 0, 0),
 	//IOCTL(X86_IOC_WRMSR_REGS),	// Too dangerous.
 };
 

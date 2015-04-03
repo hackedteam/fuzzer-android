@@ -8,9 +8,9 @@
 #define MCE_GETCLEAR_FLAGS   _IOR('M', 3, int)
 
 static const struct ioctl mce_ioctls[] = {
-  IOCTL(MCE_GET_RECORD_LEN, 0),
-  IOCTL(MCE_GET_LOG_LEN, 0),
-  IOCTL(MCE_GETCLEAR_FLAGS, 0),
+  IOCTL(MCE_GET_RECORD_LEN, 0, 0),
+  IOCTL(MCE_GET_LOG_LEN, 0, 0),
+  IOCTL(MCE_GETCLEAR_FLAGS, 0, 0),
 };
 
 static const char *const mce_devs[] = {
