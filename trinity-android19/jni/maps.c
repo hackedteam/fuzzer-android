@@ -17,38 +17,57 @@
  */
 struct map * get_map(void)
 {
-	struct list_head *node, *list;
-	unsigned int num;
-
-	unsigned int i, j = 0;
-
-	/*
-	 * Some of the fd providers need weird mappings on startup.
-	 * (fd-perf for eg), these are called from the main process,
-	 * and hence don't have a valid this_child, so we address the
-	 * initial mappings list directly.
-	 */
-	if (this_child == NULL) {
-		list = &initial_mappings->list;
-		num = num_initial_mappings;
-	} else {
-		list = &this_child->mappings->list;
-		num = this_child->num_mappings;
-	}
-
-	i = rand() % num;
-
-	list_for_each(node, list) {
-		struct map *m;
-
-		m = (struct map *) node;
-
-		if (i == j)
-			return m;
-		j++;
-	}
-	return NULL;
+  struct list_head *node, *list;
+  unsigned int num;
+  
+  unsigned int i, j = 0;
+  
+  /*
+   * Some of the fd providers need weird mappings on startup.
+   * (fd-perf for eg), these are called from the main process,
+   * and hence don't have a valid this_child, so we address the
+   * initial mappings list directly.
+   */
+  if (this_child == NULL) {
+    list = &initial_mappings->list;
+    num = num_initial_mappings;
+  } else {
+    list = &this_child->mappings->list;
+    num = this_child->num_mappings;
+  }
+  
+  i = rand() % num;
+  
+  list_for_each(node, list) {
+    struct map *m;
+    
+    m = (struct map *) node;
+    
+    if (i == j)
+      return m;
+    j++;
+  }
+  return NULL;
 }
+
+
+int get_map_size(void *ptr) {
+  struct list_head *node, *list;
+  
+  list = &this_child->mappings->list;
+  
+  list_for_each(node, list) {
+    struct map *m;
+    
+    m = (struct map *) node;
+
+    if(m->ptr == ptr)
+      return m->size;
+  }
+  return 0;
+}
+
+
 
 /*
  * Set up a childs local mapping list.
@@ -57,33 +76,33 @@ struct map * get_map(void)
  */
 void init_child_mappings(struct childdata *child)
 {
-	struct list_head *node;
-
-	child->mappings = zmalloc(sizeof(struct map));
-	INIT_LIST_HEAD(&child->mappings->list);
-
-	/* Copy the initial mapping list to the child.
-	 * Note we're only copying pointers here, the actual mmaps
-	 * will be faulted into the child when they get accessed.
-	 */
-	list_for_each(node, &initial_mappings->list) {
-		struct map *m, *new;
-
-		m = (struct map *) node;
-
-		new = zmalloc(sizeof(struct map));
-		new->ptr = m->ptr;
-		new->name = strdup(m->name);
-		new->size = m->size;
-		new->prot = m->prot;
-		/* We leave type as 'INITIAL' until we change the mapping
-		 * by mprotect/mremap/munmap etc..
-		 */
-		new->type = TRINITY_MAP_INITIAL;
-
-		list_add_tail(&new->list, &this_child->mappings->list);
-		this_child->num_mappings++;
-	}
+  struct list_head *node;
+  
+  child->mappings = zmalloc(sizeof(struct map));
+  INIT_LIST_HEAD(&child->mappings->list);
+  
+  /* Copy the initial mapping list to the child.
+   * Note we're only copying pointers here, the actual mmaps
+   * will be faulted into the child when they get accessed.
+   */
+  list_for_each(node, &initial_mappings->list) {
+    struct map *m, *new;
+    
+    m = (struct map *) node;
+    
+    new = zmalloc(sizeof(struct map));
+    new->ptr = m->ptr;
+    new->name = strdup(m->name);
+    new->size = m->size;
+    new->prot = m->prot;
+    /* We leave type as 'INITIAL' until we change the mapping
+     * by mprotect/mremap/munmap etc..
+     */
+    new->type = TRINITY_MAP_INITIAL;
+    
+    list_add_tail(&new->list, &this_child->mappings->list);
+    this_child->num_mappings++;
+  }
 }
 
 /* Called from munmap()'s ->post routine. */

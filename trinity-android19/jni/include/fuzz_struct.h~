@@ -1,0 +1,3 @@
+#include "syscall.h"
+
+void fuzz_struct_type(

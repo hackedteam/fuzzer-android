@@ -12,38 +12,48 @@
 
 enum ioctl_struct_type {
   STRUCT_undefined = 0,
-  // QSEECOM
+  // MSM_VIDC_ENC
+  STRUCT_venc_ioctl_msg,
+  // MSM_VIDC_DEC
+  STRUCT_vdec_ioctl_msg,
+
   STRUCT_qseecom_register_listener_req,
   STRUCT_qseecom_send_cmd_req,
+  STRUCT_qseecom_ion_fd_info,
   STRUCT_qseecom_send_modfd_cmd_req,
+  STRUCT_qseecom_send_resp_req,
   STRUCT_qseecom_load_img_req,
   STRUCT_qseecom_set_sb_mem_param_req,
   STRUCT_qseecom_qseos_version_req,
   STRUCT_qseecom_qseos_app_load_query,
-  // MSM_VIDC_ENC
-  STRUCT_venc_ioctl_msg,
-  // MSM_KGSL
+  STRUCT_kgsl_devinfo,
+  STRUCT_kgsl_devmemstore,
+  STRUCT_kgsl_shadowprop,
+  STRUCT_kgsl_version,
+  STRUCT_kgsl_ibdesc,
   STRUCT_kgsl_device_getproperty,
-  STRUCT_kgsl_device_waittimestamp_ctxtid,
   STRUCT_kgsl_device_waittimestamp,
+  STRUCT_kgsl_device_waittimestamp_ctxtid,
   STRUCT_kgsl_ringbuffer_issueibcmds,
   STRUCT_kgsl_cmdstream_readtimestamp,
   STRUCT_kgsl_cmdstream_freememontimestamp,
   STRUCT_kgsl_drawctxt_create,
-  STRUCT_kgsl_drawctxt_destroy,
   STRUCT_kgsl_map_user_mem,
   STRUCT_kgsl_cmdstream_readtimestamp_ctxtid,
   STRUCT_kgsl_cmdstream_freememontimestamp_ctxtid,
   STRUCT_kgsl_sharedmem_from_pmem,
   STRUCT_kgsl_sharedmem_free,
   STRUCT_kgsl_cff_user_event,
+  STRUCT_kgsl_gmem_desc,
+  STRUCT_kgsl_buffer_desc,
   STRUCT_kgsl_bind_gmem_shadow,
   STRUCT_kgsl_sharedmem_from_vmalloc,
   STRUCT_kgsl_drawctxt_set_bin_base_offset,
   STRUCT_kgsl_cmdwindow_write,
-  STRUCT_kgsl_gpumem_alloc,
   STRUCT_kgsl_cff_syncmem,
   STRUCT_kgsl_timestamp_event,
+  STRUCT_kgsl_timestamp_event_genlock,
+  STRUCT_kgsl_timestamp_event_fence,
   STRUCT_kgsl_gpumem_alloc_id,
   STRUCT_kgsl_gpumem_free_id,
   STRUCT_kgsl_gpumem_get_info,
@@ -51,7 +61,11 @@ enum ioctl_struct_type {
   STRUCT_kgsl_perfcounter_get,
   STRUCT_kgsl_perfcounter_put,
   STRUCT_kgsl_perfcounter_query,
-  STRUCT_kgsl_perfcounter_read
+  STRUCT_kgsl_perfcounter_read_group,
+  STRUCT_kgsl_perfcounter_read,
+  STRUCT_kgsl_drawctxt_destroy,
+  STRUCT_kgsl_gpumem_alloc
+
 };  
 
 enum syscallstate {
@@ -64,26 +78,26 @@ enum syscallstate {
 };
 
 struct syscallrecord {
-	struct timeval tv;
-	unsigned int nr;
-	unsigned long a1;
-	unsigned long a2;
-	unsigned long a3;
-	unsigned long a4;
-	unsigned long a5;
-	unsigned long a6;
-	unsigned long retval;
-	int errno_post;	/* what errno was after the syscall. */
+  struct timeval tv;
+  unsigned int nr;
+  unsigned long a1;
+  unsigned long a2;
+  unsigned long a3;
+  unsigned long a4;
+  unsigned long a5;
+  unsigned long a6;
+  unsigned long retval;
+  int errno_post;	/* what errno was after the syscall. */
+  
+  unsigned long op_nr;	/* used to tell if we're making progress. */
 
-	unsigned long op_nr;	/* used to tell if we're making progress. */
-
-	bool do32bit;
-	lock_t lock;
-	enum syscallstate state;
-	char prebuffer[PREBUFFER_LEN];
-	char postbuffer[POSTBUFFER_LEN];
-        bool is_ioctl_call;
-        enum ioctl_struct_type ioctl_struct_type;
+  bool do32bit;
+  lock_t lock;
+  enum syscallstate state;
+  char prebuffer[PREBUFFER_LEN];
+  char postbuffer[POSTBUFFER_LEN];
+  bool is_ioctl_call;
+  enum ioctl_struct_type ioctl_struct_type;
 };
 
 enum argtype {

@@ -12,6 +12,7 @@
 #include "shm.h"
 #include "syscall.h"
 #include "trinity.h"
+#include "fuzz_ioctl_struct.h"
 
 static void ioctl_mangle_cmd(struct syscallrecord *rec)
 {
@@ -28,17 +29,33 @@ static void ioctl_mangle_cmd(struct syscallrecord *rec)
 
 static void ioctl_mangle_arg(struct syscallrecord *rec)
 {
-	/* the argument could mean anything, because ioctl sucks like that. */
-	//if (rand_bool())
-	//	rec->a3 = rand32();
-	//else
-        rec->a3 = (unsigned long) get_non_null_address();
+  /* the argument could mean anything, because ioctl sucks like that. */
+  int p = rand() % 100;
+  
+  // Rand integer
+  if(p < 8) {
+    rec->a3 = rand32();
+    return;
+  }
+
+  // Real mapped addr
+  if(p < 25) {
+    rec->a3 = (unsigned long) get_non_null_address();
+    return;
+  }
+
+  // Correct fuzzed struct type
+  fuzz_ioctl_struct_type(rec);
+  return;
+
+
+
 }
 
 static void generic_sanitise_ioctl(struct syscallrecord *rec)
 {
 	if ((rand() % 50)==0)
-		ioctl_mangle_cmd(rec);
+	  ioctl_mangle_cmd(rec);
 
 	ioctl_mangle_arg(rec);
 }
@@ -48,22 +65,16 @@ static void sanitise_ioctl(struct syscallrecord *rec)
 	const struct ioctl_group *grp;
 
 	if (rand() % 100 == 0) {
-	  // printf("GROUP Rand child %d\n", this_child->num);
 	  grp = get_random_ioctl_group();
 	}
 	else {
-	  //printf("GROUP spec child %d\n", this_child->num);
 	  grp = find_ioctl_group(rec->a1);
 	}
 
-	//printf("GROUP %s\n", *(grp->devs));
-	//sleep(5);
-
 	if (grp) {
-	  
-		ioctl_mangle_arg(rec);
 
-		grp->sanitise(grp, rec);
+		grp->sanitise(grp, rec);			  
+		ioctl_mangle_arg(rec);
 
 		if (rand() % 100 == 0)
 			ioctl_mangle_cmd(rec);

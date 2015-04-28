@@ -341,11 +341,11 @@ static unsigned int render_syscall_prefix(struct syscallrecord *rec, char *buffe
 	}
 
 	xmlTextWriterFlush(writer);
-	//fflush(NULL);
+	fflush(NULL);
 	int ret = 0;
 	if(xmlwriter_fd) {
 	  ret = fflush(fdopen(xmlwriter_fd, "w"));
-	  usleep(400); // this is really important to save the last syscall
+	  //usleep(700); // this is really important to save the last syscall
 	  fsync(xmlwriter_fd);
 	  if(ret)
 	    printf("FLUSH ERROR\n");

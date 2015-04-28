@@ -108,9 +108,8 @@ void pick_random_ioctl(const struct ioctl_group *grp, struct syscallrecord *rec)
 	rec->is_ioctl_call = TRUE;
 	rec->a2 = grp->ioctls[ioctlnr].request;
 	rec->ioctl_struct_type = grp->ioctls[ioctlnr].struct_argtype;
+	
 
-	//rec->a2 = grp->ioctls[39].request;
-	//rec->ioctl_struct_type = grp->ioctls[39].struct_argtype;
 }
 
 void dump_ioctls(void)

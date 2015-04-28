@@ -161,6 +161,29 @@ void struct_recursive_analyze(void *arg_ptr, bool is_ioctl_call, enum ioctl_stru
       p7 = (struct venc_ioctl_msg *) arg_ptr;
       xmlTextWriterStartElement(writer, "STRUCT_venc_ioctl_msg");
       xmlTextWriterWriteBase64(writer, (char *) p7 , 0, sizeof(struct venc_ioctl_msg));
+      unsigned int i1;
+      unsigned int i2;
+      memcpy(&i1, arg_ptr, sizeof(i1));
+      memcpy(&i2, arg_ptr+4, sizeof(i2));
+      
+      if(write(nullfd, (void *) i1, 512) < 0) {
+	xmlTextWriterWriteElement(writer, "STRUCT_venc_ioctl_msg_in", "unmapped");
+      }
+      else {
+	xmlTextWriterStartElement(writer, "STRUCT_venc_ioctl_msg_in");
+	xmlTextWriterWriteBase64(writer, (char *) i1 , 0, 512);
+	xmlTextWriterEndElement(writer);
+      }
+
+      if(write(nullfd, (void *) i2, 512) < 0) {
+	xmlTextWriterWriteElement(writer, "STRUCT_venc_ioctl_msg_out", "unmapped");
+      }
+      else {
+	xmlTextWriterStartElement(writer, "STRUCT_venc_ioctl_msg_out");
+	xmlTextWriterWriteBase64(writer, (char *) i2 , 0, 512);
+	xmlTextWriterEndElement(writer);
+      }
+
       xmlTextWriterEndElement(writer);
 
       return;

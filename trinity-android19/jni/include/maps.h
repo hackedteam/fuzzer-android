@@ -35,3 +35,4 @@ struct faultfn {
 
 void random_map_readfn(struct map *map);
 void random_map_writefn(struct map *map);
+int get_map_size(void *);
