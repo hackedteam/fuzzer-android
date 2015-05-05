@@ -1,1228 +1,534 @@
-<6>[  452.547565] app_process (8705): undefined instruction: pc=b655b4e8
-<6>[  452.547626] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  45.792]appoes(72:udfndisrcin cb67e
-6[ 5.258 oe a0020000 2e1ee2f1 e101)
-<7>[  452.852525] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  452.852556] 
-<6>[  452.904745] app_process (8722): undefined instruction: pc=40ab44e8
-<6>[  452.904776] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<3>[  453.292537] init: untracked pid 8719 exited
-<3>[  453.529131] init: untracked pid 8722 exited
-<6>[  453.739050] msm_vidc_venc: Inside vid_enc_open()
-<6>[  453.739081] 
-<6>[  453.739081]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  453.739111] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  453.739233] vid_enc_open_client() : No free clients client_index == -1
-<3>[  453.739386] vid_enc_open() open failed rc=-19
-<7>[  453.868579] usb: terminal_version_show teklcsatv aelc s_t
-eoe(
-6[ 5.800 <> 44307] s_icec nievdecoe_let)<> 44300]vdecgtepycin_ne(:RO osaefrnwcin
-3[ 5.823 i_n_pncin(  ofe let letidx= 1<> 44307]vdecoe( pnfie c-971] sb: teria_eso_hwtria_oemjr0mnr0vno 
-7[ 5.739 <6>[  455.131298] msm_vidc_venc: Inside vid_enc_open()
-<6>[  455.131329] 
-<6>[  455.131329]  msm_vidc_enc: Inside idecoe_let)<> 45115]vdecgtepycin_ne(:RO osaefrnwcin
-3[ 5.341 i_n_pncin(  ofe let letidx= 1<> 45116]vdecoe( pnfie c-9<7>[  455.371493] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  455.371524] 
-
-<7>[  455.872333] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  455.872363] 
-<7>[  456.373264] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  456.373325] 
-<6>[  456.904013] [debug_wake_locks]active wake lock msm_otg
-<7>[  457.375888] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  457.375949] 
-<7>[  457.877399] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  457.877430] 
-<6>[  458.073065] msm_vidc_venc: Inside vid_enc_open()
-<6>[  458.073096] 
-<6>[  458.073126]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  458.073157] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  458.073340] vid_enc_open_client() : No free clients client_index == -1
-<3>[  458.073615] vid_enc_open() open failed rc=-19
-<7>[  458.378635] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  458.378696] 
-<6>[  458.815260] chmod (8791): undefined instruction: pc=b6ea24e8
-<6>[  458.815321] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  458.911704] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  458.911765] 
-<6>[  459.093331] rm (8805): undefined instruction: pc=b6e8b4e8
-<6>[  459.095101] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  459.230093] msm_vidc_venc: Inside vid_enc_open()
-<6>[  459.230123] 
-<6>[  459.230123]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  459.230154] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  459.230306] vid_enc_open_client() : No free clients client_index == -1
-<3>[  459.230428] vid_enc_open() open failed rc=-19
-<6>[  459.240866] ps (8811): undefined instruction: pc=b6e404e8
-<6>[  459.240897] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  459.412757] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  459.412787] 
-<6>[  459.483351] app_process (8792): undefined instruction: pc=b655f4e8
-<6>[  459.483412] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  459.560415] app_process (8806): undefined instruction: pc=b661b4e8
-<6>[  459.560445] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  459.765084] app_process (8806): undefined instruction: pc=40ae84e8
-<6>[  459.765145] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  459.840805] app_process (8792): undefined instruction: pc=40a444e8
-<6>[  459.840836] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  459.913901] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  459.913932] 
-<6>[  459.914115] [debug_wake_locks]active wake lock msm_otg
-<6>[  460.125408] msm_vidc_venc: Inside vid_enc_open()
-<6>[  460.125438] 
-<6>[  460.125469]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  460.125499] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  460.125591] vid_enc_open_client() : No free clients client_index == -1
-<3>[  460.125713] vid_enc_open() open failed rc=-19
-<6>[  460.296108] app_process (8846): undefined instruction: pc=b65cb4e8
-<6>[  460.296139] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<3>[  460.419319] init: untracked pid 8802 exited
-<7>[  460.475019] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  460.475049] 
-<6>[  460.558889] app_process (8846): undefined instruction: pc=40ad24e8
-<6>[  460.558919] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<3>[  460.562032] init: untracked pid 8788 exited
-<6>[  460.614619] msm_thermal: Debug Temp for Sensors (0 --- 44)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<3>[  460.656584] init: untracked pid 8806 exited
-<6>[  460.743415] msm_vidc_venc: Inside vid_enc_open()
-<6>[  460.743445] 
-<6>[  460.743445]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  460.743476] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  460.743598] vid_enc_open_client() : No free clients client_index == -1
-<3>[  460.743750] vid_enc_open() open failed rc=-19
-<3>[  460.800946] init: untracked pid 8792 exited
-<3>[  460.922050] init: untracked pid 8840 exited
-<7>[  460.982878] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  460.982908] 
-<6>[  461.111002] msm_vidc_venc: Inside vid_enc_open()
-<6>[  461.111033] 
-<6>[  461.111033]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  461.111063] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  461.111155] vid_enc_open_client() : No free clients client_index == -1
-<3>[  461.111277] vid_enc_open() open failed rc=-19
-<3>[  461.152845] init: untracked pid 8846 exited
-<7>[  461.483717] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  461.483747] 
-<6>[  461.698367] msm_vidc_venc: Inside vid_enc_open()
-<6>[  461.698397] 
-<6>[  461.698397]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  461.698428] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  461.698550] vid_enc_open_client() : No free clients client_index == -1
-<3>[  461.698702] vid_enc_open() open failed rc=-19
-<7>[  461.984800] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  461.984831] 
-<7>[  462.485670] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  462.485701] 
-<6>[  462.687074] msm_vidc_venc: Inside vid_enc_open()
-<6>[  462.687105] 
-<6>[  462.687135]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  462.687166] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  462.687379] vid_enc_open_client() : No free clients client_index == -1
-<3>[  462.687501] vid_enc_open() open failed rc=-19
-<6>[  462.923851] [debug_wake_locks]active wake lock msm_otg
-<7>[  462.986632] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  462.986662] 
-<6>[  463.066351] msm_vidc_venc: Inside vid_enc_open()
-<6>[  463.066381] 
-<6>[  463.066381]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  463.066412] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  463.066534] vid_enc_open_client() : No free clients client_index == -1
-<3>[  463.066686] vid_enc_open() open failed rc=-19
-<6>[  463.481306] msm_vidc_venc: Inside vid_enc_open()
-<6>[  463.481336] 
-<6>[  463.481336]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  463.481367] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  463.481550] vid_enc_open_client() : No free clients client_index == -1
-<3>[  463.481702] vid_enc_open() open failed rc=-19
-<7>[  463.487440] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  463.487471] 
-<7>[  463.988280] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  463.988310] 
-<6>[  464.006012] msm_vidc_venc: Inside vid_enc_open()
-<6>[  464.006042] 
-<6>[  464.006042]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  464.006073] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  464.006256] vid_enc_open_client() : No free clients client_index == -1
-<3>[  464.006378] vid_enc_open() open failed rc=-19
-<7>[  464.489272] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  464.489333] 
-<6>[  464.754646] msm_vidc_venc: Inside vid_enc_open()
-<6>[  464.754677] 
-<6>[  464.754707]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  464.754738] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  464.754921] vid_enc_open_client() : No free clients client_index == -1
-<3>[  464.755104] vid_enc_open() open failed rc=-19
-<7>[  464.990294] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  464.990324] 
-<6>[  465.232015] msm_vidc_venc: Inside vid_enc_open()
-<6>[  465.232046] 
-<6>[  465.232046]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  465.232076] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  465.232259] vid_enc_open_client() : No free clients client_index == -1
-<3>[  465.232351] vid_enc_open() open failed rc=-19
-<7>[  465.491530] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  465.491561] 
-<6>[  465.623866] msm_thermal: Debug Temp for Sensors (0 --- 39)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  465.677826] msm_vidc_venc: Inside vid_enc_open()
-<6>[  465.677857] 
-<6>[  465.677857]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  465.677887] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  465.677979] vid_enc_open_client() : No free clients client_index == -1
-<3>[  465.678132] vid_enc_open() open failed rc=-19
-<6>[  465.933862] [debug_wake_locks]active wake lock msm_otg
-<7>[  465.992278] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  465.992308] 
-<6>[  466.108103] msm_vidc_venc: Inside vid_enc_open()
-<6>[  466.108133] 
-<6>[  466.108164]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  466.108194] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  466.108377] vid_enc_open_client() : No free clients client_index == -1
-<3>[  466.108499] vid_enc_open() open failed rc=-19
-<7>[  466.493026] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  466.493056] 
-<6>[  466.664520] msm_vidc_venc: Inside vid_enc_open()
-<6>[  466.664550] 
-<6>[  466.664550]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  466.664581] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  466.664703] vid_enc_open_client() : No free clients client_index == -1
-<3>[  466.664886] vid_enc_open() open failed rc=-19
-<6>[  466.869708] app_process (8928): undefined instruction: pc=b654c4e8
-<6>[  466.869738] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  466.994262] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  466.994292] 
-<6>[  467.066259] app_process (8928): undefined instruction: pc=40a7b4e8
-<6>[  467.066320] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  467.495070] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  467.495101] 
-<6>[  467.542224] msm_vidc_venc: Inside vid_enc_open()
-<6>[  467.542255] 
-<6>[  467.542255]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  467.542285] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  467.542469] vid_enc_open_client() : No free clients client_index == -1
-<3>[  467.542621] vid_enc_open() open failed rc=-19
-<3>[  467.555379] init: untracked pid 8925 exited
-<3>[  467.789989] init: untracked pid 8928 exited
-<7>[  467.995879] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  467.995910] 
-<6>[  468.290096] msm_vidc_venc: Inside vid_enc_open()
-<6>[  468.290126] 
-<6>[  468.290157]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  468.290187] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  468.290279] vid_enc_open_client() : No free clients client_index == -1
-<3>[  468.290462] vid_enc_open() open failed rc=-19
-<7>[  468.496902] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  468.496932] 
-<6>[  468.943872] [debug_wake_locks]active wake lock msm_otg
-<7>[  468.997924] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  468.997955] 
-<6>[  469.196062] msm_vidc_venc: Inside vid_enc_open()
-<6>[  469.196123] 
-<6>[  469.196123]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  469.196184] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  469.196459] vid_enc_open_client() : No free clients client_index == -1
-<3>[  469.196612] vid_enc_open() open failed rc=-19
-<7>[  469.499160] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  469.499191] 
-<7>[  470.000244] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  470.000305] 
-<6>[  470.251976] msm_vidc_venc: Inside vid_enc_open()
-<6>[  470.252037] 
-<6>[  470.252037]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  470.252098] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  470.252281] vid_enc_open_client() : No free clients client_index == -1
-<3>[  470.252586] vid_enc_open() open failed rc=-19
-<7>[  470.501541] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  470.501571] 
-<6>[  470.634274] msm_thermal: Debug Temp for Sensors (0 --- 38)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  471.010651] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  471.010682] 
-<6>[  471.359224] msm_vidc_venc: Inside vid_enc_open()
-<6>[  471.359255] 
-<6>[  471.359255]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  471.359285] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  471.359468] vid_enc_open_client() : No free clients client_index == -1
-<3>[  471.359621] vid_enc_open() open failed rc=-19
-<7>[  471.528460] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  471.528490] 
-<6>[  471.954036] [debug_wake_locks]active wake lock msm_otg
-<7>[  472.037143] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  472.037204] 
-<6>[  472.164016] msm_vidc_venc: Inside vid_enc_open()
-<6>[  472.164046] 
-<6>[  472.164077]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  472.164107] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  472.164352] vid_enc_open_client() : No free clients client_index == -1
-<3>[  472.164504] vid_enc_open() open failed rc=-19
-<7>[  472.538257] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  472.538287] 
-<7>[  473.039279] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  473.039340] 
-<6>[  473.159560] msm_vidc_venc: Inside vid_enc_open()
-<6>[  473.159590] 
-<6>[  473.159590]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  473.159652] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  473.159926] vid_enc_open_client() : No free clients client_index == -1
-<3>[  473.160170] vid_enc_open() open failed rc=-19
-<7>[  473.540485] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  473.540515] 
-<7>[  474.041751] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  474.041782] 
-<6>[  474.345978] msm_vidc_venc: Inside vid_enc_open()
-<6>[  474.346039] 
-<6>[  474.346039]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  474.346100] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  474.346497] vid_enc_open_client() : No free clients client_index == -1
-<3>[  474.346741] vid_enc_open() open failed rc=-19
-<6>[  474.493636] app_process (9000): undefined instruction: pc=b65404e8
-<6>[  474.493697] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  474.542163] !@Sync 15
-<7>[  474.543598] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  474.543659] 
-<6>[  474.691133] app_process (9000): undefined instruction: pc=40ac94e8
-<6>[  474.691194] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  474.896108] msm_vidc_venc: Inside vid_enc_open()
-<6>[  474.896139] 
-<6>[  474.896139]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  474.896169] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  474.896291] vid_enc_open_client() : No free clients client_index == -1
-<3>[  474.896474] vid_enc_open() open failed rc=-19
-<6>[  474.963863] [debug_wake_locks]active wake lock msm_otg
-<7>[  475.045872] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  475.045902] 
-<3>[  475.122508] init: untracked pid 8992 exited
-<6>[  475.330871] msm_vidc_venc: Inside vid_enc_open()
-<6>[  475.330901] 
-<6>[  475.330901]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  475.330932] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  475.331023] vid_enc_open_client() : No free clients client_index == -1
-<3>[  475.331176] vid_enc_open() open failed rc=-19
-<3>[  475.349366] init: untracked pid 9000 exited
-<7>[  475.547779] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  475.547810] 
-<6>[  475.643979] msm_thermal: Debug Temp for Sensors (0 --- 39)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  475.945032] msm_vidc_venc: Inside vid_enc_open()
-<6>[  475.945063] 
-<6>[  475.945063]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  475.945093] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  475.945215] vid_enc_open_client() : No free clients client_index == -1
-<3>[  475.945368] vid_enc_open() open failed rc=-19
-<7>[  476.048954] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  476.048985] 
-<7>[  476.550099] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  476.550129] 
-<6>[  476.759224] msm_vidc_venc: Inside vid_enc_open()
-<6>[  476.759255] 
-<6>[  476.759285]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  476.759316] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  476.759560] vid_enc_open_client() : No free clients client_index == -1
-<3>[  476.759713] vid_enc_open() open failed rc=-19
-<7>[  477.051335] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  477.051396] 
-<7>[  477.552540] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  477.552571] 
-<6>[  477.720250] msm_vidc_venc: Inside vid_enc_open()
-<6>[  477.720311] 
-<6>[  477.720311]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  477.720372] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  477.720524] vid_enc_open_client() : No free clients client_index == -1
-<3>[  477.720799] vid_enc_open() open failed rc=-19
-<6>[  477.973843] [debug_wake_locks]active wake lock msm_otg
-<7>[  478.053715] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  478.053776] 
-<7>[  478.555012] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  478.555043] 
-<6>[  478.808515] msm_vidc_venc: Inside vid_enc_open()
-<6>[  478.808545] 
-<6>[  478.808576]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  478.808606] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  478.808850] vid_enc_open_client() : No free clients client_index == -1
-<3>[  478.808972] vid_enc_open() open failed rc=-19
-<7>[  479.056310] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  479.056340] 
-<7>[  479.557515] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  479.557576] 
-<6>[  479.875415] msm_vidc_venc: Inside vid_enc_open()
-<6>[  479.875446] 
-<6>[  479.875476]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  479.875507] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  479.875690] vid_enc_open_client() : No free clients client_index == -1
-<3>[  479.875934] vid_enc_open() open failed rc=-19
-<7>[  480.058629] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  480.058660] 
-<7>[  480.559865] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  480.559926] 
-<6>[  480.654265] msm_thermal: Debug Temp for Sensors (0 --- 37)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  480.926781] msm_vidc_venc: Inside vid_enc_open()
-<6>[  480.926842] 
-<6>[  480.926842]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  480.926903] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  480.927208] vid_enc_open_client() : No free clients client_index == -1
-<3>[  480.927544] vid_enc_open() open failed rc=-19
-<6>[  480.984068] [debug_wake_locks]active wake lock msm_otg
-<7>[  481.061101] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  481.061162] 
-<7>[  481.562581] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  481.562612] 
-<6>[  481.746711] app_process (9073): undefined instruction: pc=b66084e8
-<6>[  481.746741] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  481.927544] msm_vidc_venc: Inside vid_enc_open()
-<6>[  481.927575] 
-<6>[  481.927575]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  481.927605] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  481.927788] vid_enc_open_client() : No free clients client_index == -1
-<3>[  481.927880] vid_enc_open() open failed rc=-19
-<6>[  481.932366] app_process (9073): undefined instruction: pc=40aa34e8
-<6>[  481.932397] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  482.063299] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  482.063329] 
-<3>[  482.326079] init: untracked pid 9069 exited
-<6>[  482.367556] msm_vidc_venc: Inside vid_enc_open()
-<6>[  482.367587] 
-<6>[  482.367587]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  482.367617] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  482.367709] vid_enc_open_client() : No free clients client_index == -1
-<3>[  482.367861] vid_enc_open() open failed rc=-19
-<3>[  482.557576] init: untracked pid 9073 exited
-<7>[  482.564687] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  482.564718] 
-<6>[  482.876728] msm_vidc_venc: Inside vid_enc_open()
-<6>[  482.876758] 
-<6>[  482.876758]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  482.876789] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  482.876911] vid_enc_open_client() : No free clients client_index == -1
-<3>[  482.877094] vid_enc_open() open failed rc=-19
-<7>[  483.065710] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  483.065740] 
-<7>[  483.566641] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  483.566671] 
-<6>[  483.636685] msm_vidc_venc: Inside vid_enc_open()
-<6>[  483.636715] 
-<6>[  483.636746]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  483.636776] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  483.637021] vid_enc_open_client() : No free clients client_index == -1
-<3>[  483.637265] vid_enc_open() open failed rc=-19
-<6>[  483.994078] [debug_wake_locks]active wake lock msm_otg
-<7>[  484.067694] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  484.067724] 
-<7>[  484.568777] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  484.568838] 
-<6>[  484.620509] msm_vidc_venc: Inside vid_enc_open()
-<6>[  484.620540] 
-<6>[  484.620540]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  484.620601] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  484.620875] vid_enc_open_client() : No free clients client_index == -1
-<3>[  484.621028] vid_enc_open() open failed rc=-19
-<7>[  485.070105] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  485.070166] 
-<7>[  485.571402] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  485.571463] 
-<6>[  485.664123] msm_thermal: Debug Temp for Sensors (0 --- 37)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  485.736670] msm_vidc_venc: Inside vid_enc_open()
-<6>[  485.736700] 
-<6>[  485.736731]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  485.736761] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  485.736914] vid_enc_open_client() : No free clients client_index == -1
-<3>[  485.737158] vid_enc_open() open failed rc=-19
-<7>[  486.072455] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  486.072485] 
-<7>[  486.573477] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  486.573538] 
-<6>[  486.721593] msm_vidc_venc: Inside vid_enc_open()
-<6>[  486.721654] 
-<6>[  486.721654]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  486.721715] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  486.722020] vid_enc_open_client() : No free clients client_index == -1
-<3>[  486.722234] vid_enc_open() open failed rc=-19
-<6>[  487.004211] [debug_wake_locks]active wake lock msm_otg
-<7>[  487.074957] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  487.074988] 
-<6>[  487.267663] get_prop_batt_status: get_prop_batt_status: Full charged 4,1,1,0
-<6>[  487.269067] tsu6721_monitor lastINT[0][0] lastDev[4][0][2] currDev[4][0][2] callState[0][0]
-<6>[  487.270288] update_heartbeat: health(1),stat(4),chgen(0),fsm(1),cable(1),extchg(0)
-<6>[  487.271600] update_heartbeat: soc(100/100), v(4337601), i(-1000), temp(343), batt(1), absexpr(0), siop(100)
-<6>[  487.282893] healthd: battery l=100 v=4337 t=34.3 h=2 st=5 c=1 o=4 ct=0 chg=u
-<7>[  487.576102] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  487.576163] 
-<6>[  487.827529] msm_vidc_venc: Inside vid_enc_open()
-<6>[  487.827590] 
-<6>[  487.827590]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  487.827620] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  487.827804] vid_enc_open_client() : No free clients client_index == -1
-<3>[  487.828048] vid_enc_open() open failed rc=-19
-<7>[  488.077308] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  488.077369] 
-<6>[  488.112986] ps (9126): undefined instruction: pc=b6ead4e8
-<6>[  488.113047] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  488.578513] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  488.578574] 
-<7>[  489.079658] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  489.079688] 
-<6>[  489.156386] msm_vidc_venc: Inside vid_enc_open()
-<6>[  489.156416] 
-<6>[  489.156416]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  489.156447] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  489.156599] vid_enc_open_client() : No free clients client_index == -1
-<3>[  489.156722] vid_enc_open() open failed rc=-19
-<6>[  489.320982] app_process (9147): undefined instruction: pc=b65c14e8
-<6>[  489.321043] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  489.524919] app_process (9147): undefined instruction: pc=40a454e8
-<6>[  489.524950] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  489.580375] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  489.580405] 
-<6>[  489.713993] msm_vidc_venc: Inside vid_enc_open()
-<6>[  489.714024] 
-<6>[  489.714024]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  489.714054] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  489.714176] vid_enc_open_client() : No free clients client_index == -1
-<3>[  489.714329] vid_enc_open() open failed rc=-19
-<3>[  489.919639] init: untracked pid 9144 exited
-<6>[  490.013978] [debug_wake_locks]active wake lock msm_otg
-<7>[  490.081001] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  490.081031] 
-<3>[  490.149275] init: untracked pid 9147 exited
-<6>[  490.295681] msm_vidc_venc: Inside vid_enc_open()
-<6>[  490.295711] 
-<6>[  490.295711]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  490.295742] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  490.295925] vid_enc_open_client() : No free clients client_index == -1
-<3>[  490.296017] vid_enc_open() open failed rc=-19
-<7>[  490.581718] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  490.581748] 
-<6>[  490.674103] msm_thermal: Debug Temp for Sensors (0 --- 39)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  490.835159] msm_vidc_venc: Inside vid_enc_open()
-<6>[  490.835189] 
-<6>[  490.835220]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  490.835250] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  490.835342] vid_enc_open_client() : No free clients client_index == -1
-<3>[  490.835525] vid_enc_open() open failed rc=-19
-<7>[  491.082465] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  491.082527] 
-<6>[  491.312101] msm_vidc_venc: Inside vid_enc_open()
-<6>[  491.312131] 
-<6>[  491.312131]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  491.312162] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  491.312345] vid_enc_open_client() : No free clients client_index == -1
-<3>[  491.312467] vid_enc_open() open failed rc=-19
-<7>[  491.583244] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  491.583274] 
-<6>[  491.867358] msm_vidc_venc: Inside vid_enc_open()
-<6>[  491.867388] 
-<6>[  491.867419]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  491.867449] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  491.867541] vid_enc_open_client() : No free clients client_index == -1
-<3>[  491.867724] vid_enc_open() open failed rc=-19
-<7>[  492.084297] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  492.084327] 
-<7>[  492.585167] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  492.585197] 
-<6>[  492.608881] ls (9183): undefined instruction: pc=b6e134e8
-<6>[  492.608942] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  492.683503] msm_vidc_venc: Inside vid_enc_open()
-<6>[  492.683534] 
-<6>[  492.683534]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  492.683595] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  492.684693] vid_enc_open_client() : No free clients client_index == -1
-<3>[  492.684968] vid_enc_open() open failed rc=-19
-<6>[  493.024049] [debug_wake_locks]active wake lock msm_otg
-<7>[  493.086311] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  493.086372] 
-<7>[  493.587761] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  493.587791] 
-<6>[  493.680604] msm_vidc_venc: Inside vid_enc_open()
-<6>[  493.680634] 
-<6>[  493.680634]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  493.680695] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  493.680970] vid_enc_open_client() : No free clients client_index == -1
-<3>[  493.681123] vid_enc_open() open failed rc=-19
-<7>[  494.089088] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  494.089149] 
-<7>[  494.590355] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  494.590416] 
-<6>[  494.796032] msm_vidc_venc: Inside vid_enc_open()
-<6>[  494.796062] 
-<6>[  494.796062]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  494.796093] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  494.796245] vid_enc_open_client() : No free clients client_index == -1
-<3>[  494.796490] vid_enc_open() open failed rc=-19
-<7>[  495.091469] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  495.091500] 
-<7>[  495.592797] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  495.592827] 
-<6>[  495.684175] msm_thermal: Debug Temp for Sensors (0 --- 37)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  495.898275] msm_vidc_venc: Inside vid_enc_open()
-<6>[  495.898306] 
-<6>[  495.898306]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  495.898367] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  495.898611] vid_enc_open_client() : No free clients client_index == -1
-<3>[  495.898794] vid_enc_open() open failed rc=-19
-<6>[  496.033877] [debug_wake_locks]active wake lock msm_otg
-<7>[  496.094582] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  496.094613] 
-<6>[  496.290584] app_process (9223): undefined instruction: pc=b660e4e8
-<6>[  496.290645] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<6>[  496.482160] app_process (9223): undefined instruction: pc=40aa14e8
-<6>[  496.482221] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  496.595605] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  496.595635] 
-<6>[  496.810559] msm_vidc_venc: Inside vid_enc_open()
-<6>[  496.810590] 
-<6>[  496.810590]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  496.810621] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  496.810743] vid_enc_open_client() : No free clients client_index == -1
-<3>[  496.810895] vid_enc_open() open failed rc=-19
-<3>[  496.851274] init: untracked pid 9220 exited
-<3>[  497.080909] init: untracked pid 9223 exited
-<7>[  497.096413] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  497.096444] 
-<6>[  497.246696] msm_vidc_venc: Inside vid_enc_open()
-<6>[  497.246726] 
-<6>[  497.246726]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  497.246757] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  497.246879] vid_enc_open_client() : No free clients client_index == -1
-<3>[  497.246970] vid_enc_open() open failed rc=-19
-<6>[  497.580711] ps (9248): undefined instruction: pc=b6df24e8
-<6>[  497.580741] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  497.597131] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  497.597161] 
-<6>[  497.656310] msm_vidc_venc: Inside vid_enc_open()
-<6>[  497.656340] 
-<6>[  497.656371]  msm_vidc_enc: Inside vid_enc_open_client()
-<3>[  497.656401] vid_enc_get_empty_client_index():ERROR No space for new client
-<3>[  497.656493] vid_enc_open_client() : No free clients client_index == -1
-<3>[  497.656676] vid_enc_open() open failed rc=-19
-<3>[  497.843766] init: untracked pid 4715 exited
-<3>[  497.844010] init: untracked pid 4716 exited
-<3>[  497.905539] init: untracked pid 4723 exited
-<6>[  498.039645] app_process (9260): undefined instruction: pc=b66074e8
-<6>[  498.039676] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  498.097939] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  498.097970] 
-<6>[  498.222707] app_process (9260): undefined instruction: pc=40af54e8
-<6>[  498.222737] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  498.598657] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  498.598687] 
-<3>[  498.620112] init: untracked pid 9257 exited
-<3>[  498.848679] init: untracked pid 9260 exited
-<6>[  499.043857] [debug_wake_locks]active wake lock msm_otg
-<7>[  499.099343] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  499.099404] 
-<7>[  499.600549] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  499.600640] 
-<6>[  499.941492] ls (9275): undefined instruction: pc=b6de04e8
-<6>[  499.941583] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[  500.102456] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  500.102548] 
-<7>[  500.604211] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  500.604303] 
-<6>[  500.694552] msm_thermal: Debug Temp for Sensors (0 --- 37)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  501.105997] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  501.106088] 
-<7>[  501.607752] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  501.607843] 
-<6>[  502.053929] [debug_wake_locks]active wake lock msm_otg
-<7>[  502.109507] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  502.109598] 
-<7>[  502.611231] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  502.611322] 
-<7>[  503.113016] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  503.113108] 
-<7>[  503.614893] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  503.614985] 
-<7>[  504.116740] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  504.116831] 
-<6>[  504.545215] !@Sync 16
-<7>[  504.618525] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  504.618617] 
-<6>[  505.063879] [debug_wake_locks]active wake lock msm_otg
-<7>[  505.120311] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  505.120402] 
-<7>[  505.621944] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  505.622035] 
-<6>[  505.704471] msm_thermal: Debug Temp for Sensors (0 --- 35)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  506.123637] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  506.123729] 
-<7>[  506.627803] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  506.627895] 
-<7>[  507.129650] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  507.129742] 
-<7>[  507.631466] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  507.631558] 
-<6>[  508.073920] [debug_wake_locks]active wake lock msm_otg
-<7>[  508.134655] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  508.134747] 
-<7>[  508.636532] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  508.636624] 
-<7>[  509.138440] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  509.138501] 
-<7>[  509.640103] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  509.640164] 
-<7>[  510.141797] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  510.141889] 
-<7>[  510.643460] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  510.643552] 
-<6>[  510.714268] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  511.083900] [debug_wake_locks]active wake lock msm_otg
-<7>[  511.147688] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  511.147779] 
-<7>[  511.649442] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  511.649534] 
-<7>[  512.151289] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  512.151380] 
-<7>[  512.653288] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  512.653380] 
-<7>[  513.157759] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  513.157851] 
-<7>[  513.659484] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  513.659575] 
-<6>[  514.093911] [debug_wake_locks]active wake lock msm_otg
-<7>[  514.161178] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  514.161269] 
-<7>[  514.662871] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  514.662993] 
-<7>[  515.166488] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  515.166610] 
-<7>[  515.668426] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  515.668518] 
-<6>[  515.724278] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  516.170273] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  516.170334] 
-<7>[  516.671966] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  516.672058] 
-<6>[  517.103921] [debug_wake_locks]active wake lock msm_otg
-<7>[  517.173721] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  517.173813] 
-<7>[  517.675568] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  517.675659] 
-<7>[  518.177323] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  518.177384] 
-<7>[  518.679017] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  518.679108] 
-<7>[  519.180680] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  519.180772] 
-<7>[  519.682374] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  519.682465] 
-<6>[  520.113901] [debug_wake_locks]active wake lock msm_otg
-<7>[  520.184739] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  520.184831] 
-<7>[  520.686372] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  520.686464] 
-<6>[  520.734014] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  521.188219] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  521.188310] 
-<7>[  521.690096] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  521.690187] 
-<7>[  522.191820] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  522.191912] 
-<7>[  522.693666] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  522.693758] 
-<6>[  523.123912] [debug_wake_locks]active wake lock msm_otg
-<7>[  523.195513] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  523.195605] 
-<7>[  523.697298] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  523.697359] 
-<7>[  524.198962] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  524.199053] 
-<7>[  524.700869] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  524.700961] 
-<7>[  525.202502] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  525.202594] 
-<7>[  525.714085] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  525.714176] 
-<6>[  525.743995] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  526.133923] [debug_wake_locks]active wake lock msm_otg
-<7>[  526.215778] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  526.215870] 
-<7>[  526.717594] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  526.717686] 
-<7>[  527.219258] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  527.219380] 
-<7>[  527.721104] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  527.721196] 
-<7>[  528.223225] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  528.223317] 
-<7>[  528.727636] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  528.727727] 
-<6>[  529.143934] [debug_wake_locks]active wake lock msm_otg
-<7>[  529.229421] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  529.229513] 
-<7>[  529.731054] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  529.731145] 
-<7>[  530.232717] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  530.232809] 
-<7>[  530.734350] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  530.734442] 
-<6>[  530.754005] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  531.236105] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  531.236197] 
-<7>[  531.737952] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  531.738043] 
-<6>[  532.153914] [debug_wake_locks]active wake lock msm_otg
-<7>[  532.239615] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  532.239676] 
-<7>[  532.741461] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  532.741553] 
-<7>[  533.243125] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  533.243216] 
-<7>[  533.747443] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  533.747504] 
-<7>[  534.249137] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  534.249229] 
-<6>[  534.546345] !@Sync 17
-<7>[  534.750831] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  534.750923] 
-<6>[  535.163955] [debug_wake_locks]active wake lock msm_otg
-<7>[  535.252494] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  535.252586] 
-<7>[  535.754890] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  535.754982] 
-<6>[  535.764230] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  536.256554] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  536.256645] 
-<7>[  536.758370] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  536.758461] 
-<7>[  537.260064] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  537.260155] 
-<7>[  537.761941] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  537.762032] 
-<6>[  538.173905] [debug_wake_locks]active wake lock msm_otg
-<7>[  538.264611] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  538.264703] 
-<7>[  538.766427] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  538.766519] 
-<7>[  539.268182] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  539.268274] 
-<7>[  539.769815] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  539.769876] 
-<7>[  540.271478] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  540.271570] 
-<7>[  540.773203] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  540.773294] 
-<6>[  540.774332] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<6>[  541.183915] [debug_wake_locks]active wake lock msm_otg
-<7>[  541.277552] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  541.277643] 
-<7>[  541.779398] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  541.779490] 
-<7>[  542.281153] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  542.281245] 
-<7>[  542.783000] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  542.783091] 
-<7>[  543.287105] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  543.287196] 
-<7>[  543.788890] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  543.789012] 
-<6>[  544.193865] [debug_wake_locks]active wake lock msm_otg
-<7>[  544.290798] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  544.290920] 
-<7>[  544.792217] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  544.792247] 
-<7>[  545.293361] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  545.293453] 
-<6>[  545.784495] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  545.797710] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  545.797802] 
-<7>[  546.299374] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  546.299465] 
-<7>[  546.801220] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  546.801312] 
-<6>[  547.203906] [debug_wake_locks]active wake lock msm_otg
-<7>[  547.303219] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  547.303311] 
-<6>[  547.309354] get_prop_batt_status: get_prop_batt_status: Full charged 4,1,1,0
-<6>[  547.311429] tsu6721_monitor lastINT[0][0] lastDev[4][0][2] currDev[4][0][2] callState[0][0]
-<6>[  547.312803] update_heartbeat: health(1),stat(4),chgen(0),fsm(1),cable(1),extchg(0)
-<6>[  547.314603] update_heartbeat: soc(100/100), v(4339068), i(-500), temp(341), batt(1), absexpr(0), siop(100)
-<6>[  547.330596] healthd: battery l=100 v=4338 t=34.1 h=2 st=5 c=0 o=4 ct=0 chg=u
-<7>[  547.807996] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  547.808087] 
-<7>[  548.309781] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  548.309873] 
-<7>[  548.811658] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  548.811750] 
-<7>[  549.313444] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  549.313566] 
-<7>[  549.817854] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  549.817976] 
-<6>[  550.213917] [debug_wake_locks]active wake lock msm_otg
-<7>[  550.319517] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  550.319609] 
-<6>[  550.794414] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  550.821303] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  550.821394] 
-<7>[  551.322935] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  551.323027] 
-<7>[  551.826766] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  551.826857] 
-<7>[  552.328551] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  552.328643] 
-<7>[  552.830306] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  552.830367] 
-<6>[  553.223897] [debug_wake_locks]active wake lock msm_otg
-<7>[  553.331970] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  553.332061] 
-<7>[  553.833969] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  553.834030] 
-<7>[  554.335632] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  554.335724] 
-<7>[  554.837234] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  554.837326] 
-<7>[  555.338928] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  555.339020] 
-<6>[  555.804455] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  555.840622] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  555.840683] 
-<6>[  556.233969] [debug_wake_locks]active wake lock msm_otg
-<7>[  556.342285] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  556.342377] 
-<7>[  556.844284] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  556.844376] 
-<7>[  557.346039] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  557.346131] 
-<7>[  557.847764] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  557.847825] 
-<7>[  558.349427] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  558.349519] 
-<7>[  558.851304] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  558.851396] 
-<6>[  559.243918] [debug_wake_locks]active wake lock msm_otg
-<7>[  559.353059] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  559.353151] 
-<7>[  559.856645] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  559.856767] 
-<7>[  560.358400] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  560.358492] 
-<6>[  560.814344] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  560.860094] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  560.860186] 
-<7>[  561.361757] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  561.361849] 
-<7>[  561.863634] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  561.863726] 
-<6>[  562.253898] [debug_wake_locks]active wake lock msm_otg
-<7>[  562.365481] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  562.365572] 
-<7>[  562.867327] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  562.867419] 
-<7>[  563.369113] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  563.369204] 
-<7>[  563.870837] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  563.870929] 
-<7>[  564.372653] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  564.372714] 
-<6>[  564.547565] !@Sync 18
-<7>[  564.874408] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  564.874500] 
-<6>[  565.263909] [debug_wake_locks]active wake lock msm_otg
-<7>[  565.376163] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  565.376255] 
-<6>[  565.824446] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  565.877826] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  565.877918] 
-<7>[  566.379459] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  566.379551] 
-<7>[  566.881184] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  566.881275] 
-<7>[  567.383030] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  567.383122] 
-<7>[  567.884907] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  567.885029] 
-<6>[  568.273950] [debug_wake_locks]active wake lock msm_otg
-<7>[  568.386723] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  568.386815] 
-<7>[  568.888386] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  568.888478] 
-<7>[  569.390172] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  569.390263] 
-<7>[  569.891896] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  569.891957] 
-<7>[  570.393529] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  570.393621] 
-<6>[  570.834457] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  570.897726] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  570.897817] 
-<6>[  571.283869] [debug_wake_locks]active wake lock msm_otg
-<7>[  571.399359] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  571.399450] 
-<7>[  571.901022] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  571.901083] 
-<7>[  572.402807] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  572.402899] 
-<7>[  572.904715] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  572.904806] 
-<7>[  573.406622] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  573.406714] 
-<7>[  573.908286] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  573.908377] 
-<6>[  574.293911] [debug_wake_locks]active wake lock msm_otg
-<7>[  574.409919] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  574.410010] 
-<7>[  574.911582] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  574.911673] 
-<7>[  575.413245] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  575.413337] 
-<6>[  575.844284] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  575.917411] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  575.917503] 
-<7>[  576.419136] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  576.419227] 
-<7>[  576.920769] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  576.920860] 
-<6>[  577.303921] [debug_wake_locks]active wake lock msm_otg
-<7>[  577.422554] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  577.422646] 
-<7>[  577.924309] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  577.924400] 
-<7>[  578.426155] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  578.426247] 
-<7>[  578.927819] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  578.927910] 
-<7>[  579.429452] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  579.429543] 
-<7>[  579.932427] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  579.932488] 
-<6>[  580.313901] [debug_wake_locks]active wake lock msm_otg
-<7>[  580.434701] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  580.434793] 
-<6>[  580.854326] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  580.936425] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  580.936517] 
-<7>[  581.438119] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  581.438211] 
-<7>[  581.939752] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  581.939844] 
-<7>[  582.441568] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  582.441660] 
-<7>[  582.943323] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  582.943415] 
-<6>[  583.323912] [debug_wake_locks]active wake lock msm_otg
-<7>[  583.447581] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  583.447672] 
-<7>[  583.949275] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  583.949366] 
-<7>[  584.450907] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  584.451029] 
-<7>[  584.952662] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  584.952754] 
-<7>[  585.454326] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  585.454417] 
-<6>[  585.864458] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  585.956020] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  585.956111] 
-<6>[  586.333892] [debug_wake_locks]active wake lock msm_otg
-<7>[  586.457744] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  586.457836] 
-<7>[  586.959407] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  586.959499] 
-<7>[  587.461223] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  587.461315] 
-<7>[  587.963009] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  587.963070] 
-<7>[  588.466900] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  588.466992] 
-<7>[  588.968594] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  588.968686] 
-<6>[  589.343903] [debug_wake_locks]active wake lock msm_otg
-<7>[  589.470318] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  589.470410] 
-<7>[  589.971982] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  589.972073] 
-<7>[  590.473615] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  590.473737] 
-<6>[  590.874469] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  590.977720] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  590.977811] 
-<7>[  591.479597] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  591.479688] 
-<7>[  591.981351] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  591.981443] 
-<6>[  592.353914] [debug_wake_locks]active wake lock msm_otg
-<7>[  592.483167] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  592.483290] 
-<7>[  592.985136] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  592.985228] 
-<7>[  593.486769] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  593.486860] 
-<7>[  593.988554] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  593.988646] 
-<7>[  594.490279] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  594.490370] 
-<6>[  594.549030] !@Sync 19
-<7>[  594.991973] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  594.992064] 
-<6>[  595.363924] [debug_wake_locks]active wake lock msm_otg
-<7>[  595.493636] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  595.493727] 
-<6>[  595.884266] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  595.997680] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  595.997741] 
-<7>[  596.499313] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  596.499404] 
-<7>[  597.000976] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  597.001068] 
-<7>[  597.502578] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  597.502670] 
-<7>[  598.004547] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  598.004669] 
-<6>[  598.373905] [debug_wake_locks]active wake lock msm_otg
-<7>[  598.506271] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  598.506363] 
-<7>[  599.008087] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  599.008179] 
-<7>[  599.509842] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  599.509934] 
-<7>[  600.011536] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  600.011628] 
-<7>[  600.513138] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  600.513230] 
-<6>[  600.894368] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  601.017335] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  601.017427] 
-<6>[  601.383885] [debug_wake_locks]active wake lock msm_otg
-<7>[  601.519029] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  601.519090] 
-<7>[  602.020631] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  602.020723] 
-<7>[  602.522295] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  602.522386] 
-<7>[  603.025942] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  603.026003] 
-<7>[  603.527605] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  603.527697] 
-<7>[  604.029391] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  604.029482] 
-<6>[  604.393895] [debug_wake_locks]active wake lock msm_otg
-<7>[  604.531145] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  604.531207] 
-<7>[  605.032748] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  605.032839] 
-<7>[  605.536029] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  605.536120] 
-<6>[  605.904288] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  606.037784] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  606.037875] 
-<7>[  606.539813] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  606.539905] 
-<7>[  607.041477] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  607.041568] 
-<6>[  607.403937] [debug_wake_locks]active wake lock sec-charger-monitor
-<6>[  607.404028] [debug_wake_locks]active wake lock msm_otg
-<6>[  607.409308] get_prop_batt_status: get_prop_batt_status: Full charged 4,1,1,0
-<6>[  607.411384] tsu6721_monitor lastINT[0][0] lastDev[4][0][2] currDev[4][0][2] callState[0][0]
-<6>[  607.412757] update_heartbeat: health(1),stat(4),chgen(0),fsm(1),cable(1),extchg(0)
-<6>[  607.414802] update_heartbeat: soc(100/100), v(4340238), i(-1600), temp(339), batt(1), absexpr(0), siop(100)
-<6>[  607.431496] healthd: battery l=100 v=4339 t=33.9 h=2 st=5 c=1 o=4 ct=0 chg=u
-<7>[  607.543323] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  607.543415] 
-<7>[  608.047459] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  608.047520] 
-<7>[  608.549122] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  608.549214] 
-<7>[  609.050968] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  609.051029] 
-<7>[  609.552601] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  609.552693] 
-<7>[  610.055028] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  610.055119] 
-<6>[  610.413917] [debug_wake_locks]active wake lock msm_otg
-<7>[  610.556691] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  610.556783] 
-<6>[  610.914451] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  611.058354] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  611.058446] 
-<7>[  611.560018] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  611.560109] 
-<7>[  612.061712] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  612.061803] 
-<7>[  612.563406] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  612.563497] 
-<7>[  613.067816] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  613.067938] 
-<6>[  613.423897] [debug_wake_locks]active wake lock msm_otg
-<7>[  613.569510] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  613.569601] 
-<7>[  614.071387] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  614.071478] 
-<7>[  614.573080] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  614.573172] 
-<7>[  615.076209] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  615.076270] 
-<7>[  615.577872] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  615.577964] 
-<6>[  615.924492] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  616.079536] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  616.079627] 
-<6>[  616.433877] [debug_wake_locks]active wake lock msm_otg
-<7>[  616.581138] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  616.581229] 
-<7>[  617.082832] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  617.082923] 
-<7>[  617.586448] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  617.586509] 
-<4>[  617.919792] QSEECOM: qseecom_query_app_loaded: App id 4 (tima_pkm) already exists
-<7>[  618.088203] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  618.088264] 
-<7>[  618.590050] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  618.590111] 
-<7>[  619.091927] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  619.092018] 
-<6>[  619.443918] [debug_wake_locks]active wake lock msm_otg
-<7>[  619.593651] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  619.593743] 
-<7>[  620.097207] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  620.097298] 
-<7>[  620.598901] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  620.599023] 
-<6>[  620.934320] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  621.100656] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  621.100747] 
-<7>[  621.602319] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  621.602411] 
-<7>[  622.104776] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  622.104867] 
-<6>[  622.453898] [debug_wake_locks]active wake lock msm_otg
-<7>[  622.606409] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  622.606500] 
-<7>[  623.108133] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  623.108194] 
-<7>[  623.609827] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  623.609919] 
-<7>[  624.111490] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  624.111582] 
-<6>[  624.550556] !@Sync 20
-<7>[  624.613245] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  624.613337] 
-<7>[  625.117442] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  625.117503] 
-<6>[  625.463909] [debug_wake_locks]active wake lock msm_otg
-<7>[  625.619166] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  625.619258] 
-<6>[  625.944452] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  626.120830] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  626.120921] 
-<7>[  626.622493] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  626.622585] 
-<7>[  627.124492] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  627.124584] 
-<7>[  627.626247] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  627.626339] 
-<7>[  628.127941] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  628.128032] 
-<6>[  628.473920] [debug_wake_locks]active wake lock msm_otg
-<7>[  628.629787] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  628.629879] 
-<7>[  629.131420] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  629.131542] 
-<7>[  629.633114] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  629.633206] 
-<7>[  630.136792] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  630.136883] 
-<7>[  630.638425] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  630.638516] 
-<6>[  630.954463] msm_thermal: Debug Temp for Sensors (0 --- 33)(1 --- 52)(2 --- 45)(3 --- 44)(4 --- 44)(5 --- 44)(6 --- 58)(7 --- 44)(8 --- 45)(9 --- 63)
-<7>[  631.140057] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  631.140149] 
-<6>[  631.483869] [debug_wake_locks]active wake lock msm_otg
-<7>[  631.641660] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  631.641751] 
-<7>[  632.143384] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[  632.143476] 
+<3>[ 3443.132410] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ccbf2361
+<3>[ 3443.411901] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3443.412270] app_process (20375): undefined instruction: pc=b65b1528
+<6>[ 3443.412282] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 3443.564017] app_process (20375): undefined instruction: pc=40a1e528
+<6>[ 3443.564029] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3443.614174] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3443.663925] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<3>[ 3443.872169] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 64257325
+<3>[ 3443.953502] init: untracked pid 20372 exited
+<3>[ 3444.094946] init: untracked pid 17992 exited
+<6>[ 3444.160295] app_process (20405): undefined instruction: pc=b667f528
+<6>[ 3444.160306] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3444.176146] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c4000000
+<3>[ 3444.202046] init: untracked pid 20375 exited
+<6>[ 3444.311144] app_process (20405): undefined instruction: pc=40a70528
+<6>[ 3444.311155] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3444.451839] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3444.669133] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3444.677903] init: untracked pid 20402 exited
+<3>[ 3444.730391] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3444.876709] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227165696 device_id=0
+<3>[ 3444.910569] init: untracked pid 20405 exited
+<3>[ 3444.919535] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffff48
+<3>[ 3445.066018] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1144249852 device_id=0
+<6>[ 3445.198295] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3445.198909] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3445.201839] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.5)
+<6>[ 3445.230909] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3702mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3445.230922] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3445.230945] sec_bat_check_callback:  Battery status(1)
+<6>[ 3445.231540] max77803_get_health_state: reg_data(0x3)
+<6>[ 3445.233277] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3445.233291] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3445.235754] healthd: battery l=19 v=3702 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<3>[ 3445.470091] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffb3f000
+<3>[ 3445.704320] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3446.039832] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b68ad000
+<3>[ 3446.081720] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffff48
+<3>[ 3446.379577] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3446.401082] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3446.676734] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b3aad000
+<3>[ 3446.698201] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffff7e7e
+<3>[ 3446.764076] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<3>[ 3446.801641] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3447.099075] reading MSM_THERM_CH [rc = 0] [adc_code = 28742]
+<3>[ 3447.590804] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<3>[ 3448.030179] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3448.176928] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00004602
+<3>[ 3448.617770] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3448.849993] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffffff85
+<3>[ 3448.892685] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3449.043888] [SSP]: debug_work_func(3) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3449.052092] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<3>[ 3449.808006] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 00000000
+<3>[ 3449.865751] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00004613
+<3>[ 3450.199060] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id 0 device_id=0
+<3>[ 3450.219890] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b44ad000
+<3>[ 3450.486128] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b68ad000
+<3>[ 3450.609474] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 04003e3e
+<3>[ 3450.670930] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1280651264 device_id=0
+<3>[ 3450.866739] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 000000d0
+<6>[ 3450.919988] app_process (20503): undefined instruction: pc=b6635528
+<6>[ 3450.920000] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3450.936759] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3450.959079] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3451.008011] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1240805376 device_id=0
+<6>[ 3451.068385] app_process (20503): undefined instruction: pc=40a84528
+<6>[ 3451.068397] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3451.122621] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3451.190387] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1270165504 device_id=0
+<3>[ 3451.416049] init: untracked pid 20500 exited
+<3>[ 3451.430537] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227173888 device_id=0
+<3>[ 3451.655844] init: untracked pid 20503 exited
+<3>[ 3452.035890] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 1400fffe
+<3>[ 3452.382971] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3452.421038] [SSP]: hub_batt_adc_show: adc 1531
+<6>[ 3452.430591] [SSP]: hub_chg_adc_show: adc 1021
+<3>[ 3452.436992] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b5cad000
+<3>[ 3452.440641] reading MSM_THERM_CH [rc = 0] [adc_code = 28831]
+<3>[ 3452.842402] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 2900e1f1
+<3>[ 3453.259542] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<3>[ 3453.546887] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr cf260427
+<3>[ 3453.778692] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3454.111494] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b68ad000
+<3>[ 3454.133184] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b66ad000
+<3>[ 3454.243583] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c00015a7
+<3>[ 3454.264582] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6daf000
+<3>[ 3454.790521] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b5cad000
+<3>[ 3454.875697] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3455.191921] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id 0 device_id=0
+<6>[ 3455.240249] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3455.240835] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3455.243706] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.5)
+<6>[ 3455.279240] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3728mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3455.279253] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3455.279277] sec_bat_check_callback:  Battery status(1)
+<6>[ 3455.279857] max77803_get_health_state: reg_data(0x3)
+<6>[ 3455.281565] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3455.281581] sec-battery battery.81: sec_bat_time_management: Charging Time : 3263 secs
+<6>[ 3455.281592] sec-battery battery.81: sec_bat_temperature: HT(600), HR(460), LT(-45), LR(0)
+<6>[ 3455.281602] sec-battery battery.81: sec_bat_fullcharged_check: Charging Mode : Normal
+<6>[ 3455.281613] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3455.283442] healthd: battery l=19 v=3728 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<3>[ 3455.382352] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b44ad000
+<3>[ 3455.428665] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 809e5821
+<3>[ 3455.469612] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 840c4912
+<3>[ 3455.713920] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b4ead000
+<3>[ 3455.753263] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3455.862281] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6db1000
+<3>[ 3455.913968] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00004c06
+<3>[ 3456.013671] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<3>[ 3456.085782] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b5cad000
+<3>[ 3456.932538] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3457.072965] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227165696 device_id=0
+<3>[ 3457.138668] reading MSM_THERM_CH [rc = 0] [adc_code = 28853]
+<6>[ 3457.188609] ps (20582): undefined instruction: pc=b6dcf528
+<6>[ 3457.188620] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 3457.824054] app_process (20609): undefined instruction: pc=b6596528
+<6>[ 3457.824067] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3457.849187] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00004602
+<6>[ 3457.991319] app_process (20609): undefined instruction: pc=40aa7528
+<6>[ 3457.991332] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3457.995036] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3458.062923] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<3>[ 3458.374622] init: untracked pid 20606 exited
+<3>[ 3458.597645] init: untracked pid 20609 exited
+<3>[ 3459.039923] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3459.206263] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3459.232031] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3459.333933] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3459.500688] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3459.542120] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id 0 device_id=0
+<3>[ 3459.562133] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr dd738fec
+<3>[ 3459.749174] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3459.950222] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<6>[ 3460.043907] [SSP]: debug_work_func(3) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3460.052228] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<3>[ 3460.437429] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b5cad000
+<3>[ 3460.498828] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 82000000
+<3>[ 3460.880475] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3461.008389] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1244999680 device_id=0
+<3>[ 3461.033713] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -819592153 device_id=0
+<3>[ 3461.060970] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3461.138084] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<3>[ 3461.349939] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 12ecefff
+<3>[ 3461.373818] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3461.585091] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<3>[ 3461.777670] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -16844801 device_id=0
+<3>[ 3461.999067] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3462.306194] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1249193984 device_id=0
+<6>[ 3462.412953] [SSP]: hub_batt_adc_show: adc 1533
+<6>[ 3462.419267] [SSP]: hub_chg_adc_show: adc 1026
+<3>[ 3462.428753] reading MSM_THERM_CH [rc = 0] [adc_code = 28849]
+<3>[ 3462.657386] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<3>[ 3463.012196] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr fffff7fd
+<3>[ 3463.326833] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3463.367763] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3463.565762] !@Sync 115
+<3>[ 3463.681162] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -579629076 device_id=0
+<3>[ 3463.700815] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6bad000
+<3>[ 3463.963760] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1240805376 device_id=0
+<3>[ 3464.317601] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b3aad000
+<3>[ 3464.383252] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1280651264 device_id=0
+<3>[ 3464.463977] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 28009cd0
+<6>[ 3464.617870] app_process (20703): undefined instruction: pc=b6608528
+<6>[ 3464.617882] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3464.646495] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 45413c
+<6>[ 3464.770879] app_process (20703): undefined instruction: pc=40a8b528
+<6>[ 3464.770892] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3464.936248] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3465.115517] init: untracked pid 20696 exited
+<3>[ 3465.278660] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1886417009 device_id=0
+<3>[ 3465.341707] init: untracked pid 20703 exited
+<3>[ 3465.385951] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2051 device_id=0
+<3>[ 3465.673107] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b3aad000
+<3>[ 3465.966037] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3466.192261] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227165696 device_id=0
+<3>[ 3466.278209] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3466.316916] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3466.516898] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3467.160067] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3467.220904] reading MSM_THERM_CH [rc = 0] [adc_code = 28846]
+<3>[ 3467.287908] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3467.426787] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3467.538854] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr a0000008
+<3>[ 3467.702967] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3467.757394] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3467.838980] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffdfbbd8
+<3>[ 3468.077728] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffffff
+<3>[ 3468.130892] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3468.230989] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffffffff
+<3>[ 3469.074330] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2114600 device_id=0
+<3>[ 3469.124579] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00006b06
+<3>[ 3469.199114] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b68ad000
+<3>[ 3469.673390] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b44ad000
+<3>[ 3470.125900] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 000000b3
+<3>[ 3470.488495] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2114600 device_id=0
+<3>[ 3470.550754] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3470.736338] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3470.888565] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffffff
+<6>[ 3471.043900] [SSP]: debug_work_func(3) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3471.052207] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<3>[ 3471.143133] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr fffffffe
+<6>[ 3471.493356] app_process (20806): undefined instruction: pc=b6590528
+<6>[ 3471.493368] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3471.555805] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<6>[ 3471.647300] app_process (20806): undefined instruction: pc=40a56528
+<6>[ 3471.647312] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3471.996175] init: untracked pid 20802 exited
+<3>[ 3472.234645] init: untracked pid 20806 exited
+<3>[ 3472.279276] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3472.410152] [SSP]: hub_batt_adc_show: adc 1537
+<6>[ 3472.418217] [SSP]: hub_chg_adc_show: adc 1026
+<3>[ 3472.429238] reading MSM_THERM_CH [rc = 0] [adc_code = 28843]
+<3>[ 3472.655347] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b66ad000
+<3>[ 3472.862566] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3472.892599] [SSP]: show_sensors_enable - cur_enable = 0
+<6>[ 3472.892641] [SSP]: set_sensors_enable - new_enable = 512, old_enable = 0
+<6>[ 3472.892650] [SSP]: enable_sensor - add 512, New = 200000000ns
+<6>[ 3472.892661] [SSP]: send_instruction - Inst = 0xa1, Sensor Type = 0x9, data = 200
+<6>[ 3472.904953] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3472.905535] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3472.908563] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.3)
+<6>[ 3472.908632] [SSP], delay 200, timeout 0, flag=0, ret1
+<6>[ 3472.936008] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3710mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3472.936020] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3472.936042] sec_bat_check_callback:  Battery status(1)
+<6>[ 3472.936613] max77803_get_health_state: reg_data(0x3)
+<6>[ 3472.938285] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3472.938298] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3472.939964] healthd: battery l=19 v=3710 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<3>[ 3473.453965] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 04005fa9
+<6>[ 3473.606869] [SSP]: MSG From MCU - =>LIGopen
+<6>[ 3473.606873] AD 9 1 0 1
+<6>[ 3473.607537] [SSP]: show_sensors_enable - cur_enable = 512
+<6>[ 3473.607570] [SSP]: set_sensors_enable - new_enable = 0, old_enable = 512
+<6>[ 3473.607577] [SSP]: ssp_remove_sensor - remove sensor = 512, current state = 0
+<6>[ 3473.607587] [SSP]: send_instruction - Inst = 0xa2, Sensor Type = 0x9, data = 200
+<3>[ 3473.621451] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227165696 device_id=0
+<3>[ 3473.971943] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6dad000
+<3>[ 3473.993389] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr dfd52735
+<3>[ 3474.055694] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -513 device_id=0
+<3>[ 3474.312168] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6db1000
+<3>[ 3474.813699] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3475.004425] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3475.192042] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 237fcff7
+<3>[ 3475.253590] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3475.451583] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code c10d0b02
+<3>[ 3475.492777] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3475.576734] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b60ad000
+<3>[ 3475.618079] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3475.935995] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -513 device_id=0
+<3>[ 3476.027258] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b778863a
+<3>[ 3476.048554] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 73256425
+<3>[ 3476.132030] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2113995363 device_id=0
+<3>[ 3476.495947] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1236611072 device_id=0
+<3>[ 3476.517231] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1236611072 device_id=0
+<3>[ 3476.685049] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3476.748339] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 9694cd25
+<3>[ 3476.869762] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3477.258753] reading MSM_THERM_CH [rc = 0] [adc_code = 28859]
+<3>[ 3477.269375] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 0028772b
+<3>[ 3477.777233] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 80000077
+<6>[ 3478.250964] app_process (20884): undefined instruction: pc=b65cd528
+<6>[ 3478.250975] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 3478.400680] app_process (20884): undefined instruction: pc=40a83528
+<6>[ 3478.400693] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3478.446434] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3478.756030] init: untracked pid 20877 exited
+<3>[ 3478.984212] init: untracked pid 20884 exited
+<3>[ 3479.222694] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3479.266126] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b64ad000
+<3>[ 3479.446713] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b8b21e1e
+<3>[ 3479.543636] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3479.567962] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1270165504 device_id=0
+<3>[ 3479.592934] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 82000000
+<3>[ 3480.097268] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3480.158296] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: f3e4c121
+<3>[ 3480.179552] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b3aad000
+<3>[ 3480.495764] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6bad000
+<3>[ 3480.517892] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3480.623983] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b44ad000
+<3>[ 3481.103965] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id 2651947 device_id=0
+<3>[ 3481.386835] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b58ad000
+<3>[ 3481.472331] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2063597568 device_id=0
+<3>[ 3482.015878] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<6>[ 3482.043911] [SSP]: debug_work_func(6) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3482.051811] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<6>[ 3482.809211] [SSP]: MSG From MCU - =>LIGC
+<6>[ 3482.809215] RM 9 0 0 0
+<6>[ 3482.816036] [SSP]: hub_batt_adc_show: adc 1534
+<6>[ 3482.822358] [SSP]: hub_chg_adc_show: adc 1026
+<3>[ 3482.831540] reading MSM_THERM_CH [rc = 0] [adc_code = 28835]
+<3>[ 3482.867350] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b58ad000
+<6>[ 3482.950179] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3482.950755] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3482.953630] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.3)
+<6>[ 3482.987918] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3711mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3482.987930] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3482.987952] sec_bat_check_callback:  Battery status(1)
+<6>[ 3482.988524] max77803_get_health_state: reg_data(0x3)
+<6>[ 3482.990204] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3482.990218] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3482.991954] healthd: battery l=19 v=3711 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<3>[ 3483.067100] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 8d8cf6dd
+<3>[ 3483.116296] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3483.594470] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ff00007a
+<3>[ 3483.717984] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3484.187121] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b60ad000
+<3>[ 3484.437049] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3484.476928] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 84000001
+<6>[ 3484.512449] ps (20942): undefined instruction: pc=b6df2528
+<6>[ 3484.512464] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3485.021714] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3485.043032] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6db1000
+<3>[ 3485.164265] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -2080374783 device_id=0
+<6>[ 3485.176954] app_process (20969): undefined instruction: pc=b6591528
+<6>[ 3485.176967] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 3485.384260] app_process (20969): undefined instruction: pc=40a24528
+<6>[ 3485.384272] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3485.415087] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3485.586774] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3485.627570] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr dc987ced
+<3>[ 3485.788193] init: untracked pid 20966 exited
+<3>[ 3486.017536] init: untracked pid 20969 exited
+<3>[ 3486.440626] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3486.769704] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227165696 device_id=0
+<3>[ 3487.118083] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3487.219572] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 00000000
+<3>[ 3487.240443] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3487.308624] reading MSM_THERM_CH [rc = 0] [adc_code = 28784]
+<3>[ 3487.313823] kgsl kgsl-3d0: |kgsl_ioctl| Malformed ioctl code 00007006
+<3>[ 3487.420742] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ff8e2fff
+<3>[ 3487.483709] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3487.505004] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3488.017145] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1270165504 device_id=0
+<3>[ 3488.336300] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3488.599771] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3488.641463] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b4ead000
+<3>[ 3488.893451] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b68ad000
+<3>[ 3489.537013] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffff5a
+<3>[ 3489.875940] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 1b1b1b1b
+<3>[ 3490.509859] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b64ad000
+<3>[ 3490.572593] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr de1c253e
+<3>[ 3490.883627] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3491.053227] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3491.230264] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: e40000bf
+<3>[ 3491.333459] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3491.682152] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -57826 device_id=0
+<3>[ 3491.724407] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ff00007a
+<3>[ 3491.745848] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227157504 device_id=0
+<6>[ 3491.759471] app_process (21056): undefined instruction: pc=b660e528
+<6>[ 3491.759482] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3491.767055] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3491.909545] app_process (21056): undefined instruction: pc=40abb528
+<6>[ 3491.909557] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3491.922861] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3492.091906] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr fffff001
+<3>[ 3492.243044] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3492.260595] init: untracked pid 21052 exited
+<3>[ 3492.499361] init: untracked pid 21056 exited
+<6>[ 3492.814806] [SSP]: hub_batt_adc_show: adc 1530
+<6>[ 3492.821147] [SSP]: hub_chg_adc_show: adc 1015
+<3>[ 3492.831940] reading MSM_THERM_CH [rc = 0] [adc_code = 28762]
+<3>[ 3492.974312] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b60ad000
+<6>[ 3493.000627] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3493.001453] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3493.005071] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.3)
+<6>[ 3493.032826] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3713mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3493.032840] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3493.032865] sec_bat_check_callback:  Battery status(1)
+<6>[ 3493.033461] max77803_get_health_state: reg_data(0x3)
+<6>[ 3493.035896] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3493.035914] sec-battery battery.81: sec_bat_time_management: Charging Time : 3301 secs
+<6>[ 3493.035927] sec-battery battery.81: sec_bat_temperature: HT(600), HR(460), LT(-45), LR(0)
+<6>[ 3493.035937] sec-battery battery.81: sec_bat_fullcharged_check: Charging Mode : Normal
+<6>[ 3493.035950] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3493.038151] healthd: battery l=19 v=3713 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<6>[ 3493.043921] [SSP]: debug_work_func(6) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3493.050252] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<3>[ 3493.194149] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3493.402712] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 00000000
+<3>[ 3493.499093] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b64ad000
+<3>[ 3493.543128] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<6>[ 3493.570988] !@Sync 116
+<3>[ 3493.587565] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b64ad000
+<3>[ 3493.722525] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c1645010
+<3>[ 3493.763727] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b4ead000
+<3>[ 3493.984242] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b60ad000
+<3>[ 3494.075625] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6db1000
+<3>[ 3494.096543] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1259679744 device_id=0
+<3>[ 3494.271029] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3494.291658] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3495.257389] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b66ad000
+<3>[ 3495.764149] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b64ad000
+<3>[ 3495.807492] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3495.880160] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3496.021404] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 26800022
+<3>[ 3496.042458] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b6cad000
+<3>[ 3496.401625] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3497.021771] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1249193984 device_id=0
+<3>[ 3497.066146] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr a8001f0f
+<3>[ 3497.361107] reading MSM_THERM_CH [rc = 0] [adc_code = 28840]
+<3>[ 3497.379455] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffffff
+<3>[ 3497.737489] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -62452 device_id=0
+<3>[ 3498.314101] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffff8b8b
+<3>[ 3498.369803] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3498.545477] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr e965e842
+<6>[ 3498.628021] app_process (21153): undefined instruction: pc=b6635528
+<6>[ 3498.628036] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 3498.803072] app_process (21153): undefined instruction: pc=40a50528
+<6>[ 3498.803086] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3498.851776] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3499.109501] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3499.166822] init: untracked pid 21150 exited
+<3>[ 3499.261263] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1476387057 device_id=0
+<3>[ 3499.397613] init: untracked pid 21153 exited
+<3>[ 3499.553178] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr bf800000
+<3>[ 3499.679628] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1082130432 device_id=0
+<3>[ 3499.892000] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6db1000
+<3>[ 3499.935023] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3499.954852] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3500.119328] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3500.140512] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3500.161590] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3500.351089] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b66ad000
+<3>[ 3500.753990] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3500.795899] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b6cad000
+<3>[ 3500.818347] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1259679744 device_id=0
+<3>[ 3500.921905] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3501.013658] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3501.425824] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3501.519902] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3501.847629] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<6>[ 3502.811839] [SSP]: hub_batt_adc_show: adc 1531
+<6>[ 3502.818659] [SSP]: hub_chg_adc_show: adc 1023
+<3>[ 3502.828315] reading MSM_THERM_CH [rc = 0] [adc_code = 28857]
+<3>[ 3503.041258] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<6>[ 3503.051495] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3503.052101] max77803_get_input_current: CHG_CNFG_09(0x12)
+<7>[ 3503.055917] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.3)
+<6>[ 3503.085716] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3712mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(360)
+<6>[ 3503.085730] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3503.085757] sec_bat_check_callback:  Battery status(1)
+<6>[ 3503.086358] max77803_get_health_state: reg_data(0x3)
+<6>[ 3503.088424] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3503.088442] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)
+<6>[ 3503.090589] healthd: battery l=19 v=3712 t=36.0 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<3>[ 3503.232212] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1015019520 device_id=0
+<3>[ 3503.406350] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6aad000
+<3>[ 3503.445281] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227173888 device_id=0
+<3>[ 3503.882350] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<6>[ 3504.044001] [SSP]: debug_work_func(3) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<6>[ 3504.053264] [SSP] Sensor Posision A : 6, G : 6, M: 3
+<3>[ 3504.185347] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3504.460605] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 00000000
+<3>[ 3504.944557] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1230319616 device_id=0
+<3>[ 3505.237175] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6aad000
+<6>[ 3505.456394] app_process (21243): undefined instruction: pc=b6647528
+<6>[ 3505.456405] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3505.567136] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 000fefff
+<6>[ 3505.604868] app_process (21243): undefined instruction: pc=40aeb528
+<6>[ 3505.604879] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3505.664839] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 9ffff000
+<3>[ 3505.698913] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 8742c9
+<3>[ 3505.956148] init: untracked pid 21238 exited
+<3>[ 3506.186985] init: untracked pid 21243 exited
+<3>[ 3506.285189] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffdfffff
+<3>[ 3506.354086] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b66ad000
+<3>[ 3506.467126] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3506.542616] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr f5df7f2e
+<3>[ 3506.975745] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3507.072584] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1232416768 device_id=0
+<3>[ 3507.118151] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3507.382555] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 08002f6e
+<3>[ 3507.398727] reading MSM_THERM_CH [rc = 0] [adc_code = 28834]
+<3>[ 3507.574704] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+<3>[ 3507.620721] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1232416768 device_id=0
+<3>[ 3507.748486] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1230319616 device_id=0
+<3>[ 3507.842345] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3508.762103] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3508.933421] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 73257325
+<3>[ 3509.324272] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffff8102
+<3>[ 3509.386430] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b44ad000
+<3>[ 3509.428341] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 4400928b
+<3>[ 3509.492791] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: c0008000
+<3>[ 3509.619151] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1227173888 device_id=0
+<3>[ 3509.871672] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1228222464 device_id=0
+<3>[ 3509.977551] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr 82009456
+<3>[ 3510.001061] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr ffff8102
+<3>[ 3510.105530] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -4099 device_id=0
+<3>[ 3510.126941] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3510.543933] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr b6cad000
+<3>[ 3510.724171] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+<3>[ 3510.747227] kgsl: kgsl_get_phys_file: fget_light failed
+<3>[ 3510.794648] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: ffffff03
+<3>[ 3510.816162] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: b4ead000
+<3>[ 3511.023630] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr c0008000
+fef 1ffe(e9fd [51323]ks gl30 _msra_reeotmsap nai pad 6a00>31.204 glks-d:|cdtemfemmnietm|ivldgudrc080
+<3>[ 3511.649488] kgsl kgsl-3d0: |_cmdstream_freememontimestamp| invalid gpuaddr00dff<6>[ 3511.669759] ps 219) neie ntuto:p=6358<> 51697]Cd:e000 0000f6ef 1ffe(e9fd <3>[ 3511.970808] kgsl kgsl-3d0: |adrenoiot|ivlddacx rwtti 6405dvc_d0<6>[ 3512.261607 appoes(12) neie ntuto:p=6458<> 52211]Cd:e000 0000f6ef 1ffe(e9fd <3>[ 3512.387160] kgsl kgsl-3d0: |adreno_ioctl| invalid drawctxt drawctxt_id -1073709056 device_id=0
+6 52442]appoes(12) neie ntuto:p=0358<> 52443]Cd:e000 0000f6ef 1ffe(e9fd >31.815 gl glgtpy_ie gtlgtfie
+<3>[ 3512.7436 glks-d:|deoicl nai rwttdacx_d-27788dvc_d0<>[31.089 SP:hbbt_d_hw d 51<> 52839][S] u_h_d_hw d 04<>[31.477 edn S_HR_H[c=0 accd  80]<>[31.494 glks-d:|cdtemfemmnietm|ivldgudrb0d0
+<3>[ 3513.066643] kgsl kgsl-3d0: |adreno_ioctl| invalid racx rwtti 12137 eiei=
+6 53101]mx70_e_nu_urn:CGCF_901)<> 53109]mx70_e_nu_urn:CGCF_901)<6>[ 3513.153399] sec-battery battery.1:scbtgtbteyif:nw30m)Io(5m)Ia(6m)SC1%,bt30
+6[31.542 e_a_hc_alak btey>dt-btiqgi(3)<> 53133]scbtcekclbc: atr tts1
+m783gthat_tt:rgdt(x)<> 53171]mx70_e_elhsae bssae:03 h_ts:01<> 53173]scbteybtey8:scbtmntrwr:Sau(hrig,Md(oml,Hat(od,Cbe4,Vno(D D) iplvl10
+6[31.518 elh:bteyl1 =71t3. = t2c0o4c=5 t1p= h=
+3[31.406 glks-d:|deoicl nai rwttdacx_d-20028dvc_d03 53454]ks gl30 arn_ot|ivlddacx rwtti 12214 eiei=
+3[31.516 glks-d:|cdtemfemmnietm|ivldgudrc080
+3 53620]ks gl30 _msra_reeotmsap nai pad 0000<3>[ 3513.741255] kgsl: kgsl_ioctl_map_user_mem: Invalid memory type: 8742c9
+<6>[ 3514.153762] ps (21346): undefined instruction: pc=b6dd8528
+<6>[ 3514.153777] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 3514.404428] init: untracked pid 22694 exited
+<3>[ 51.092 nt nrce i 29 xtd<3>[ 3514.470467] init: untracked pid 22715 exited
+<> 54685]appoes(16) neie ntuto:p=0b58<> 54686]Cd:e000 0000f6ef 1ffe(e9fd <3>[ 3514.976276] init: untracked pid 21363 exited
+f,R:0 S  at:0Dm:0<> 55030][S]Sno oiinA:6   ,M 
+<3>[ 3515.210640] init: untracked pid 21366 exited
+<3>[ 3517.453654] reading MSM_THERM_CH [rc = 0] [adc_code = 29131]
+<6>[ 3522.809886] [SSP]: hub_batt_adc_show: adc 1532
+<3>[ 3522.829357] reading MSM_THERM_CH [rc = 0] [adc_code = 29615]
+<7>[ 3523.275657] sec-fuelgauge 19-0036: sec_fg_get_scaled_capacity: scaled capacity (19.3)
+<6>[ 3523.322423] healthd: battery l=19 v=3778 t=35.9 h=2 st=2 c=0 o=4 ca=450 ct=1 ps=0 chg=u
+<6>[ 3526.044200] [SSP]: debug_work_func(3) - Sensor state: 0x3ffff, RC: 0, MS: 0 Santi: 0 Dump: 0
+<3>[ 3527.511326] reading MSM_THERM_CH [rc = 0] [adc_code = 29831]
+<6>[ 3532.814397] [SSP]: hub_chg_adc_show: adc 1160
+<6>[ 3533.352324] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3533.353282] max77803_get_input_current: CHG_CNFG_09(0x12)
+<6>[ 3533.389238] sec-battery battery.81: sec_bat_get_battery_info:Vnow(3781mV),Inow(450mA),Imax(460mA),SOC(19%),Tbat(359)
+<6>[ 3533.389289] sec_bat_check_callback:  battery->pdata->bat_irq_gpio(535)
+<6>[ 3533.389354] sec_bat_check_callback:  Battery status(1)
+<6>[ 3533.390310] max77803_get_health_state: reg_data(0x3)
+<6>[ 3533.393056] max77803_get_health_state: vbus_state : 0x3, chg_dtls : 0x1
+<6>[ 3533.393109] sec-battery battery.81: sec_bat_monitor_work: Status(Charging), Mode(Normal), Health(Good), Cable(4), Vendor(SDI SDI), siop_level(100)

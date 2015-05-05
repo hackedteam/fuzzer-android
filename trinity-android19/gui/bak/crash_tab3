@@ -1,4 +1,0 @@
-[child1:6436] [18] ioctl(fd=259, cmd=0x8d6d7da2, arg=0xffffdffe)
-
-[child0:5390] [5769] ioctl(fd=274, cmd=0xc00c092f, arg=0xb6ddf000) (s4mini)
-[child0:4733] [6596] ioctl(fd=277, cmd=0xc01c0934, arg=0xffff) 

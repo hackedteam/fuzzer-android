@@ -51,12 +51,52 @@ if(is_ioctl_call == TRUE) {
 switch(ioctl_struct_type) {
 struct qseecom_register_listener_req *p0;
 struct qseecom_send_cmd_req *p1;
-struct qseecom_send_modfd_cmd_req *p2;
-struct qseecom_load_img_req *p3;
-struct qseecom_set_sb_mem_param_req *p4;
-struct qseecom_qseos_version_req *p5;
-struct qseecom_qseos_app_load_query *p6;
-struct venc_ioctl_msg *p7;
+struct qseecom_ion_fd_info *p2;
+struct qseecom_send_modfd_cmd_req *p3;
+struct qseecom_send_resp_req *p4;
+struct qseecom_load_img_req *p5;
+struct qseecom_set_sb_mem_param_req *p6;
+struct qseecom_qseos_version_req *p7;
+struct qseecom_qseos_app_load_query *p8;
+struct kgsl_devinfo *p9;
+struct kgsl_devmemstore *p10;
+struct kgsl_shadowprop *p11;
+struct kgsl_version *p12;
+struct kgsl_ibdesc *p13;
+struct kgsl_device_getproperty *p14;
+struct kgsl_device_waittimestamp *p15;
+struct kgsl_device_waittimestamp_ctxtid *p16;
+struct kgsl_ringbuffer_issueibcmds *p17;
+struct kgsl_cmdstream_readtimestamp *p18;
+struct kgsl_cmdstream_freememontimestamp *p19;
+struct kgsl_drawctxt_create *p20;
+struct kgsl_map_user_mem *p21;
+struct kgsl_cmdstream_readtimestamp_ctxtid *p22;
+struct kgsl_cmdstream_freememontimestamp_ctxtid *p23;
+struct kgsl_sharedmem_from_pmem *p24;
+struct kgsl_sharedmem_free *p25;
+struct kgsl_cff_user_event *p26;
+struct kgsl_gmem_desc *p27;
+struct kgsl_buffer_desc *p28;
+struct kgsl_bind_gmem_shadow *p29;
+struct kgsl_sharedmem_from_vmalloc *p30;
+struct kgsl_drawctxt_set_bin_base_offset *p31;
+struct kgsl_cmdwindow_write *p32;
+struct kgsl_cff_syncmem *p33;
+struct kgsl_timestamp_event *p34;
+struct kgsl_timestamp_event_genlock *p35;
+struct kgsl_timestamp_event_fence *p36;
+struct kgsl_gpumem_alloc_id *p37;
+struct kgsl_gpumem_free_id *p38;
+struct kgsl_gpumem_get_info *p39;
+struct kgsl_gpumem_sync_cache *p40;
+struct kgsl_perfcounter_get *p41;
+struct kgsl_perfcounter_put *p42;
+struct kgsl_perfcounter_query *p43;
+struct kgsl_perfcounter_read_group *p44;
+struct kgsl_perfcounter_read *p45;
+struct kgsl_drawctxt_destroy *p46;
+struct kgsl_gpumem_alloc *p47;
 case STRUCT_undefined:
 
 return;
@@ -69,10 +109,14 @@ return;
 
 p0 = (struct qseecom_register_listener_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_register_listener_req");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
 xmlTextWriterWriteBase64(writer, (char *) p0 , 0, sizeof(struct qseecom_register_listener_req));
 xmlTextWriterEndElement(writer);
 
+xmlTextWriterEndElement(writer);
+
 return;
+
 
 case STRUCT_qseecom_send_cmd_req:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_send_cmd_req)) < 0) {
@@ -82,10 +126,47 @@ return;
 
 p1 = (struct qseecom_send_cmd_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_send_cmd_req");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
 xmlTextWriterWriteBase64(writer, (char *) p1 , 0, sizeof(struct qseecom_send_cmd_req));
 xmlTextWriterEndElement(writer);
 
+// void pointer
+if(write(nullfd, (void *)(p1->cmd_req_buf), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_cmd_req_buf");
+xmlTextWriterWriteBase64(writer, (char *) (p1->cmd_req_buf), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_cmd_req_buf", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p1->resp_buf), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_resp_buf");
+xmlTextWriterWriteBase64(writer, (char *) (p1->resp_buf), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_resp_buf", "unmapped");
+xmlTextWriterEndElement(writer);
+
 return;
+
+
+case STRUCT_qseecom_ion_fd_info:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_ion_fd_info)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_qseecom_ion_fd_info", "unmapped");
+return;
+ }
+
+p2 = (struct qseecom_ion_fd_info *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_qseecom_ion_fd_info");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p2 , 0, sizeof(struct qseecom_ion_fd_info));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
 
 case STRUCT_qseecom_send_modfd_cmd_req:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_send_modfd_cmd_req)) < 0) {
@@ -93,12 +174,57 @@ xmlTextWriterWriteElement(writer, "STRUCT_qseecom_send_modfd_cmd_req", "unmapped
 return;
  }
 
-p2 = (struct qseecom_send_modfd_cmd_req *) arg_ptr;
+p3 = (struct qseecom_send_modfd_cmd_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_send_modfd_cmd_req");
-xmlTextWriterWriteBase64(writer, (char *) p2 , 0, sizeof(struct qseecom_send_modfd_cmd_req));
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p3 , 0, sizeof(struct qseecom_send_modfd_cmd_req));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p3->cmd_req_buf), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_cmd_req_buf");
+xmlTextWriterWriteBase64(writer, (char *) (p3->cmd_req_buf), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_cmd_req_buf", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p3->resp_buf), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_resp_buf");
+xmlTextWriterWriteBase64(writer, (char *) (p3->resp_buf), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_resp_buf", "unmapped");
 xmlTextWriterEndElement(writer);
 
 return;
+
+
+case STRUCT_qseecom_send_resp_req:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_send_resp_req)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_qseecom_send_resp_req", "unmapped");
+return;
+ }
+
+p4 = (struct qseecom_send_resp_req *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_qseecom_send_resp_req");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p4 , 0, sizeof(struct qseecom_send_resp_req));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p4->resp_buf), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_resp_buf");
+xmlTextWriterWriteBase64(writer, (char *) (p4->resp_buf), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_resp_buf", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
 
 case STRUCT_qseecom_load_img_req:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_load_img_req)) < 0) {
@@ -106,12 +232,16 @@ xmlTextWriterWriteElement(writer, "STRUCT_qseecom_load_img_req", "unmapped");
 return;
  }
 
-p3 = (struct qseecom_load_img_req *) arg_ptr;
+p5 = (struct qseecom_load_img_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_load_img_req");
-xmlTextWriterWriteBase64(writer, (char *) p3 , 0, sizeof(struct qseecom_load_img_req));
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p5 , 0, sizeof(struct qseecom_load_img_req));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;
+
 
 case STRUCT_qseecom_set_sb_mem_param_req:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_set_sb_mem_param_req)) < 0) {
@@ -119,12 +249,16 @@ xmlTextWriterWriteElement(writer, "STRUCT_qseecom_set_sb_mem_param_req", "unmapp
 return;
  }
 
-p4 = (struct qseecom_set_sb_mem_param_req *) arg_ptr;
+p6 = (struct qseecom_set_sb_mem_param_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_set_sb_mem_param_req");
-xmlTextWriterWriteBase64(writer, (char *) p4 , 0, sizeof(struct qseecom_set_sb_mem_param_req));
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p6 , 0, sizeof(struct qseecom_set_sb_mem_param_req));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;
+
 
 case STRUCT_qseecom_qseos_version_req:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_qseos_version_req)) < 0) {
@@ -132,12 +266,16 @@ xmlTextWriterWriteElement(writer, "STRUCT_qseecom_qseos_version_req", "unmapped"
 return;
  }
 
-p5 = (struct qseecom_qseos_version_req *) arg_ptr;
+p7 = (struct qseecom_qseos_version_req *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_qseos_version_req");
-xmlTextWriterWriteBase64(writer, (char *) p5 , 0, sizeof(struct qseecom_qseos_version_req));
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p7 , 0, sizeof(struct qseecom_qseos_version_req));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;
+
 
 case STRUCT_qseecom_qseos_app_load_query:
 if(write(nullfd, (void *) arg_ptr, sizeof(struct qseecom_qseos_app_load_query)) < 0) {
@@ -145,724 +283,859 @@ xmlTextWriterWriteElement(writer, "STRUCT_qseecom_qseos_app_load_query", "unmapp
 return;
  }
 
-p6 = (struct qseecom_qseos_app_load_query *) arg_ptr;
+p8 = (struct qseecom_qseos_app_load_query *) arg_ptr;
 xmlTextWriterStartElement(writer, "STRUCT_qseecom_qseos_app_load_query");
-xmlTextWriterWriteBase64(writer, (char *) p6 , 0, sizeof(struct qseecom_qseos_app_load_query));
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p8 , 0, sizeof(struct qseecom_qseos_app_load_query));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;
 
-case STRUCT_venc_ioctl_msg:
-if(write(nullfd, (void *) arg_ptr, sizeof(struct venc_ioctl_msg)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_venc_ioctl_msg", "unmapped");
+
+case STRUCT_kgsl_devinfo:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_devinfo)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_devinfo", "unmapped");
 return;
  }
 
-p7 = (struct venc_ioctl_msg *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_venc_ioctl_msg");
-xmlTextWriterWriteBase64(writer, (char *) p7 , 0, sizeof(struct venc_ioctl_msg));
+p9 = (struct kgsl_devinfo *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_devinfo");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p9 , 0, sizeof(struct kgsl_devinfo));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;
 
-default:
+
+case STRUCT_kgsl_devmemstore:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_devmemstore)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_devmemstore", "unmapped");
 return;
+ }
+
+p10 = (struct kgsl_devmemstore *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_devmemstore");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p10 , 0, sizeof(struct kgsl_devmemstore));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_shadowprop:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_shadowprop)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_shadowprop", "unmapped");
+return;
+ }
+
+p11 = (struct kgsl_shadowprop *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_shadowprop");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p11 , 0, sizeof(struct kgsl_shadowprop));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_version:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_version)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_version", "unmapped");
+return;
+ }
+
+p12 = (struct kgsl_version *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_version");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p12 , 0, sizeof(struct kgsl_version));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_ibdesc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_ibdesc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_ibdesc", "unmapped");
+return;
+ }
+
+p13 = (struct kgsl_ibdesc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_ibdesc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p13 , 0, sizeof(struct kgsl_ibdesc));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p13->hostptr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_hostptr");
+xmlTextWriterWriteBase64(writer, (char *) (p13->hostptr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_hostptr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_device_getproperty:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_device_getproperty)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_device_getproperty", "unmapped");
+return;
+ }
+
+p14 = (struct kgsl_device_getproperty *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_device_getproperty");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p14 , 0, sizeof(struct kgsl_device_getproperty));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p14->value), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_value");
+xmlTextWriterWriteBase64(writer, (char *) (p14->value), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_value", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_device_waittimestamp:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_device_waittimestamp)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_device_waittimestamp", "unmapped");
+return;
+ }
+
+p15 = (struct kgsl_device_waittimestamp *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_device_waittimestamp");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p15 , 0, sizeof(struct kgsl_device_waittimestamp));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_device_waittimestamp_ctxtid:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_device_waittimestamp_ctxtid)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_device_waittimestamp_ctxtid", "unmapped");
+return;
+ }
+
+p16 = (struct kgsl_device_waittimestamp_ctxtid *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_device_waittimestamp_ctxtid");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p16 , 0, sizeof(struct kgsl_device_waittimestamp_ctxtid));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_ringbuffer_issueibcmds:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_ringbuffer_issueibcmds)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_ringbuffer_issueibcmds", "unmapped");
+return;
+ }
+
+p17 = (struct kgsl_ringbuffer_issueibcmds *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_ringbuffer_issueibcmds");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p17 , 0, sizeof(struct kgsl_ringbuffer_issueibcmds));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p17->ibdesc_addr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_ibdesc_addr");
+xmlTextWriterWriteBase64(writer, (char *) (p17->ibdesc_addr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_ibdesc_addr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cmdstream_readtimestamp:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cmdstream_readtimestamp)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cmdstream_readtimestamp", "unmapped");
+return;
+ }
+
+p18 = (struct kgsl_cmdstream_readtimestamp *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cmdstream_readtimestamp");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p18 , 0, sizeof(struct kgsl_cmdstream_readtimestamp));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cmdstream_freememontimestamp:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cmdstream_freememontimestamp)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cmdstream_freememontimestamp", "unmapped");
+return;
+ }
+
+p19 = (struct kgsl_cmdstream_freememontimestamp *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cmdstream_freememontimestamp");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p19 , 0, sizeof(struct kgsl_cmdstream_freememontimestamp));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p19->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p19->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_drawctxt_create:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_drawctxt_create)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_drawctxt_create", "unmapped");
+return;
+ }
+
+p20 = (struct kgsl_drawctxt_create *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_drawctxt_create");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p20 , 0, sizeof(struct kgsl_drawctxt_create));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_map_user_mem:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_map_user_mem)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_map_user_mem", "unmapped");
+return;
+ }
+
+p21 = (struct kgsl_map_user_mem *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_map_user_mem");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p21 , 0, sizeof(struct kgsl_map_user_mem));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p21->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p21->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p21->hostptr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_hostptr");
+xmlTextWriterWriteBase64(writer, (char *) (p21->hostptr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_hostptr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cmdstream_readtimestamp_ctxtid:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cmdstream_readtimestamp_ctxtid)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cmdstream_readtimestamp_ctxtid", "unmapped");
+return;
+ }
+
+p22 = (struct kgsl_cmdstream_readtimestamp_ctxtid *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cmdstream_readtimestamp_ctxtid");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p22 , 0, sizeof(struct kgsl_cmdstream_readtimestamp_ctxtid));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cmdstream_freememontimestamp_ctxtid:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cmdstream_freememontimestamp_ctxtid)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cmdstream_freememontimestamp_ctxtid", "unmapped");
+return;
+ }
+
+p23 = (struct kgsl_cmdstream_freememontimestamp_ctxtid *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cmdstream_freememontimestamp_ctxtid");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p23 , 0, sizeof(struct kgsl_cmdstream_freememontimestamp_ctxtid));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p23->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p23->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_sharedmem_from_pmem:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_sharedmem_from_pmem)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_sharedmem_from_pmem", "unmapped");
+return;
+ }
+
+p24 = (struct kgsl_sharedmem_from_pmem *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_sharedmem_from_pmem");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p24 , 0, sizeof(struct kgsl_sharedmem_from_pmem));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p24->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p24->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_sharedmem_free:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_sharedmem_free)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_sharedmem_free", "unmapped");
+return;
+ }
+
+p25 = (struct kgsl_sharedmem_free *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_sharedmem_free");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p25 , 0, sizeof(struct kgsl_sharedmem_free));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p25->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p25->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cff_user_event:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cff_user_event)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cff_user_event", "unmapped");
+return;
+ }
+
+p26 = (struct kgsl_cff_user_event *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cff_user_event");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p26 , 0, sizeof(struct kgsl_cff_user_event));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gmem_desc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gmem_desc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gmem_desc", "unmapped");
+return;
+ }
+
+p27 = (struct kgsl_gmem_desc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gmem_desc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p27 , 0, sizeof(struct kgsl_gmem_desc));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_buffer_desc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_buffer_desc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_buffer_desc", "unmapped");
+return;
+ }
+
+p28 = (struct kgsl_buffer_desc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_buffer_desc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p28 , 0, sizeof(struct kgsl_buffer_desc));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p28->hostptr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_hostptr");
+xmlTextWriterWriteBase64(writer, (char *) (p28->hostptr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_hostptr", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p28->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p28->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_bind_gmem_shadow:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_bind_gmem_shadow)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_bind_gmem_shadow", "unmapped");
+return;
+ }
+
+p29 = (struct kgsl_bind_gmem_shadow *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_bind_gmem_shadow");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p29 , 0, sizeof(struct kgsl_bind_gmem_shadow));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_sharedmem_from_vmalloc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_sharedmem_from_vmalloc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_sharedmem_from_vmalloc", "unmapped");
+return;
+ }
+
+p30 = (struct kgsl_sharedmem_from_vmalloc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_sharedmem_from_vmalloc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p30 , 0, sizeof(struct kgsl_sharedmem_from_vmalloc));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p30->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p30->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p30->hostptr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_hostptr");
+xmlTextWriterWriteBase64(writer, (char *) (p30->hostptr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_hostptr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_drawctxt_set_bin_base_offset:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_drawctxt_set_bin_base_offset)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_drawctxt_set_bin_base_offset", "unmapped");
+return;
+ }
+
+p31 = (struct kgsl_drawctxt_set_bin_base_offset *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_drawctxt_set_bin_base_offset");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p31 , 0, sizeof(struct kgsl_drawctxt_set_bin_base_offset));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cmdwindow_write:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cmdwindow_write)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cmdwindow_write", "unmapped");
+return;
+ }
+
+p32 = (struct kgsl_cmdwindow_write *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cmdwindow_write");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p32 , 0, sizeof(struct kgsl_cmdwindow_write));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p32->addr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_addr");
+xmlTextWriterWriteBase64(writer, (char *) (p32->addr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_addr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_cff_syncmem:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_cff_syncmem)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_cff_syncmem", "unmapped");
+return;
+ }
+
+p33 = (struct kgsl_cff_syncmem *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_cff_syncmem");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p33 , 0, sizeof(struct kgsl_cff_syncmem));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p33->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p33->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_timestamp_event:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_timestamp_event)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_timestamp_event", "unmapped");
+return;
+ }
+
+p34 = (struct kgsl_timestamp_event *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_timestamp_event");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p34 , 0, sizeof(struct kgsl_timestamp_event));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p34->priv), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_priv");
+xmlTextWriterWriteBase64(writer, (char *) (p34->priv), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_priv", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_timestamp_event_genlock:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_timestamp_event_genlock)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_timestamp_event_genlock", "unmapped");
+return;
+ }
+
+p35 = (struct kgsl_timestamp_event_genlock *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_timestamp_event_genlock");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p35 , 0, sizeof(struct kgsl_timestamp_event_genlock));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_timestamp_event_fence:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_timestamp_event_fence)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_timestamp_event_fence", "unmapped");
+return;
+ }
+
+p36 = (struct kgsl_timestamp_event_fence *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_timestamp_event_fence");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p36 , 0, sizeof(struct kgsl_timestamp_event_fence));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gpumem_alloc_id:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gpumem_alloc_id)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gpumem_alloc_id", "unmapped");
+return;
+ }
+
+p37 = (struct kgsl_gpumem_alloc_id *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gpumem_alloc_id");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p37 , 0, sizeof(struct kgsl_gpumem_alloc_id));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p37->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p37->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gpumem_free_id:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gpumem_free_id)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gpumem_free_id", "unmapped");
+return;
+ }
+
+p38 = (struct kgsl_gpumem_free_id *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gpumem_free_id");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p38 , 0, sizeof(struct kgsl_gpumem_free_id));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gpumem_get_info:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gpumem_get_info)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gpumem_get_info", "unmapped");
+return;
+ }
+
+p39 = (struct kgsl_gpumem_get_info *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gpumem_get_info");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p39 , 0, sizeof(struct kgsl_gpumem_get_info));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p39->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p39->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p39->useraddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_useraddr");
+xmlTextWriterWriteBase64(writer, (char *) (p39->useraddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_useraddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gpumem_sync_cache:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gpumem_sync_cache)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gpumem_sync_cache", "unmapped");
+return;
+ }
+
+p40 = (struct kgsl_gpumem_sync_cache *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gpumem_sync_cache");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p40 , 0, sizeof(struct kgsl_gpumem_sync_cache));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p40->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p40->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_perfcounter_get:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_perfcounter_get)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_perfcounter_get", "unmapped");
+return;
+ }
+
+p41 = (struct kgsl_perfcounter_get *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_perfcounter_get");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p41 , 0, sizeof(struct kgsl_perfcounter_get));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_perfcounter_put:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_perfcounter_put)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_perfcounter_put", "unmapped");
+return;
+ }
+
+p42 = (struct kgsl_perfcounter_put *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_perfcounter_put");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p42 , 0, sizeof(struct kgsl_perfcounter_put));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_perfcounter_query:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_perfcounter_query)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_perfcounter_query", "unmapped");
+return;
+ }
+
+p43 = (struct kgsl_perfcounter_query *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_perfcounter_query");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p43 , 0, sizeof(struct kgsl_perfcounter_query));
+xmlTextWriterEndElement(writer);
+
+// pointer to primitive
+if(write(nullfd, (void *)(p43->countables), 4) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_countables");
+xmlTextWriterWriteBase64(writer, (char *) (p43->countables), 0, 4);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_countables", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_perfcounter_read_group:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_perfcounter_read_group)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_perfcounter_read_group", "unmapped");
+return;
+ }
+
+p44 = (struct kgsl_perfcounter_read_group *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_perfcounter_read_group");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p44 , 0, sizeof(struct kgsl_perfcounter_read_group));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_perfcounter_read:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_perfcounter_read)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_perfcounter_read", "unmapped");
+return;
+ }
+
+p45 = (struct kgsl_perfcounter_read *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_perfcounter_read");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p45 , 0, sizeof(struct kgsl_perfcounter_read));
+xmlTextWriterEndElement(writer);
+
+// Pointer to struct kgsl_perfcounter_read_group
+struct_recursive_analyze((void *)(p45->reads), TRUE, STRUCT_kgsl_perfcounter_read_group, 0, writer);
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_drawctxt_destroy:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_drawctxt_destroy)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_drawctxt_destroy", "unmapped");
+return;
+ }
+
+p46 = (struct kgsl_drawctxt_destroy *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_drawctxt_destroy");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p46 , 0, sizeof(struct kgsl_drawctxt_destroy));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_kgsl_gpumem_alloc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct kgsl_gpumem_alloc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_kgsl_gpumem_alloc", "unmapped");
+return;
+ }
+
+p47 = (struct kgsl_gpumem_alloc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_kgsl_gpumem_alloc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p47 , 0, sizeof(struct kgsl_gpumem_alloc));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p47->gpuaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_gpuaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p47->gpuaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+
 }
 }
-
-#ifdef LOLLIPOP
-
-switch(struct_argtype) {
-struct timeval timeval_s;
-struct timeval *timeval_p;
-
-struct timezone timezone_s;
-struct timezone *timezone_p;
-
-struct timex timex_s;
-struct timex *timex_p;
-
-struct tms tms_s;
-struct tms *tms_p;
-
-struct timespec timespec_s;
-struct timespec *timespec_p;
-
-struct itimerval itimerval_s;
-struct itimerval *itimerval_p;
-
-struct sigevent sigevent_s;
-struct sigevent *sigevent_p;
-
-struct itimerspec itimerspec_s;
-struct itimerspec *itimerspec_p;
-
-struct sched_param sched_param_s;
-struct sched_param *sched_param_p;
-
-struct kexec_segment kexec_segment_s;
-struct kexec_segment *kexec_segment_p;
-
-struct rusage rusage_s;
-struct rusage *rusage_p;
-
-struct siginfo siginfo_s;
-struct siginfo *siginfo_p;
-
-struct statfs statfs_s;
-struct statfs *statfs_p;
-
-struct statfs64 statfs64_s;
-struct statfs64 *statfs64_p;
-
-struct stat stat_s;
-struct stat *stat_p;
-
-struct ustat ustat_s;
-struct ustat *ustat_p;
-
-struct stat64 stat64_s;
-struct stat64 *stat64_p;
-
-struct io_event io_event_s;
-struct io_event *io_event_p;
-
-struct iocb iocb_s;
-struct iocb *iocb_p;
-
-struct utimbuf utimbuf_s;
-struct utimbuf *utimbuf_p;
-
-struct iovec iovec_s;
-struct iovec *iovec_p;
-
-struct linux_dirent linux_dirent_s;
-struct linux_dirent *linux_dirent_p;
-
-struct linux_dirent64 linux_dirent64_s;
-struct linux_dirent64 *linux_dirent64_p;
-
-struct sockaddr sockaddr_s;
-struct sockaddr *sockaddr_p;
-
-struct msghdr msghdr_s;
-struct msghdr *msghdr_p;
-
-struct mmsghdr mmsghdr_s;
-struct mmsghdr *mmsghdr_p;
-
-struct pollfd pollfd_s;
-struct pollfd *pollfd_p;
-
-struct sel_arg_struct sel_arg_struct_s;
-struct sel_arg_struct *sel_arg_struct_p;
-
-struct epoll_event epoll_event_s;
-struct epoll_event *epoll_event_p;
-
-struct new_utsname new_utsname_s;
-struct new_utsname *new_utsname_p;
-
-struct rlimit rlimit_s;
-struct rlimit *rlimit_p;
-
-struct rlimit64 rlimit64_s;
-struct rlimit64 *rlimit64_p;
-
-struct msgbuf msgbuf_s;
-struct msgbuf *msgbuf_p;
-
-struct msqid_ds msqid_ds_s;
-struct msqid_ds *msqid_ds_p;
-
-struct sembuf sembuf_s;
-struct sembuf *sembuf_p;
-
-struct shmid_ds shmid_ds_s;
-struct shmid_ds *shmid_ds_p;
-
-struct mq_attr mq_attr_s;
-struct mq_attr *mq_attr_p;
-
-struct __sysctl_args __sysctl_args_s;
-struct __sysctl_args *__sysctl_args_p;
-
-struct robust_list_head robust_list_head_s;
-struct robust_list_head *robust_list_head_p;
-
-struct getcpu_cache getcpu_cache_s;
-struct getcpu_cache *getcpu_cache_p;
-
-struct perf_event_attr perf_event_attr_s;
-struct perf_event_attr *perf_event_attr_p;
-
-struct mmap_arg_struct mmap_arg_struct_s;
-struct mmap_arg_struct *mmap_arg_struct_p;
-
-struct file_handle file_handle_s;
-struct file_handle *file_handle_p;
-
-case STRUCT_ARG_timeval:
-if(write(nullfd, (void *) arg_ptr, sizeof(timeval_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_timeval", "unmapped");
-return;
- }
-
-timeval_p = (struct timeval *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_timeval");
-xmlTextWriterWriteBase64(writer, (char *) timeval_p, 0, sizeof(timeval_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_timezone:
-if(write(nullfd, (void *) arg_ptr, sizeof(timezone_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_timezone", "unmapped");
-return;
- }
-
-timezone_p = (struct timezone *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_timezone");
-xmlTextWriterWriteBase64(writer, (char *) timezone_p, 0, sizeof(timezone_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_timex:
-if(write(nullfd, (void *) arg_ptr, sizeof(timex_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_timex", "unmapped");
-return;
- }
-
-timex_p = (struct timex *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_timex");
-xmlTextWriterWriteBase64(writer, (char *) timex_p, 0, sizeof(timex_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_tms:
-if(write(nullfd, (void *) arg_ptr, sizeof(tms_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_tms", "unmapped");
-return;
- }
-
-tms_p = (struct tms *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_tms");
-xmlTextWriterWriteBase64(writer, (char *) tms_p, 0, sizeof(tms_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_timespec:
-if(write(nullfd, (void *) arg_ptr, sizeof(timespec_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_timespec", "unmapped");
-return;
- }
-
-timespec_p = (struct timespec *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_timespec");
-xmlTextWriterWriteBase64(writer, (char *) timespec_p, 0, sizeof(timespec_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_itimerval:
-if(write(nullfd, (void *) arg_ptr, sizeof(itimerval_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_itimerval", "unmapped");
-return;
- }
-
-itimerval_p = (struct itimerval *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_itimerval");
-xmlTextWriterWriteBase64(writer, (char *) itimerval_p, 0, sizeof(itimerval_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_sigevent:
-if(write(nullfd, (void *) arg_ptr, sizeof(sigevent_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_sigevent", "unmapped");
-return;
- }
-
-sigevent_p = (struct sigevent *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_sigevent");
-xmlTextWriterWriteBase64(writer, (char *) sigevent_p, 0, sizeof(sigevent_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_itimerspec:
-if(write(nullfd, (void *) arg_ptr, sizeof(itimerspec_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_itimerspec", "unmapped");
-return;
- }
-
-itimerspec_p = (struct itimerspec *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_itimerspec");
-xmlTextWriterWriteBase64(writer, (char *) itimerspec_p, 0, sizeof(itimerspec_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_sched_param:
-if(write(nullfd, (void *) arg_ptr, sizeof(sched_param_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_sched_param", "unmapped");
-return;
- }
-
-sched_param_p = (struct sched_param *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_sched_param");
-xmlTextWriterWriteBase64(writer, (char *) sched_param_p, 0, sizeof(sched_param_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_kexec_segment:
-if(write(nullfd, (void *) arg_ptr, sizeof(kexec_segment_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_kexec_segment", "unmapped");
-return;
- }
-
-kexec_segment_p = (struct kexec_segment *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_kexec_segment");
-xmlTextWriterWriteBase64(writer, (char *) kexec_segment_p, 0, sizeof(kexec_segment_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_rusage:
-if(write(nullfd, (void *) arg_ptr, sizeof(rusage_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_rusage", "unmapped");
-return;
- }
-
-rusage_p = (struct rusage *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_rusage");
-xmlTextWriterWriteBase64(writer, (char *) rusage_p, 0, sizeof(rusage_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_siginfo:
-if(write(nullfd, (void *) arg_ptr, sizeof(siginfo_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_siginfo", "unmapped");
-return;
- }
-
-siginfo_p = (struct siginfo *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_siginfo");
-xmlTextWriterWriteBase64(writer, (char *) siginfo_p, 0, sizeof(siginfo_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_statfs:
-if(write(nullfd, (void *) arg_ptr, sizeof(statfs_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_statfs", "unmapped");
-return;
- }
-
-statfs_p = (struct statfs *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_statfs");
-xmlTextWriterWriteBase64(writer, (char *) statfs_p, 0, sizeof(statfs_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_statfs64:
-if(write(nullfd, (void *) arg_ptr, sizeof(statfs64_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_statfs64", "unmapped");
-return;
- }
-
-statfs64_p = (struct statfs64 *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_statfs64");
-xmlTextWriterWriteBase64(writer, (char *) statfs64_p, 0, sizeof(statfs64_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_stat:
-if(write(nullfd, (void *) arg_ptr, sizeof(stat_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_stat", "unmapped");
-return;
- }
-
-stat_p = (struct stat *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_stat");
-xmlTextWriterWriteBase64(writer, (char *) stat_p, 0, sizeof(stat_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_ustat:
-if(write(nullfd, (void *) arg_ptr, sizeof(ustat_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_ustat", "unmapped");
-return;
- }
-
-ustat_p = (struct ustat *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_ustat");
-xmlTextWriterWriteBase64(writer, (char *) ustat_p, 0, sizeof(ustat_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_stat64:
-if(write(nullfd, (void *) arg_ptr, sizeof(stat64_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_stat64", "unmapped");
-return;
- }
-
-stat64_p = (struct stat64 *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_stat64");
-xmlTextWriterWriteBase64(writer, (char *) stat64_p, 0, sizeof(stat64_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_io_event:
-if(write(nullfd, (void *) arg_ptr, sizeof(io_event_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_io_event", "unmapped");
-return;
- }
-
-io_event_p = (struct io_event *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_io_event");
-xmlTextWriterWriteBase64(writer, (char *) io_event_p, 0, sizeof(io_event_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_iocb:
-if(write(nullfd, (void *) arg_ptr, sizeof(iocb_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_iocb", "unmapped");
-return;
- }
-
-iocb_p = (struct iocb *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_iocb");
-xmlTextWriterWriteBase64(writer, (char *) iocb_p, 0, sizeof(iocb_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_utimbuf:
-if(write(nullfd, (void *) arg_ptr, sizeof(utimbuf_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_utimbuf", "unmapped");
-return;
- }
-
-utimbuf_p = (struct utimbuf *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_utimbuf");
-xmlTextWriterWriteBase64(writer, (char *) utimbuf_p, 0, sizeof(utimbuf_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_iovec:
-if(write(nullfd, (void *) arg_ptr, sizeof(iovec_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_iovec", "unmapped");
-return;
- }
-
-iovec_p = (struct iovec *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_iovec");
-xmlTextWriterWriteBase64(writer, (char *) iovec_p, 0, sizeof(iovec_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_linux_dirent:
-if(write(nullfd, (void *) arg_ptr, sizeof(linux_dirent_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_linux_dirent", "unmapped");
-return;
- }
-
-linux_dirent_p = (struct linux_dirent *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_linux_dirent");
-xmlTextWriterWriteBase64(writer, (char *) linux_dirent_p, 0, sizeof(linux_dirent_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_linux_dirent64:
-if(write(nullfd, (void *) arg_ptr, sizeof(linux_dirent64_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_linux_dirent64", "unmapped");
-return;
- }
-
-linux_dirent64_p = (struct linux_dirent64 *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_linux_dirent64");
-xmlTextWriterWriteBase64(writer, (char *) linux_dirent64_p, 0, sizeof(linux_dirent64_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_sockaddr:
-if(write(nullfd, (void *) arg_ptr, sizeof(sockaddr_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_sockaddr", "unmapped");
-return;
- }
-
-sockaddr_p = (struct sockaddr *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_sockaddr");
-xmlTextWriterWriteBase64(writer, (char *) sockaddr_p, 0, sizeof(sockaddr_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_msghdr:
-if(write(nullfd, (void *) arg_ptr, sizeof(msghdr_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_msghdr", "unmapped");
-return;
- }
-
-msghdr_p = (struct msghdr *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_msghdr");
-xmlTextWriterWriteBase64(writer, (char *) msghdr_p, 0, sizeof(msghdr_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_mmsghdr:
-if(write(nullfd, (void *) arg_ptr, sizeof(mmsghdr_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_mmsghdr", "unmapped");
-return;
- }
-
-mmsghdr_p = (struct mmsghdr *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_mmsghdr");
-xmlTextWriterWriteBase64(writer, (char *) mmsghdr_p, 0, sizeof(mmsghdr_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_pollfd:
-if(write(nullfd, (void *) arg_ptr, sizeof(pollfd_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_pollfd", "unmapped");
-return;
- }
-
-pollfd_p = (struct pollfd *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_pollfd");
-xmlTextWriterWriteBase64(writer, (char *) pollfd_p, 0, sizeof(pollfd_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_sel_arg_struct:
-if(write(nullfd, (void *) arg_ptr, sizeof(sel_arg_struct_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_sel_arg_struct", "unmapped");
-return;
- }
-
-sel_arg_struct_p = (struct sel_arg_struct *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_sel_arg_struct");
-xmlTextWriterWriteBase64(writer, (char *) sel_arg_struct_p, 0, sizeof(sel_arg_struct_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_epoll_event:
-if(write(nullfd, (void *) arg_ptr, sizeof(epoll_event_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_epoll_event", "unmapped");
-return;
- }
-
-epoll_event_p = (struct epoll_event *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_epoll_event");
-xmlTextWriterWriteBase64(writer, (char *) epoll_event_p, 0, sizeof(epoll_event_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_new_utsname:
-if(write(nullfd, (void *) arg_ptr, sizeof(new_utsname_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_new_utsname", "unmapped");
-return;
- }
-
-new_utsname_p = (struct new_utsname *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_new_utsname");
-xmlTextWriterWriteBase64(writer, (char *) new_utsname_p, 0, sizeof(new_utsname_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_rlimit:
-if(write(nullfd, (void *) arg_ptr, sizeof(rlimit_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_rlimit", "unmapped");
-return;
- }
-
-rlimit_p = (struct rlimit *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_rlimit");
-xmlTextWriterWriteBase64(writer, (char *) rlimit_p, 0, sizeof(rlimit_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_rlimit64:
-if(write(nullfd, (void *) arg_ptr, sizeof(rlimit64_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_rlimit64", "unmapped");
-return;
- }
-
-rlimit64_p = (struct rlimit64 *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_rlimit64");
-xmlTextWriterWriteBase64(writer, (char *) rlimit64_p, 0, sizeof(rlimit64_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_msgbuf:
-if(write(nullfd, (void *) arg_ptr, sizeof(msgbuf_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_msgbuf", "unmapped");
-return;
- }
-
-msgbuf_p = (struct msgbuf *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_msgbuf");
-xmlTextWriterWriteBase64(writer, (char *) msgbuf_p, 0, sizeof(msgbuf_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_msqid_ds:
-if(write(nullfd, (void *) arg_ptr, sizeof(msqid_ds_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_msqid_ds", "unmapped");
-return;
- }
-
-msqid_ds_p = (struct msqid_ds *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_msqid_ds");
-xmlTextWriterWriteBase64(writer, (char *) msqid_ds_p, 0, sizeof(msqid_ds_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_sembuf:
-if(write(nullfd, (void *) arg_ptr, sizeof(sembuf_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_sembuf", "unmapped");
-return;
- }
-
-sembuf_p = (struct sembuf *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_sembuf");
-xmlTextWriterWriteBase64(writer, (char *) sembuf_p, 0, sizeof(sembuf_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_shmid_ds:
-if(write(nullfd, (void *) arg_ptr, sizeof(shmid_ds_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_shmid_ds", "unmapped");
-return;
- }
-
-shmid_ds_p = (struct shmid_ds *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_shmid_ds");
-xmlTextWriterWriteBase64(writer, (char *) shmid_ds_p, 0, sizeof(shmid_ds_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_mq_attr:
-if(write(nullfd, (void *) arg_ptr, sizeof(mq_attr_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_mq_attr", "unmapped");
-return;
- }
-
-mq_attr_p = (struct mq_attr *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_mq_attr");
-xmlTextWriterWriteBase64(writer, (char *) mq_attr_p, 0, sizeof(mq_attr_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG___sysctl_args:
-if(write(nullfd, (void *) arg_ptr, sizeof(__sysctl_args_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT___sysctl_args", "unmapped");
-return;
- }
-
-__sysctl_args_p = (struct __sysctl_args *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT___sysctl_args");
-xmlTextWriterWriteBase64(writer, (char *) __sysctl_args_p, 0, sizeof(__sysctl_args_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_robust_list_head:
-if(write(nullfd, (void *) arg_ptr, sizeof(robust_list_head_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_robust_list_head", "unmapped");
-return;
- }
-
-robust_list_head_p = (struct robust_list_head *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_robust_list_head");
-xmlTextWriterWriteBase64(writer, (char *) robust_list_head_p, 0, sizeof(robust_list_head_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_getcpu_cache:
-if(write(nullfd, (void *) arg_ptr, sizeof(getcpu_cache_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_getcpu_cache", "unmapped");
-return;
- }
-
-getcpu_cache_p = (struct getcpu_cache *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_getcpu_cache");
-xmlTextWriterWriteBase64(writer, (char *) getcpu_cache_p, 0, sizeof(getcpu_cache_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_perf_event_attr:
-if(write(nullfd, (void *) arg_ptr, sizeof(perf_event_attr_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_perf_event_attr", "unmapped");
-return;
- }
-
-perf_event_attr_p = (struct perf_event_attr *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_perf_event_attr");
-xmlTextWriterWriteBase64(writer, (char *) perf_event_attr_p, 0, sizeof(perf_event_attr_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_mmap_arg_struct:
-if(write(nullfd, (void *) arg_ptr, sizeof(mmap_arg_struct_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_mmap_arg_struct", "unmapped");
-return;
- }
-
-mmap_arg_struct_p = (struct mmap_arg_struct *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_mmap_arg_struct");
-xmlTextWriterWriteBase64(writer, (char *) mmap_arg_struct_p, 0, sizeof(mmap_arg_struct_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-case STRUCT_ARG_file_handle:
-if(write(nullfd, (void *) arg_ptr, sizeof(file_handle_s)) < 0) {
-xmlTextWriterWriteElement(writer, "STRUCT_file_handle", "unmapped");
-return;
- }
-
-file_handle_p = (struct file_handle *) arg_ptr;
-xmlTextWriterStartElement(writer, "STRUCT_file_handle");
-xmlTextWriterWriteBase64(writer, (char *) file_handle_p, 0, sizeof(file_handle_s));
-xmlTextWriterEndElement(writer);
-
-break;
-
-default:
-break;
-}
-#endif
 }
