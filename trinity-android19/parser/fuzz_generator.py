@@ -15,7 +15,11 @@ primitive = [
   ["char"],
   ["unsigned int"],
   ["unsigned long"],
-  ["size_t"]
+  ["size_t"],
+  ["__u32"],
+  ["__s32"],
+  ["__u16"],
+  ["__u8"]
 ]
 
 

@@ -62,6 +62,71 @@ struct kgsl_perfcounter_read_group *p44;
 struct kgsl_perfcounter_read *p45;
 struct kgsl_drawctxt_destroy *p46;
 struct kgsl_gpumem_alloc *p47;
+struct mc_ioctl_init *p48;
+struct mc_ioctl_info *p49;
+struct mc_ioctl_map *p50;
+struct mc_ioctl_reg_wsm *p51;
+struct mc_ioctl_execute *p52;
+struct mc_ioctl_resolv_cont_wsm *p53;
+struct mc_ioctl_resolv_wsm *p54;
+struct msm_jpeg_ctrl_cmd *p55;
+struct msm_jpeg_buf *p56;
+struct msm_jpeg_hw_cmd *p57;
+struct msm_jpeg_hw_cmds *p58;
+struct timespec *p59;
+struct v4l2_capability *p60;
+struct v4l2_fmtdesc *p61;
+struct v4l2_rect *p62;
+struct v4l2_clip *p63;
+struct v4l2_window *p64;
+struct v4l2_format *p65;
+struct v4l2_requestbuffers *p66;
+struct v4l2_timecode *p67;
+struct v4l2_plane *p68;
+struct timeval *p69;
+struct v4l2_buffer *p70;
+struct v4l2_plane_pix_format *p71;
+struct v4l2_pix_format_mplane *p72;
+struct v4l2_pix_format *p73;
+struct v4l2_framebuffer *p74;
+struct v4l2_streamparm *p75;
+struct v4l2_fract *p76;
+struct v4l2_standard *p77;
+struct v4l2_input *p78;
+struct v4l2_control *p79;
+struct v4l2_tuner *p80;
+struct v4l2_modulator *p81;
+struct v4l2_audio *p82;
+struct v4l2_queryctrl *p83;
+struct v4l2_querymenu *p84;
+struct v4l2_outputparm *p85;
+struct v4l2_audioout *p86;
+struct v4l2_frequency *p87;
+struct v4l2_cropcap *p88;
+struct v4l2_crop *p89;
+struct v4l2_jpegcompression *p90;
+struct v4l2_sliced_vbi_cap *p91;
+struct v4l2_ext_controls *p92;
+struct v4l2_frmsize_stepwise *p93;
+struct v4l2_frmsizeenum *p94;
+struct v4l2_frmival_stepwise *p95;
+struct v4l2_frmivalenum *p96;
+struct v4l2_enc_idx_entry *p97;
+struct v4l2_enc_idx *p98;
+struct v4l2_encoder_cmd *p99;
+struct v4l2_dbg_match *p100;
+struct v4l2_dbg_register *p101;
+struct v4l2_dbg_chip_ident *p102;
+struct v4l2_hw_freq_seek *p103;
+struct v4l2_dv_enum_preset *p104;
+struct v4l2_dv_preset *p105;
+struct v4l2_dv_timings *p106;
+struct v4l2_event *p107;
+struct v4l2_event_subscription *p108;
+struct v4l2_create_buffers *p109;
+struct v4l2_selection *p110;
+struct v4l2_decoder_cmd *p111;
+struct v4l2_output *p112;
 
 
 case STRUCT_qseecom_register_listener_req:
@@ -768,6 +833,1101 @@ p47->gpuaddr = (void *) get_non_null_address();
 //size is primitive
 //flags is primitive
 return p47;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_init:
+if(local_addr != NULL)
+p48 = (struct mc_ioctl_init *)local_addr;
+else
+p48 = (struct mc_ioctl_init *)get_writable_address(sizeof(struct mc_ioctl_init));
+if(p48) {
+//nq_offset is primitive
+//nq_length is primitive
+//mcp_offset is primitive
+//mcp_length is primitive
+return p48;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_info:
+if(local_addr != NULL)
+p49 = (struct mc_ioctl_info *)local_addr;
+else
+p49 = (struct mc_ioctl_info *)get_writable_address(sizeof(struct mc_ioctl_info));
+if(p49) {
+//ext_info_id is primitive
+//state is primitive
+//ext_info is primitive
+return p49;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_map:
+if(local_addr != NULL)
+p50 = (struct mc_ioctl_map *)local_addr;
+else
+p50 = (struct mc_ioctl_map *)get_writable_address(sizeof(struct mc_ioctl_map));
+if(p50) {
+//len is primitive
+//handle is primitive
+p50->addr = (void *) get_non_null_address();
+p50->phys_addr = (void *) get_non_null_address();
+//reused is primitive
+return p50;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_reg_wsm:
+if(local_addr != NULL)
+p51 = (struct mc_ioctl_reg_wsm *)local_addr;
+else
+p51 = (struct mc_ioctl_reg_wsm *)get_writable_address(sizeof(struct mc_ioctl_reg_wsm));
+if(p51) {
+//len is primitive
+//pid is primitive
+//handle is primitive
+p51->table_phys = (void *) get_non_null_address();
+return p51;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_execute:
+if(local_addr != NULL)
+p52 = (struct mc_ioctl_execute *)local_addr;
+else
+p52 = (struct mc_ioctl_execute *)get_writable_address(sizeof(struct mc_ioctl_execute));
+if(p52) {
+p52->phys_start_addr = (void *) get_non_null_address();
+//length is primitive
+return p52;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_resolv_cont_wsm:
+if(local_addr != NULL)
+p53 = (struct mc_ioctl_resolv_cont_wsm *)local_addr;
+else
+p53 = (struct mc_ioctl_resolv_cont_wsm *)get_writable_address(sizeof(struct mc_ioctl_resolv_cont_wsm));
+if(p53) {
+//handle is primitive
+p53->phys = (void *) get_non_null_address();
+//length is primitive
+//fd is primitive
+return p53;
+}
+return get_non_null_address();
+
+
+case STRUCT_mc_ioctl_resolv_wsm:
+if(local_addr != NULL)
+p54 = (struct mc_ioctl_resolv_wsm *)local_addr;
+else
+p54 = (struct mc_ioctl_resolv_wsm *)get_writable_address(sizeof(struct mc_ioctl_resolv_wsm));
+if(p54) {
+//handle is primitive
+//fd is primitive
+p54->phys = (void *) get_non_null_address();
+return p54;
+}
+return get_non_null_address();
+
+
+case STRUCT_msm_jpeg_ctrl_cmd:
+if(local_addr != NULL)
+p55 = (struct msm_jpeg_ctrl_cmd *)local_addr;
+else
+p55 = (struct msm_jpeg_ctrl_cmd *)get_writable_address(sizeof(struct msm_jpeg_ctrl_cmd));
+if(p55) {
+//type is primitive
+//len is primitive
+p55->value = (void *) get_non_null_address();
+return p55;
+}
+return get_non_null_address();
+
+
+case STRUCT_msm_jpeg_buf:
+if(local_addr != NULL)
+p56 = (struct msm_jpeg_buf *)local_addr;
+else
+p56 = (struct msm_jpeg_buf *)get_writable_address(sizeof(struct msm_jpeg_buf));
+if(p56) {
+//type is primitive
+//fd is primitive
+p56->vaddr = (void *) get_non_null_address();
+//y_off is primitive
+//y_len is primitive
+//framedone_len is primitive
+//cbcr_off is primitive
+//cbcr_len is primitive
+//num_of_mcu_rows is primitive
+//offset is primitive
+//pln2_off is primitive
+//pln2_len is primitive
+return p56;
+}
+return get_non_null_address();
+
+
+case STRUCT_msm_jpeg_hw_cmd:
+if(local_addr != NULL)
+p57 = (struct msm_jpeg_hw_cmd *)local_addr;
+else
+p57 = (struct msm_jpeg_hw_cmd *)get_writable_address(sizeof(struct msm_jpeg_hw_cmd));
+if(p57) {
+//type is primitive
+//n is primitive
+//offset is primitive
+//mask is primitive
+p57->pdata = (uint32_t *) get_writable_address(sizeof(uint32_t));
+return p57;
+}
+return get_non_null_address();
+
+
+case STRUCT_msm_jpeg_hw_cmds:
+if(local_addr != NULL)
+p58 = (struct msm_jpeg_hw_cmds *)local_addr;
+else
+p58 = (struct msm_jpeg_hw_cmds *)get_writable_address(sizeof(struct msm_jpeg_hw_cmds));
+if(p58) {
+//m is primitive
+recursive_fuzz(STRUCT_msm_jpeg_hw_cmd, &p58->hw_cmd);
+return p58;
+}
+return get_non_null_address();
+
+
+case STRUCT_timespec:
+if(local_addr != NULL)
+p59 = (struct timespec *)local_addr;
+else
+p59 = (struct timespec *)get_writable_address(sizeof(struct timespec));
+if(p59) {
+return p59;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_capability:
+if(local_addr != NULL)
+p60 = (struct v4l2_capability *)local_addr;
+else
+p60 = (struct v4l2_capability *)get_writable_address(sizeof(struct v4l2_capability));
+if(p60) {
+//driver is an array of __u8 of 16 elements
+//card is an array of __u8 of 32 elements
+//bus_info is an array of __u8 of 32 elements
+//version is primitive
+//capabilities is primitive
+//device_caps is primitive
+//reserved is an array of __u32 of 3 elements
+return p60;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_fmtdesc:
+if(local_addr != NULL)
+p61 = (struct v4l2_fmtdesc *)local_addr;
+else
+p61 = (struct v4l2_fmtdesc *)get_writable_address(sizeof(struct v4l2_fmtdesc));
+if(p61) {
+//index is primitive
+//enum v4l2_buf_type;
+//flags is primitive
+//description is an array of __u8 of 32 elements
+//pixelformat is primitive
+//reserved is an array of __u32 of 4 elements
+return p61;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_rect:
+if(local_addr != NULL)
+p62 = (struct v4l2_rect *)local_addr;
+else
+p62 = (struct v4l2_rect *)get_writable_address(sizeof(struct v4l2_rect));
+if(p62) {
+//left is primitive
+//top is primitive
+//width is primitive
+//height is primitive
+return p62;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_clip:
+if(local_addr != NULL)
+p63 = (struct v4l2_clip *)local_addr;
+else
+p63 = (struct v4l2_clip *)get_writable_address(sizeof(struct v4l2_clip));
+if(p63) {
+recursive_fuzz(STRUCT_v4l2_rect, &p63->c);
+p63->next = (void *) get_non_null_address();
+return p63;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_window:
+if(local_addr != NULL)
+p64 = (struct v4l2_window *)local_addr;
+else
+p64 = (struct v4l2_window *)get_writable_address(sizeof(struct v4l2_window));
+if(p64) {
+recursive_fuzz(STRUCT_v4l2_rect, &p64->w);
+//enum v4l2_field;
+//chromakey is primitive
+p64->clips = (struct v4l2_clip *) recursive_fuzz(STRUCT_v4l2_clip, NULL);
+//clipcount is primitive
+p64->bitmap = (void *) get_non_null_address();
+//global_alpha is primitive
+return p64;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_format:
+if(local_addr != NULL)
+p65 = (struct v4l2_format *)local_addr;
+else
+p65 = (struct v4l2_format *)get_writable_address(sizeof(struct v4l2_format));
+if(p65) {
+//enum v4l2_buf_type;
+recursive_fuzz(STRUCT_v4l2_window, &p65->win);
+return p65;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_requestbuffers:
+if(local_addr != NULL)
+p66 = (struct v4l2_requestbuffers *)local_addr;
+else
+p66 = (struct v4l2_requestbuffers *)get_writable_address(sizeof(struct v4l2_requestbuffers));
+if(p66) {
+//count is primitive
+//enum v4l2_buf_type;
+//enum v4l2_memory;
+//reserved is an array of __u32 of 2 elements
+return p66;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_timecode:
+if(local_addr != NULL)
+p67 = (struct v4l2_timecode *)local_addr;
+else
+p67 = (struct v4l2_timecode *)get_writable_address(sizeof(struct v4l2_timecode));
+if(p67) {
+//type is primitive
+//flags is primitive
+//frames is primitive
+//seconds is primitive
+//minutes is primitive
+//hours is primitive
+//userbits is an array of __u8 of 4 elements
+return p67;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_plane:
+if(local_addr != NULL)
+p68 = (struct v4l2_plane *)local_addr;
+else
+p68 = (struct v4l2_plane *)get_writable_address(sizeof(struct v4l2_plane));
+if(p68) {
+//bytesused is primitive
+//length is primitive
+p68->userptr = (void *) get_non_null_address();
+//data_offset is primitive
+//reserved is an array of __u32 of 11 elements
+return p68;
+}
+return get_non_null_address();
+
+
+case STRUCT_timeval:
+if(local_addr != NULL)
+p69 = (struct timeval *)local_addr;
+else
+p69 = (struct timeval *)get_writable_address(sizeof(struct timeval));
+if(p69) {
+return p69;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_buffer:
+if(local_addr != NULL)
+p70 = (struct v4l2_buffer *)local_addr;
+else
+p70 = (struct v4l2_buffer *)get_writable_address(sizeof(struct v4l2_buffer));
+if(p70) {
+//index is primitive
+//enum v4l2_buf_type;
+//bytesused is primitive
+//flags is primitive
+//enum v4l2_field;
+recursive_fuzz(STRUCT_timeval, &p70->timestamp);
+recursive_fuzz(STRUCT_v4l2_timecode, &p70->timecode);
+//sequence is primitive
+//enum v4l2_memory;
+p70->planes = (struct v4l2_plane *) recursive_fuzz(STRUCT_v4l2_plane, NULL);
+//length is primitive
+//input is primitive
+//reserved is primitive
+return p70;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_plane_pix_format:
+if(local_addr != NULL)
+p71 = (struct v4l2_plane_pix_format *)local_addr;
+else
+p71 = (struct v4l2_plane_pix_format *)get_writable_address(sizeof(struct v4l2_plane_pix_format));
+if(p71) {
+//sizeimage is primitive
+//bytesperline is primitive
+//reserved is an array of __u16 of 7 elements
+return p71;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_pix_format_mplane:
+if(local_addr != NULL)
+p72 = (struct v4l2_pix_format_mplane *)local_addr;
+else
+p72 = (struct v4l2_pix_format_mplane *)get_writable_address(sizeof(struct v4l2_pix_format_mplane));
+if(p72) {
+//width is primitive
+//height is primitive
+//pixelformat is primitive
+//enum v4l2_field;
+//enum v4l2_colorspace;
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[0]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[1]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[2]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[3]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[4]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[5]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[6]);
+recursive_fuzz(STRUCT_v4l2_plane_pix_format, &p72->plane_fmt[7]);
+//plane_fmt is an array of v4l2_plane_pix_format of 8 elements
+//num_planes is primitive
+//reserved is an array of __u8 of 11 elements
+return p72;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_pix_format:
+if(local_addr != NULL)
+p73 = (struct v4l2_pix_format *)local_addr;
+else
+p73 = (struct v4l2_pix_format *)get_writable_address(sizeof(struct v4l2_pix_format));
+if(p73) {
+//width is primitive
+//height is primitive
+//pixelformat is primitive
+//enum v4l2_field;
+//bytesperline is primitive
+//sizeimage is primitive
+//enum v4l2_colorspace;
+//priv is primitive
+return p73;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_framebuffer:
+if(local_addr != NULL)
+p74 = (struct v4l2_framebuffer *)local_addr;
+else
+p74 = (struct v4l2_framebuffer *)get_writable_address(sizeof(struct v4l2_framebuffer));
+if(p74) {
+//capability is primitive
+//flags is primitive
+p74->base = (void *) get_non_null_address();
+recursive_fuzz(STRUCT_v4l2_pix_format, &p74->fmt);
+return p74;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_streamparm:
+if(local_addr != NULL)
+p75 = (struct v4l2_streamparm *)local_addr;
+else
+p75 = (struct v4l2_streamparm *)get_writable_address(sizeof(struct v4l2_streamparm));
+if(p75) {
+//enum v4l2_buf_type;
+//raw_data is an array of __u8 of 200 elements
+return p75;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_fract:
+if(local_addr != NULL)
+p76 = (struct v4l2_fract *)local_addr;
+else
+p76 = (struct v4l2_fract *)get_writable_address(sizeof(struct v4l2_fract));
+if(p76) {
+//numerator is primitive
+//denominator is primitive
+return p76;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_standard:
+if(local_addr != NULL)
+p77 = (struct v4l2_standard *)local_addr;
+else
+p77 = (struct v4l2_standard *)get_writable_address(sizeof(struct v4l2_standard));
+if(p77) {
+//index is primitive
+//name is an array of __u8 of 24 elements
+recursive_fuzz(STRUCT_v4l2_fract, &p77->frameperiod);
+//framelines is primitive
+//reserved is an array of __u32 of 4 elements
+return p77;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_input:
+if(local_addr != NULL)
+p78 = (struct v4l2_input *)local_addr;
+else
+p78 = (struct v4l2_input *)get_writable_address(sizeof(struct v4l2_input));
+if(p78) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//type is primitive
+//audioset is primitive
+//tuner is primitive
+//status is primitive
+//capabilities is primitive
+//reserved is an array of __u32 of 3 elements
+return p78;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_control:
+if(local_addr != NULL)
+p79 = (struct v4l2_control *)local_addr;
+else
+p79 = (struct v4l2_control *)get_writable_address(sizeof(struct v4l2_control));
+if(p79) {
+//id is primitive
+//value is primitive
+return p79;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_tuner:
+if(local_addr != NULL)
+p80 = (struct v4l2_tuner *)local_addr;
+else
+p80 = (struct v4l2_tuner *)get_writable_address(sizeof(struct v4l2_tuner));
+if(p80) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//enum v4l2_tuner_type;
+//capability is primitive
+//rangelow is primitive
+//rangehigh is primitive
+//rxsubchans is primitive
+//audmode is primitive
+//signal is primitive
+//afc is primitive
+//reserved is an array of __u32 of 4 elements
+return p80;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_modulator:
+if(local_addr != NULL)
+p81 = (struct v4l2_modulator *)local_addr;
+else
+p81 = (struct v4l2_modulator *)get_writable_address(sizeof(struct v4l2_modulator));
+if(p81) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//capability is primitive
+//rangelow is primitive
+//rangehigh is primitive
+//txsubchans is primitive
+//reserved is an array of __u32 of 4 elements
+return p81;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_audio:
+if(local_addr != NULL)
+p82 = (struct v4l2_audio *)local_addr;
+else
+p82 = (struct v4l2_audio *)get_writable_address(sizeof(struct v4l2_audio));
+if(p82) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//capability is primitive
+//mode is primitive
+//reserved is an array of __u32 of 2 elements
+return p82;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_queryctrl:
+if(local_addr != NULL)
+p83 = (struct v4l2_queryctrl *)local_addr;
+else
+p83 = (struct v4l2_queryctrl *)get_writable_address(sizeof(struct v4l2_queryctrl));
+if(p83) {
+//id is primitive
+//enum v4l2_ctrl_type;
+//name is an array of __u8 of 32 elements
+//minimum is primitive
+//maximum is primitive
+//step is primitive
+//default_value is primitive
+//flags is primitive
+//reserved is an array of __u32 of 2 elements
+return p83;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_querymenu:
+if(local_addr != NULL)
+p84 = (struct v4l2_querymenu *)local_addr;
+else
+p84 = (struct v4l2_querymenu *)get_writable_address(sizeof(struct v4l2_querymenu));
+if(p84) {
+//id is primitive
+//index is primitive
+//name is an array of __u8 of 32 elements
+//reserved is primitive
+return p84;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_outputparm:
+if(local_addr != NULL)
+p85 = (struct v4l2_outputparm *)local_addr;
+else
+p85 = (struct v4l2_outputparm *)get_writable_address(sizeof(struct v4l2_outputparm));
+if(p85) {
+//capability is primitive
+//outputmode is primitive
+recursive_fuzz(STRUCT_v4l2_fract, &p85->timeperframe);
+//extendedmode is primitive
+//writebuffers is primitive
+//reserved is an array of __u32 of 4 elements
+return p85;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_audioout:
+if(local_addr != NULL)
+p86 = (struct v4l2_audioout *)local_addr;
+else
+p86 = (struct v4l2_audioout *)get_writable_address(sizeof(struct v4l2_audioout));
+if(p86) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//capability is primitive
+//mode is primitive
+//reserved is an array of __u32 of 2 elements
+return p86;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_frequency:
+if(local_addr != NULL)
+p87 = (struct v4l2_frequency *)local_addr;
+else
+p87 = (struct v4l2_frequency *)get_writable_address(sizeof(struct v4l2_frequency));
+if(p87) {
+//tuner is primitive
+//enum v4l2_tuner_type;
+//frequency is primitive
+//reserved is an array of __u32 of 8 elements
+return p87;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_cropcap:
+if(local_addr != NULL)
+p88 = (struct v4l2_cropcap *)local_addr;
+else
+p88 = (struct v4l2_cropcap *)get_writable_address(sizeof(struct v4l2_cropcap));
+if(p88) {
+//enum v4l2_buf_type;
+recursive_fuzz(STRUCT_v4l2_rect, &p88->bounds);
+recursive_fuzz(STRUCT_v4l2_rect, &p88->defrect);
+recursive_fuzz(STRUCT_v4l2_fract, &p88->pixelaspect);
+return p88;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_crop:
+if(local_addr != NULL)
+p89 = (struct v4l2_crop *)local_addr;
+else
+p89 = (struct v4l2_crop *)get_writable_address(sizeof(struct v4l2_crop));
+if(p89) {
+//enum v4l2_buf_type;
+recursive_fuzz(STRUCT_v4l2_rect, &p89->c);
+return p89;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_jpegcompression:
+if(local_addr != NULL)
+p90 = (struct v4l2_jpegcompression *)local_addr;
+else
+p90 = (struct v4l2_jpegcompression *)get_writable_address(sizeof(struct v4l2_jpegcompression));
+if(p90) {
+//quality is primitive
+//APPn is primitive
+//APP_len is primitive
+//APP_data is an array of char of 60 elements
+//COM_len is primitive
+//COM_data is an array of char of 60 elements
+//jpeg_markers is primitive
+//marker is primitive
+return p90;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_sliced_vbi_cap:
+if(local_addr != NULL)
+p91 = (struct v4l2_sliced_vbi_cap *)local_addr;
+else
+p91 = (struct v4l2_sliced_vbi_cap *)get_writable_address(sizeof(struct v4l2_sliced_vbi_cap));
+if(p91) {
+//service_set is primitive
+//service_lines is an array of __u16 of 2 elements
+//enum v4l2_buf_type;
+//reserved is an array of __u32 of 3 elements
+return p91;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_ext_controls:
+if(local_addr != NULL)
+p92 = (struct v4l2_ext_controls *)local_addr;
+else
+p92 = (struct v4l2_ext_controls *)get_writable_address(sizeof(struct v4l2_ext_controls));
+if(p92) {
+//ctrl_class is primitive
+//count is primitive
+//error_idx is primitive
+//reserved is an array of __u32 of 2 elements
+p92->controls = (void *) get_non_null_address();
+return p92;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_frmsize_stepwise:
+if(local_addr != NULL)
+p93 = (struct v4l2_frmsize_stepwise *)local_addr;
+else
+p93 = (struct v4l2_frmsize_stepwise *)get_writable_address(sizeof(struct v4l2_frmsize_stepwise));
+if(p93) {
+//min_width is primitive
+//max_width is primitive
+//step_width is primitive
+//min_height is primitive
+//max_height is primitive
+//step_height is primitive
+return p93;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_frmsizeenum:
+if(local_addr != NULL)
+p94 = (struct v4l2_frmsizeenum *)local_addr;
+else
+p94 = (struct v4l2_frmsizeenum *)get_writable_address(sizeof(struct v4l2_frmsizeenum));
+if(p94) {
+//index is primitive
+//pixel_format is primitive
+//type is primitive
+recursive_fuzz(STRUCT_v4l2_frmsize_stepwise, &p94->stepwise);
+//reserved is an array of __u32 of 2 elements
+return p94;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_frmival_stepwise:
+if(local_addr != NULL)
+p95 = (struct v4l2_frmival_stepwise *)local_addr;
+else
+p95 = (struct v4l2_frmival_stepwise *)get_writable_address(sizeof(struct v4l2_frmival_stepwise));
+if(p95) {
+recursive_fuzz(STRUCT_v4l2_fract, &p95->min);
+recursive_fuzz(STRUCT_v4l2_fract, &p95->max);
+recursive_fuzz(STRUCT_v4l2_fract, &p95->step);
+return p95;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_frmivalenum:
+if(local_addr != NULL)
+p96 = (struct v4l2_frmivalenum *)local_addr;
+else
+p96 = (struct v4l2_frmivalenum *)get_writable_address(sizeof(struct v4l2_frmivalenum));
+if(p96) {
+//index is primitive
+//pixel_format is primitive
+//width is primitive
+//height is primitive
+//type is primitive
+recursive_fuzz(STRUCT_v4l2_frmival_stepwise, &p96->stepwise);
+//reserved is an array of __u32 of 2 elements
+return p96;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_enc_idx_entry:
+if(local_addr != NULL)
+p97 = (struct v4l2_enc_idx_entry *)local_addr;
+else
+p97 = (struct v4l2_enc_idx_entry *)get_writable_address(sizeof(struct v4l2_enc_idx_entry));
+if(p97) {
+//length is primitive
+//flags is primitive
+//reserved is an array of __u32 of 2 elements
+return p97;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_enc_idx:
+if(local_addr != NULL)
+p98 = (struct v4l2_enc_idx *)local_addr;
+else
+p98 = (struct v4l2_enc_idx *)get_writable_address(sizeof(struct v4l2_enc_idx));
+if(p98) {
+//entries is primitive
+//entries_cap is primitive
+//reserved is an array of __u32 of 4 elements
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[0]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[1]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[2]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[3]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[4]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[5]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[6]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[7]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[8]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[9]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[10]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[11]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[12]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[13]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[14]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[15]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[16]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[17]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[18]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[19]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[20]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[21]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[22]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[23]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[24]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[25]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[26]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[27]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[28]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[29]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[30]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[31]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[32]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[33]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[34]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[35]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[36]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[37]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[38]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[39]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[40]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[41]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[42]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[43]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[44]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[45]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[46]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[47]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[48]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[49]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[50]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[51]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[52]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[53]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[54]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[55]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[56]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[57]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[58]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[59]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[60]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[61]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[62]);
+recursive_fuzz(STRUCT_v4l2_enc_idx_entry, &p98->entry[63]);
+//entry is an array of v4l2_enc_idx_entry of 64 elements
+return p98;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_encoder_cmd:
+if(local_addr != NULL)
+p99 = (struct v4l2_encoder_cmd *)local_addr;
+else
+p99 = (struct v4l2_encoder_cmd *)get_writable_address(sizeof(struct v4l2_encoder_cmd));
+if(p99) {
+//cmd is primitive
+//flags is primitive
+//data is an array of __u32 of 8 elements
+return p99;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dbg_match:
+if(local_addr != NULL)
+p100 = (struct v4l2_dbg_match *)local_addr;
+else
+p100 = (struct v4l2_dbg_match *)get_writable_address(sizeof(struct v4l2_dbg_match));
+if(p100) {
+//type is primitive
+//addr is primitive
+//name is an array of char of 32 elements
+return p100;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dbg_register:
+if(local_addr != NULL)
+p101 = (struct v4l2_dbg_register *)local_addr;
+else
+p101 = (struct v4l2_dbg_register *)get_writable_address(sizeof(struct v4l2_dbg_register));
+if(p101) {
+recursive_fuzz(STRUCT_v4l2_dbg_match, &p101->match);
+//size is primitive
+return p101;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dbg_chip_ident:
+if(local_addr != NULL)
+p102 = (struct v4l2_dbg_chip_ident *)local_addr;
+else
+p102 = (struct v4l2_dbg_chip_ident *)get_writable_address(sizeof(struct v4l2_dbg_chip_ident));
+if(p102) {
+recursive_fuzz(STRUCT_v4l2_dbg_match, &p102->match);
+//ident is primitive
+//revision is primitive
+return p102;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_hw_freq_seek:
+if(local_addr != NULL)
+p103 = (struct v4l2_hw_freq_seek *)local_addr;
+else
+p103 = (struct v4l2_hw_freq_seek *)get_writable_address(sizeof(struct v4l2_hw_freq_seek));
+if(p103) {
+//tuner is primitive
+//enum v4l2_tuner_type;
+//seek_upward is primitive
+//wrap_around is primitive
+//spacing is primitive
+//reserved is an array of __u32 of 7 elements
+return p103;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dv_enum_preset:
+if(local_addr != NULL)
+p104 = (struct v4l2_dv_enum_preset *)local_addr;
+else
+p104 = (struct v4l2_dv_enum_preset *)get_writable_address(sizeof(struct v4l2_dv_enum_preset));
+if(p104) {
+//index is primitive
+//preset is primitive
+//name is an array of __u8 of 32 elements
+//width is primitive
+//height is primitive
+//reserved is an array of __u32 of 4 elements
+return p104;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dv_preset:
+if(local_addr != NULL)
+p105 = (struct v4l2_dv_preset *)local_addr;
+else
+p105 = (struct v4l2_dv_preset *)get_writable_address(sizeof(struct v4l2_dv_preset));
+if(p105) {
+//preset is primitive
+//reserved is an array of __u32 of 4 elements
+return p105;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_dv_timings:
+if(local_addr != NULL)
+p106 = (struct v4l2_dv_timings *)local_addr;
+else
+p106 = (struct v4l2_dv_timings *)get_writable_address(sizeof(struct v4l2_dv_timings));
+if(p106) {
+//type is primitive
+//reserved is an array of __u32 of 32 elements
+return p106;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_event:
+if(local_addr != NULL)
+p107 = (struct v4l2_event *)local_addr;
+else
+p107 = (struct v4l2_event *)get_writable_address(sizeof(struct v4l2_event));
+if(p107) {
+//type is primitive
+//data is an array of __u8 of 64 elements
+//pending is primitive
+//sequence is primitive
+recursive_fuzz(STRUCT_timespec, &p107->timestamp);
+//id is primitive
+//reserved is an array of __u32 of 8 elements
+return p107;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_event_subscription:
+if(local_addr != NULL)
+p108 = (struct v4l2_event_subscription *)local_addr;
+else
+p108 = (struct v4l2_event_subscription *)get_writable_address(sizeof(struct v4l2_event_subscription));
+if(p108) {
+//type is primitive
+//id is primitive
+//flags is primitive
+//reserved is an array of __u32 of 5 elements
+return p108;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_create_buffers:
+if(local_addr != NULL)
+p109 = (struct v4l2_create_buffers *)local_addr;
+else
+p109 = (struct v4l2_create_buffers *)get_writable_address(sizeof(struct v4l2_create_buffers));
+if(p109) {
+//index is primitive
+//count is primitive
+//enum v4l2_memory;
+recursive_fuzz(STRUCT_v4l2_format, &p109->format);
+//reserved is an array of __u32 of 8 elements
+return p109;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_selection:
+if(local_addr != NULL)
+p110 = (struct v4l2_selection *)local_addr;
+else
+p110 = (struct v4l2_selection *)get_writable_address(sizeof(struct v4l2_selection));
+if(p110) {
+//type is primitive
+//target is primitive
+//flags is primitive
+recursive_fuzz(STRUCT_v4l2_rect, &p110->r);
+//reserved is an array of __u32 of 9 elements
+return p110;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_decoder_cmd:
+if(local_addr != NULL)
+p111 = (struct v4l2_decoder_cmd *)local_addr;
+else
+p111 = (struct v4l2_decoder_cmd *)get_writable_address(sizeof(struct v4l2_decoder_cmd));
+if(p111) {
+//cmd is primitive
+//flags is primitive
+//speed is primitive
+//format is primitive
+return p111;
+}
+return get_non_null_address();
+
+
+case STRUCT_v4l2_output:
+if(local_addr != NULL)
+p112 = (struct v4l2_output *)local_addr;
+else
+p112 = (struct v4l2_output *)get_writable_address(sizeof(struct v4l2_output));
+if(p112) {
+//index is primitive
+//name is an array of __u8 of 32 elements
+//type is primitive
+//audioset is primitive
+//modulator is primitive
+//std is primitive
+//capabilities is primitive
+//reserved is an array of __u32 of 3 elements
+return p112;
 }
 return get_non_null_address();
 

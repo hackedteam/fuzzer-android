@@ -97,6 +97,71 @@ struct kgsl_perfcounter_read_group *p44;
 struct kgsl_perfcounter_read *p45;
 struct kgsl_drawctxt_destroy *p46;
 struct kgsl_gpumem_alloc *p47;
+struct mc_ioctl_init *p48;
+struct mc_ioctl_info *p49;
+struct mc_ioctl_map *p50;
+struct mc_ioctl_reg_wsm *p51;
+struct mc_ioctl_execute *p52;
+struct mc_ioctl_resolv_cont_wsm *p53;
+struct mc_ioctl_resolv_wsm *p54;
+struct msm_jpeg_ctrl_cmd *p55;
+struct msm_jpeg_buf *p56;
+struct msm_jpeg_hw_cmd *p57;
+struct msm_jpeg_hw_cmds *p58;
+struct timespec *p59;
+struct v4l2_capability *p60;
+struct v4l2_fmtdesc *p61;
+struct v4l2_rect *p62;
+struct v4l2_clip *p63;
+struct v4l2_window *p64;
+struct v4l2_format *p65;
+struct v4l2_requestbuffers *p66;
+struct v4l2_timecode *p67;
+struct v4l2_plane *p68;
+struct timeval *p69;
+struct v4l2_buffer *p70;
+struct v4l2_plane_pix_format *p71;
+struct v4l2_pix_format_mplane *p72;
+struct v4l2_pix_format *p73;
+struct v4l2_framebuffer *p74;
+struct v4l2_streamparm *p75;
+struct v4l2_fract *p76;
+struct v4l2_standard *p77;
+struct v4l2_input *p78;
+struct v4l2_control *p79;
+struct v4l2_tuner *p80;
+struct v4l2_modulator *p81;
+struct v4l2_audio *p82;
+struct v4l2_queryctrl *p83;
+struct v4l2_querymenu *p84;
+struct v4l2_outputparm *p85;
+struct v4l2_audioout *p86;
+struct v4l2_frequency *p87;
+struct v4l2_cropcap *p88;
+struct v4l2_crop *p89;
+struct v4l2_jpegcompression *p90;
+struct v4l2_sliced_vbi_cap *p91;
+struct v4l2_ext_controls *p92;
+struct v4l2_frmsize_stepwise *p93;
+struct v4l2_frmsizeenum *p94;
+struct v4l2_frmival_stepwise *p95;
+struct v4l2_frmivalenum *p96;
+struct v4l2_enc_idx_entry *p97;
+struct v4l2_enc_idx *p98;
+struct v4l2_encoder_cmd *p99;
+struct v4l2_dbg_match *p100;
+struct v4l2_dbg_register *p101;
+struct v4l2_dbg_chip_ident *p102;
+struct v4l2_hw_freq_seek *p103;
+struct v4l2_dv_enum_preset *p104;
+struct v4l2_dv_preset *p105;
+struct v4l2_dv_timings *p106;
+struct v4l2_event *p107;
+struct v4l2_event_subscription *p108;
+struct v4l2_create_buffers *p109;
+struct v4l2_selection *p110;
+struct v4l2_decoder_cmd *p111;
+struct v4l2_output *p112;
 case STRUCT_undefined:
 
 return;
@@ -1130,6 +1195,1227 @@ xmlTextWriterEndElement(writer);
 }
 else
 xmlTextWriterWriteElement(writer, "POINTER_gpuaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_init:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_init)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_init", "unmapped");
+return;
+ }
+
+p48 = (struct mc_ioctl_init *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_init");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p48 , 0, sizeof(struct mc_ioctl_init));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_info:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_info)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_info", "unmapped");
+return;
+ }
+
+p49 = (struct mc_ioctl_info *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_info");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p49 , 0, sizeof(struct mc_ioctl_info));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_map:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_map)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_map", "unmapped");
+return;
+ }
+
+p50 = (struct mc_ioctl_map *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_map");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p50 , 0, sizeof(struct mc_ioctl_map));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p50->addr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_addr");
+xmlTextWriterWriteBase64(writer, (char *) (p50->addr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_addr", "unmapped");
+// void pointer
+if(write(nullfd, (void *)(p50->phys_addr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_phys_addr");
+xmlTextWriterWriteBase64(writer, (char *) (p50->phys_addr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_phys_addr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_reg_wsm:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_reg_wsm)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_reg_wsm", "unmapped");
+return;
+ }
+
+p51 = (struct mc_ioctl_reg_wsm *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_reg_wsm");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p51 , 0, sizeof(struct mc_ioctl_reg_wsm));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p51->table_phys), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_table_phys");
+xmlTextWriterWriteBase64(writer, (char *) (p51->table_phys), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_table_phys", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_execute:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_execute)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_execute", "unmapped");
+return;
+ }
+
+p52 = (struct mc_ioctl_execute *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_execute");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p52 , 0, sizeof(struct mc_ioctl_execute));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p52->phys_start_addr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_phys_start_addr");
+xmlTextWriterWriteBase64(writer, (char *) (p52->phys_start_addr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_phys_start_addr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_resolv_cont_wsm:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_resolv_cont_wsm)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_resolv_cont_wsm", "unmapped");
+return;
+ }
+
+p53 = (struct mc_ioctl_resolv_cont_wsm *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_resolv_cont_wsm");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p53 , 0, sizeof(struct mc_ioctl_resolv_cont_wsm));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p53->phys), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_phys");
+xmlTextWriterWriteBase64(writer, (char *) (p53->phys), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_phys", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_mc_ioctl_resolv_wsm:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct mc_ioctl_resolv_wsm)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_mc_ioctl_resolv_wsm", "unmapped");
+return;
+ }
+
+p54 = (struct mc_ioctl_resolv_wsm *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_mc_ioctl_resolv_wsm");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p54 , 0, sizeof(struct mc_ioctl_resolv_wsm));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p54->phys), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_phys");
+xmlTextWriterWriteBase64(writer, (char *) (p54->phys), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_phys", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_msm_jpeg_ctrl_cmd:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct msm_jpeg_ctrl_cmd)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_msm_jpeg_ctrl_cmd", "unmapped");
+return;
+ }
+
+p55 = (struct msm_jpeg_ctrl_cmd *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_msm_jpeg_ctrl_cmd");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p55 , 0, sizeof(struct msm_jpeg_ctrl_cmd));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p55->value), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_value");
+xmlTextWriterWriteBase64(writer, (char *) (p55->value), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_value", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_msm_jpeg_buf:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct msm_jpeg_buf)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_msm_jpeg_buf", "unmapped");
+return;
+ }
+
+p56 = (struct msm_jpeg_buf *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_msm_jpeg_buf");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p56 , 0, sizeof(struct msm_jpeg_buf));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p56->vaddr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_vaddr");
+xmlTextWriterWriteBase64(writer, (char *) (p56->vaddr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_vaddr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_msm_jpeg_hw_cmd:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct msm_jpeg_hw_cmd)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_msm_jpeg_hw_cmd", "unmapped");
+return;
+ }
+
+p57 = (struct msm_jpeg_hw_cmd *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_msm_jpeg_hw_cmd");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p57 , 0, sizeof(struct msm_jpeg_hw_cmd));
+xmlTextWriterEndElement(writer);
+
+// pointer to primitive
+if(write(nullfd, (void *)(p57->pdata), 4) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_pdata");
+xmlTextWriterWriteBase64(writer, (char *) (p57->pdata), 0, 4);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_pdata", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_msm_jpeg_hw_cmds:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct msm_jpeg_hw_cmds)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_msm_jpeg_hw_cmds", "unmapped");
+return;
+ }
+
+p58 = (struct msm_jpeg_hw_cmds *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_msm_jpeg_hw_cmds");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p58 , 0, sizeof(struct msm_jpeg_hw_cmds));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_timespec:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct timespec)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_timespec", "unmapped");
+return;
+ }
+
+p59 = (struct timespec *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_timespec");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p59 , 0, sizeof(struct timespec));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_capability:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_capability)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_capability", "unmapped");
+return;
+ }
+
+p60 = (struct v4l2_capability *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_capability");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p60 , 0, sizeof(struct v4l2_capability));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_fmtdesc:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_fmtdesc)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_fmtdesc", "unmapped");
+return;
+ }
+
+p61 = (struct v4l2_fmtdesc *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_fmtdesc");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p61 , 0, sizeof(struct v4l2_fmtdesc));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_rect:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_rect)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_rect", "unmapped");
+return;
+ }
+
+p62 = (struct v4l2_rect *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_rect");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p62 , 0, sizeof(struct v4l2_rect));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_clip:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_clip)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_clip", "unmapped");
+return;
+ }
+
+p63 = (struct v4l2_clip *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_clip");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p63 , 0, sizeof(struct v4l2_clip));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p63->next), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_next");
+xmlTextWriterWriteBase64(writer, (char *) (p63->next), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_next", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_window:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_window)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_window", "unmapped");
+return;
+ }
+
+p64 = (struct v4l2_window *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_window");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p64 , 0, sizeof(struct v4l2_window));
+xmlTextWriterEndElement(writer);
+
+// Pointer to struct v4l2_clip
+struct_recursive_analyze((void *)(p64->clips), TRUE, STRUCT_v4l2_clip, 0, writer);
+// void pointer
+if(write(nullfd, (void *)(p64->bitmap), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_bitmap");
+xmlTextWriterWriteBase64(writer, (char *) (p64->bitmap), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_bitmap", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_format:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_format)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_format", "unmapped");
+return;
+ }
+
+p65 = (struct v4l2_format *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_format");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p65 , 0, sizeof(struct v4l2_format));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_requestbuffers:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_requestbuffers)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_requestbuffers", "unmapped");
+return;
+ }
+
+p66 = (struct v4l2_requestbuffers *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_requestbuffers");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p66 , 0, sizeof(struct v4l2_requestbuffers));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_timecode:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_timecode)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_timecode", "unmapped");
+return;
+ }
+
+p67 = (struct v4l2_timecode *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_timecode");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p67 , 0, sizeof(struct v4l2_timecode));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_plane:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_plane)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_plane", "unmapped");
+return;
+ }
+
+p68 = (struct v4l2_plane *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_plane");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p68 , 0, sizeof(struct v4l2_plane));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p68->userptr), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_userptr");
+xmlTextWriterWriteBase64(writer, (char *) (p68->userptr), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_userptr", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_timeval:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct timeval)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_timeval", "unmapped");
+return;
+ }
+
+p69 = (struct timeval *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_timeval");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p69 , 0, sizeof(struct timeval));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_buffer:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_buffer)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_buffer", "unmapped");
+return;
+ }
+
+p70 = (struct v4l2_buffer *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_buffer");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p70 , 0, sizeof(struct v4l2_buffer));
+xmlTextWriterEndElement(writer);
+
+// Pointer to struct v4l2_plane
+struct_recursive_analyze((void *)(p70->planes), TRUE, STRUCT_v4l2_plane, 0, writer);
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_plane_pix_format:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_plane_pix_format)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_plane_pix_format", "unmapped");
+return;
+ }
+
+p71 = (struct v4l2_plane_pix_format *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_plane_pix_format");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p71 , 0, sizeof(struct v4l2_plane_pix_format));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_pix_format_mplane:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_pix_format_mplane)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_pix_format_mplane", "unmapped");
+return;
+ }
+
+p72 = (struct v4l2_pix_format_mplane *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_pix_format_mplane");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p72 , 0, sizeof(struct v4l2_pix_format_mplane));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_pix_format:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_pix_format)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_pix_format", "unmapped");
+return;
+ }
+
+p73 = (struct v4l2_pix_format *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_pix_format");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p73 , 0, sizeof(struct v4l2_pix_format));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_framebuffer:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_framebuffer)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_framebuffer", "unmapped");
+return;
+ }
+
+p74 = (struct v4l2_framebuffer *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_framebuffer");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p74 , 0, sizeof(struct v4l2_framebuffer));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p74->base), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_base");
+xmlTextWriterWriteBase64(writer, (char *) (p74->base), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_base", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_streamparm:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_streamparm)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_streamparm", "unmapped");
+return;
+ }
+
+p75 = (struct v4l2_streamparm *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_streamparm");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p75 , 0, sizeof(struct v4l2_streamparm));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_fract:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_fract)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_fract", "unmapped");
+return;
+ }
+
+p76 = (struct v4l2_fract *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_fract");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p76 , 0, sizeof(struct v4l2_fract));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_standard:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_standard)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_standard", "unmapped");
+return;
+ }
+
+p77 = (struct v4l2_standard *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_standard");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p77 , 0, sizeof(struct v4l2_standard));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_input:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_input)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_input", "unmapped");
+return;
+ }
+
+p78 = (struct v4l2_input *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_input");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p78 , 0, sizeof(struct v4l2_input));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_control:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_control)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_control", "unmapped");
+return;
+ }
+
+p79 = (struct v4l2_control *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_control");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p79 , 0, sizeof(struct v4l2_control));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_tuner:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_tuner)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_tuner", "unmapped");
+return;
+ }
+
+p80 = (struct v4l2_tuner *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_tuner");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p80 , 0, sizeof(struct v4l2_tuner));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_modulator:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_modulator)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_modulator", "unmapped");
+return;
+ }
+
+p81 = (struct v4l2_modulator *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_modulator");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p81 , 0, sizeof(struct v4l2_modulator));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_audio:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_audio)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_audio", "unmapped");
+return;
+ }
+
+p82 = (struct v4l2_audio *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_audio");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p82 , 0, sizeof(struct v4l2_audio));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_queryctrl:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_queryctrl)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_queryctrl", "unmapped");
+return;
+ }
+
+p83 = (struct v4l2_queryctrl *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_queryctrl");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p83 , 0, sizeof(struct v4l2_queryctrl));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_querymenu:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_querymenu)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_querymenu", "unmapped");
+return;
+ }
+
+p84 = (struct v4l2_querymenu *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_querymenu");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p84 , 0, sizeof(struct v4l2_querymenu));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_outputparm:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_outputparm)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_outputparm", "unmapped");
+return;
+ }
+
+p85 = (struct v4l2_outputparm *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_outputparm");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p85 , 0, sizeof(struct v4l2_outputparm));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_audioout:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_audioout)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_audioout", "unmapped");
+return;
+ }
+
+p86 = (struct v4l2_audioout *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_audioout");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p86 , 0, sizeof(struct v4l2_audioout));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_frequency:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_frequency)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_frequency", "unmapped");
+return;
+ }
+
+p87 = (struct v4l2_frequency *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_frequency");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p87 , 0, sizeof(struct v4l2_frequency));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_cropcap:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_cropcap)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_cropcap", "unmapped");
+return;
+ }
+
+p88 = (struct v4l2_cropcap *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_cropcap");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p88 , 0, sizeof(struct v4l2_cropcap));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_crop:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_crop)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_crop", "unmapped");
+return;
+ }
+
+p89 = (struct v4l2_crop *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_crop");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p89 , 0, sizeof(struct v4l2_crop));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_jpegcompression:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_jpegcompression)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_jpegcompression", "unmapped");
+return;
+ }
+
+p90 = (struct v4l2_jpegcompression *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_jpegcompression");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p90 , 0, sizeof(struct v4l2_jpegcompression));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_sliced_vbi_cap:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_sliced_vbi_cap)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_sliced_vbi_cap", "unmapped");
+return;
+ }
+
+p91 = (struct v4l2_sliced_vbi_cap *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_sliced_vbi_cap");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p91 , 0, sizeof(struct v4l2_sliced_vbi_cap));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_ext_controls:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_ext_controls)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_ext_controls", "unmapped");
+return;
+ }
+
+p92 = (struct v4l2_ext_controls *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_ext_controls");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p92 , 0, sizeof(struct v4l2_ext_controls));
+xmlTextWriterEndElement(writer);
+
+// void pointer
+if(write(nullfd, (void *)(p92->controls), 128) >= 0) {
+xmlTextWriterStartElement(writer, "POINTER_controls");
+xmlTextWriterWriteBase64(writer, (char *) (p92->controls), 0, 128);
+xmlTextWriterEndElement(writer);
+}
+else
+xmlTextWriterWriteElement(writer, "POINTER_controls", "unmapped");
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_frmsize_stepwise:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_frmsize_stepwise)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_frmsize_stepwise", "unmapped");
+return;
+ }
+
+p93 = (struct v4l2_frmsize_stepwise *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_frmsize_stepwise");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p93 , 0, sizeof(struct v4l2_frmsize_stepwise));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_frmsizeenum:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_frmsizeenum)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_frmsizeenum", "unmapped");
+return;
+ }
+
+p94 = (struct v4l2_frmsizeenum *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_frmsizeenum");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p94 , 0, sizeof(struct v4l2_frmsizeenum));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_frmival_stepwise:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_frmival_stepwise)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_frmival_stepwise", "unmapped");
+return;
+ }
+
+p95 = (struct v4l2_frmival_stepwise *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_frmival_stepwise");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p95 , 0, sizeof(struct v4l2_frmival_stepwise));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_frmivalenum:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_frmivalenum)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_frmivalenum", "unmapped");
+return;
+ }
+
+p96 = (struct v4l2_frmivalenum *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_frmivalenum");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p96 , 0, sizeof(struct v4l2_frmivalenum));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_enc_idx_entry:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_enc_idx_entry)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_enc_idx_entry", "unmapped");
+return;
+ }
+
+p97 = (struct v4l2_enc_idx_entry *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_enc_idx_entry");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p97 , 0, sizeof(struct v4l2_enc_idx_entry));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_enc_idx:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_enc_idx)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_enc_idx", "unmapped");
+return;
+ }
+
+p98 = (struct v4l2_enc_idx *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_enc_idx");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p98 , 0, sizeof(struct v4l2_enc_idx));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_encoder_cmd:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_encoder_cmd)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_encoder_cmd", "unmapped");
+return;
+ }
+
+p99 = (struct v4l2_encoder_cmd *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_encoder_cmd");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p99 , 0, sizeof(struct v4l2_encoder_cmd));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dbg_match:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dbg_match)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dbg_match", "unmapped");
+return;
+ }
+
+p100 = (struct v4l2_dbg_match *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dbg_match");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p100 , 0, sizeof(struct v4l2_dbg_match));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dbg_register:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dbg_register)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dbg_register", "unmapped");
+return;
+ }
+
+p101 = (struct v4l2_dbg_register *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dbg_register");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p101 , 0, sizeof(struct v4l2_dbg_register));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dbg_chip_ident:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dbg_chip_ident)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dbg_chip_ident", "unmapped");
+return;
+ }
+
+p102 = (struct v4l2_dbg_chip_ident *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dbg_chip_ident");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p102 , 0, sizeof(struct v4l2_dbg_chip_ident));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_hw_freq_seek:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_hw_freq_seek)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_hw_freq_seek", "unmapped");
+return;
+ }
+
+p103 = (struct v4l2_hw_freq_seek *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_hw_freq_seek");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p103 , 0, sizeof(struct v4l2_hw_freq_seek));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dv_enum_preset:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dv_enum_preset)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dv_enum_preset", "unmapped");
+return;
+ }
+
+p104 = (struct v4l2_dv_enum_preset *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dv_enum_preset");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p104 , 0, sizeof(struct v4l2_dv_enum_preset));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dv_preset:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dv_preset)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dv_preset", "unmapped");
+return;
+ }
+
+p105 = (struct v4l2_dv_preset *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dv_preset");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p105 , 0, sizeof(struct v4l2_dv_preset));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_dv_timings:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_dv_timings)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_dv_timings", "unmapped");
+return;
+ }
+
+p106 = (struct v4l2_dv_timings *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_dv_timings");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p106 , 0, sizeof(struct v4l2_dv_timings));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_event:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_event)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_event", "unmapped");
+return;
+ }
+
+p107 = (struct v4l2_event *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_event");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p107 , 0, sizeof(struct v4l2_event));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_event_subscription:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_event_subscription)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_event_subscription", "unmapped");
+return;
+ }
+
+p108 = (struct v4l2_event_subscription *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_event_subscription");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p108 , 0, sizeof(struct v4l2_event_subscription));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_create_buffers:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_create_buffers)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_create_buffers", "unmapped");
+return;
+ }
+
+p109 = (struct v4l2_create_buffers *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_create_buffers");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p109 , 0, sizeof(struct v4l2_create_buffers));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_selection:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_selection)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_selection", "unmapped");
+return;
+ }
+
+p110 = (struct v4l2_selection *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_selection");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p110 , 0, sizeof(struct v4l2_selection));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_decoder_cmd:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_decoder_cmd)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_decoder_cmd", "unmapped");
+return;
+ }
+
+p111 = (struct v4l2_decoder_cmd *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_decoder_cmd");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p111 , 0, sizeof(struct v4l2_decoder_cmd));
+xmlTextWriterEndElement(writer);
+
+xmlTextWriterEndElement(writer);
+
+return;
+
+
+case STRUCT_v4l2_output:
+if(write(nullfd, (void *) arg_ptr, sizeof(struct v4l2_output)) < 0) {
+xmlTextWriterWriteElement(writer, "STRUCT_v4l2_output", "unmapped");
+return;
+ }
+
+p112 = (struct v4l2_output *) arg_ptr;
+xmlTextWriterStartElement(writer, "STRUCT_v4l2_output");
+xmlTextWriterStartElement(writer, "CONTENT_DUMP");
+xmlTextWriterWriteBase64(writer, (char *) p112 , 0, sizeof(struct v4l2_output));
+xmlTextWriterEndElement(writer);
+
 xmlTextWriterEndElement(writer);
 
 return;

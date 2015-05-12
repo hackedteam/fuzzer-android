@@ -1,61 +1,1768 @@
-8etis5<6>[421342.992534] app_process (9108): undefined instruction: pc=40aab4e8
-<6>[421342.992564] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
-<7>[421343.046921] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
-<7>[421343.046952] 
-<3>[421343.129540] kgsl: kgsl_mmu_get_gpuaddr: gen_pool_alloc(-1610608640) failed, pool: general_pool
-<3>[421343.129631] kgsl: kgsl_mmu_get_gpuaddr:  [9094] allcae=6850,etis5c26412 ald ol eea_ol<>414.707 gl glmugtgudr [04 loae=6850,etis5<3>[421343.369643] kgsl: kgsl_mmu_get_gpuaddr: gen_pool_alloc(-1073704960) failed, pool: general_pool
-<3>[421343.369857] kgsl: kgsl_mmu_get_gpuaddr:  [9094] allocated=167825408, entries=
-<6>[421343.379898] [debug_wake_locks]active wake lock pm8921_eoc
-<6>[421343.379929] [debug_wake_locks]active wake lock msm_otg
-<1>[421343.388841] Unable to handle kernel NULL pointer dereference at virtual address 00000000
-<1>[421343.388993] pgd = d7d08000
-<1>[421343.389085] [00000000] *pgd=00000000
-<0>[421343.389268] [0:     trinity-c0: 9094] Internal error: Oops: 5 [#1] PREEMPT SMP ARM
-<4>[421343.389390] [0:     trinity-c0: 9094] Modules linked in: wlan(O) adsprpc
-<4>[421343.389726] [0:     trinity-c0: 9094] CPU: 0    Tainted: G        W  O  (3.4.0-3173303 #1)
-<4>[421343.389878] [0:     trinity-c0: 9094] PC is at sg_init_table+0x1c/0x30
-<4>[421343.389970] [0:     trinity-c0: 9094] LR is at _kgsl_sharedmem_page_alloc+0x118/0x3bc
-<4>[421343.390153] 0:  tiiyc:99]p  <0fd8]  r:[c3ae>  pr 0e03<>414.914 0   rnt-0 04 p:dd72 i  0e03 p:0000
-4[233309][:  tiiyc:99]r0 0000 9:0000 r  0000<>414.950 0   rnt-0 04 7:0000 r  2100 5:0001 r  ffff<>414.973 0   rnt-0 04 3:0000 r  1360 1:0000 r  0000<>414.985 0   rnt-0 04 lg:nc IQ n Iso Md V_2 S R Sgetue
-4[233304][:  tiiyc:99]Cnrl 058d al:9786 DC 0005<>414.909 0   rnt-0 04 <>414.910 0   rnt-0 04 C x0fc8
-4[233314][:  tiiyc:99]7a e830 5404e830 540ceb81 0c12e24f 1003<>414.905 0   rnt-0 04 c8 1001ea12 1000ea70 bf88ea30 3506e861
-4[233324][:  tiiyc:99]7e e871 54081000 5f0ce015 b620e851 8d08<>414.940 0   rnt-0 04 d8 0c12e243 1001eb10 10000000 bf76e440
-4[233344][:  tiiyc:99]72 e930 3301e830 7524eb83 9d00ea50 3001<>414.995 0   rnt-0 04 d8 1000ea60 bffde937 5300e500 a007e926
-4[233350][:  tiiyc:99]76 e910 2113e500 23112630 03052000 2513<>414.941 0   rnt-0 04 d8 2362e914 1063ea50 1083ea52 5100e500
-4[233374][:  tiiyc:99]
-4[233377][:  tiiyc:99]L:0c3a6:<>414.936 0   rnt-0 04 d8 5f280001 5404ea00 30a19000 b565e000
-4[233381][:  tiiyc:99]a8 e93d 5300e500 a00aea1d 30a1ef61 3000<>414.981 0   rnt-0 04 d8 10001000 5f28ea20 5f28e121 a009ea61
-4[233398][:  tiiyc:99]ac e901 3000ea90 b113e901 1008e912 bc38<>414.037 0   rnt-0 04 d8 5f24e004 1905ba50 3002b000 35a1e906
-4[233417][:  tiiyc:99]a0 0a0d afffe410 5f20ea30 1061e611 2100<>414.082 0   rnt-0 04 e8 b41de500 061a1ac4 30001810 a00be500
-4[233427][:  tiiyc:99]a4 1003 0907e882 5f24e910 1057e821 1052<>414.037 0   rnt-0 04 <>414.037 0   rnt-0 04 P x6dd8
-4[233432][:  tiiyc:99]7a 0000 01e00026 0000dd70 0fd84001 ffff<>414.013 0   rnt-0 04 d8 6de40000 00000000 0000c821 00000000
-4[2334494] [0:     trinity-c0: 9094] 7de8  c1038650 0000000 ffff0001 21000000 00000000
-4[233452][:  tiiyc:99]70 0000 0000a001 6de8c3ae 0fd84001 ffff<>414.030 0   rnt-0 04 e8 0000d3f8 0000c3ae 0067d850 0000d3f8
-4[233472][:  tiiyc:99]74 ffff 6decd850 55840000 00000000 0e30<>414.085 0   rnt-0 04 e8 0000dd7a 7c00db58 6decbcd0 0e54c35f
-4[233488][:  tiiyc:99]78 db58 0000dd7a 0c9f0000 8fd0dd7a 0ed0<>414.029 0   rnt-0 04 <>414.029 0   rnt-0 04 2 x1350
-4[233490][:  tiiyc:99]8d 0000 0000ccd4 00000000 00000000 08f6<>414.126 0   rnt-0 04 50 00000000 00000000 08f60000 00000000
-4[233409][:  tiiyc:99]81 0000 08fc0000 00000000 0000ccd8 0000<>414.172 0   rnt-0 04 60 00000000 0000ccd8 00000000 00000000
-4[233422][:  tiiyc:99]85 ccda 00000000 00000000 08f30000 0000<>414.127 0   rnt-0 04 60 00000000 08f30000 00000000 0000ccda
-4[233435][:  tiiyc:99]89 0000 00000000 0000ccea 00000000 0000<>414.172 0   rnt-0 04 60 0000cce1 00000000 00000000 08060000
-4[233458][:  tiiyc:99]
-4[233451][:  tiiyc:99]R:0d7a8:<>414.169 0   rnt-0 04 f0 00000000 00000000 00000000 00000000
-4[233466][:  tiiyc:99]aa 0000 00000000 00000000 00000000 0000<>414.114 0   rnt-0 04 f0 00000000 00000000 00000000 00000000
-4[233475][:  tiiyc:99]ae 0000 00000000 00000000 00000000 0000<>414.160 0   rnt-0 04 00 2100c108 28f0c10c 28f0c1d0 2800c1d4
-4[233495][:  tiiyc:99]b2 c1d6 2800c1da 2800c1de 2810c1d2 2810<>414.226 0   rnt-0 04 00 2810c1d8 2810c1dc 2810c1d0 2820c1d4
-4[233404][:  tiiyc:99]b6 c1d6 2820c1da 2820c1de 2830c1d2 2830<>414.260 0   rnt-0 04 rcs rnt-0(i:99,saklmt=0dd6f)<>414.272 0   rnt-0 04 tc:(x6de8t x6d00
-0[233412][:  tiiyc:99]72:         0000 55840010 0ed80004 6840<>414.207 0   rnt-0 04 e0 0000d3f8 ffffdd78 6840d3f8 00000000
-0[233426][:  tiiyc:99]76:0000 0e30] [0:     trinity-c0: 9094] 7f40: 00000000 00000001 00000000 d7969850 dee3ae80 d6dd7f3c 5303b02b ffffff8d
-<0>[421343.423573] [0:     trinity-c0: 9094] 7f60: d7ccd300 00000000 d7ccd300 b6cfd000 c00c092f 00000103 d6dd6000 00000200
-<0>[421343.423726] [0:     trinity-c0: 9094] 7f80: 00000000 c015be18 00000103 00000000 ffffff8d c8010000 b7af93a4 00000036
-<0>[421343.423909] [0:     trinity-c0: 9094] 7fa0: c000e464 c000e43c ffffff8d c8010000 00000103 c00c092f b6cfd000 b410aec0
-<0>[421343.424061] [0:     trinity-c0: 9094] 7fc0: ffffff8d c8010000 b7af93a4 00000036 b6e10000 b6f55394 00000036 00000000
-<0>[421343.424244] [0:     trinity-c0: 9094] 7fe0: be906718 be906708 b6f92328 b6f29124 600e0010 00000103 00000000 00000000
-<4>[421343.424428] [0:     trinity-c0: 9094] [<c02f7d28>] (sg_init_table+0x1c/0x30) from [<c03eade8>] (_kgsl_sharedmem_page_alloc+0x118/0x3bc)
-<4>[421343.424611] [0:     trinity-c0: 9094] [<c03eade8>] (_kgsl_sharedmem_page_alloc+0x118/0x3bc) from [<c03e53e0>] (_gpumem_alloc+0xb4/0xec)
-<4>[421343.424794] [0:     trinity-c0: 9094] [<c03e53e0>] (_gpumem_alloc+0xb4/0xec) from [<c03e55f4>] (kgsl_ioctl_gpumem_alloc+0x30/0x13c)
-<4>[421343.424977] [0:     trinity-c0: 9094] [<c03e55f4>] (kgsl_ioctl_gpumem_alloc+0x30/0x13c) from [<c03e0d70>] (kgsl_ioctl+0x210/0x314)
-<4>[421343.425160] [0:     trinity-c0: 9094] [<c03e0d70>] (kgsl_ioctl+0x210/0x314) from [<c015b228>] (vfs_ioctl+0x28/0x3c)
-<4>[421343.425313] [0:     trinity-c0: 9094] [<c015b228>] (vfs_ioctl+0x28/0x3c) from [<c015bd7c>] (do_vfs_ioctl+0x534/0x588)
-<4>[421343.425496] [0:     trinity-c0: 9094] [<c015bd7c>] (do_vfs_ioctl+0x534/0x588) from [<c015be18>] (sys_ioctl+0x48/0x70)
-<4>[421343.425648] [0:     trinity-c0: 9094] [<c015be18>] (sys_ioctl+0x48/0x70) from [<c000e43c>] (__sys_trace_return+0x0/0x24)
-<0>[421343.425831] [0:     trinity-c0: 9094] Code: e1a05000 0a000000 ebffc7f6 e2444001 (e7953204) 
+<3>[ 1817.455974] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1817.490828] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<>[11.072 d_e_rpFIE
+3[11.073 i_n_e_e_bf(:GtVDIDBOKN ald<> 87550]stigVNICLSTDBOKN_F ald<3>[ 1817.545887] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1817.590355] ddl_get_prop:FAILED
+<3>[ 1817.590385] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1817.590507] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1817.672394] app_process (13833): undefined instruction: pc=b65ac4e8
+<6>[ 1817.672424] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[187695]vdecicl) nupre ot 04862<3>[ 1817.719914] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1817.778605] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1817.796001] vid_enc_ioctl(): Unsupported ioctl 1074286632
+17871]appoes(33) neie ntuto:p=0c48<> 87874]Cd:e000 0000f6ef 1ffe(e9fd <> 87892]vdecicl) nupre ot 04862[87852]mmteml eu epfrSnos( - 5( - 4( - 7( - 6( - 6( - 7( - 0( - 6( - 8( - 4
+3[11.853 i_n_ot(:Uspotdicl17263
+3 87908]vdecicl) nupre ot 24984
+7[11.266 s:tria_eso_hwtria_oemjr0mnr0vno 
+7[11.267 r ot 24984
+spre ot 
+<3>[ 1818.026888] vid_enc_ioctl(): nspotdicl0<> 88078]vdecicl) nupre ot 24984
+3[11.418 i_n_ot(:Uspotdicl17262
+3 88099]vdecicl) nupre ot 28396
+<3>[ 1818.093575] vid_enc_ioctl(): Unsupore ot 04612<3>[ 1818.095772] vid_enc_ioctl(): Unsupported ioctl 0
+t-07646<> 88135]
+6[11.208 vdecicl) xctn E_OT_M_EUE<> 88131]
+3[11.218 er nupre P ncin tt 
+3[11.232 etn E_OT_M_EUEfie
+<3>[ 1818.133495] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1818.152815] 
+<6>[ 1818.152845]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1818.152845] 
+<3>[ 1818.152876]  err: Unsupported API in client state 3
+<3>[ 1818.153028] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1818.161513] 
+<6>[ 1818.161513]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP<6>[ 1818.195330] 
+<6>[ 1818.195360]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<3>[ 1818.207568] vid_enc_ioctl(): Unsupported ioctl -2146938841
+
+<3>[ 1818.241873] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1818.310514] vid_enc_ioctl(): Unsupported ioctl -2146938841
+.54]vdecicl) nupre ot 
+<3>[ 1818.385960] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1818.405951] init: untracked pid 13830 exited
+<3>[ 1818.409918] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 18184468 i_n_ot(:Uspotdicl-163813[11.255 i_n_ot(:Uspotdicl17263
+3[11.461 i_n_ot(:Uspotdicl17263
+3[11.503 i_n_ot(:Uspotdicl17262
+<6>[ 1818.566061] app_process (13861): undefined instruction: pc=b65374e8
+<6>[ 1818.566091] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1818.606683] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1818.622279] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1818.646573] init: untracked pid 13833 exited
+<3>[ 818683]vdecicl) nupre ot 24986
+3[11.588 i_n_ot(:Uspotdicl17262
+<3>[ 1818.662780] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1818.666106] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1818.697420] vid_enc_ioctl(): Unsupportediocl-16384<3>[ 118.020 i_n_ot(:Uspotdicl17263
+3[11.174 i_n_ot(:Uspotdicl-16385<> 88714]vdecicl) nupre ot 04864t) nupre ot 24986
+ t 24984
+<> 88782]vdecicl) nupre ot 04864<6>[ 1818.816328] app_process (13861): undefined instruction: pc=40ab34e8
+<6>[ 1818.816358] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 1818.825331] 
+<6>[ 1818.825331]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1818.825362] 
+<6>[ 1818.825392]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<7>[ 1818.934075] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1818.934106] 
+<6>[ 1818.952662] 
+<6>[ 1818.952662]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<3>[ 1818.952693] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1818.952754] 
+<6>[ 1818.952784]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client<3>[ 1819.003021] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1819.054692] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1819.079413] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1819.127910] 
+<6>[ 1819.127910]  vid_enc_ioctl(: xctn E_OT_M_AS
+3[11.291 <> 89174] r:UspotdAIi letsae1<> 89182]stigVNICLCDPUEfie
+8.446 <> 89137] i_n_ot(:EeuigVNICLCDRSM
+3[11.456 <> 89130] r:UspotdAIi letsae1<> 89138]stigVNICLCDRSM ald<6>[ 1819.165481] 
+<6>[ 1819.165481]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1819.165511] 
+<3>[ 1819.165542]  err: Unsupported API in client state 119162]vdecicl) nupre ot 04866<> 89116]stigVNICLCDPUEfie
+<> 89100]
+6[11.809 vdecicl) xctn E_OT_M_AS
+3[11.809 <> 89106] r:UspotdAIi letsae1<> 89105]stigVNICLCDPUEfie
+<3>[ 1819.231161] vid_en_iot(:Uspotdicl17262
+3[11.311 i_n_ot(:Uspotdicl-16387<6>[ 1819.245505] 
+<6>[ 1819.245505]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1819.245536] 
+<6>[ 1819.245536]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1819.245566] 
+<3>[ 1819.245566]  err: Unsupported API in client state 1<6>[ 1819.251640] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1819.251762] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1819.251823] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1819.251914] ion_cp_allocate: non-secure allocaiondsloe rmti ep<> 89220]inc_loae o-euealcto ialwdfo hsha
+6[11.556 <> 89228] s_icec edn C_V_EPSATt let
+<6>[ 1819.259178] 
+<6>[ 1819.259178]  vid_enc_ioctl(<3>[ 1819.296077] vid_enc_ioctl(): Unsupported ioctl 0
+1331] i_n_ot(:EeuigVNICLCDSAT<> 89336]inc_loae o-euealcto ialwdfo hsha
+6[11.168 o_palct:nnscr loaindsloe rmti ep<> 89334]inc_loae o-euealcto ialwdfo hsha
+6[11.180 o_palct:nnscr loaindsloe rmti ep<> 89333]inc_loae o-euealcto ialwdfo hsha
+6[11.152 <> 89347] s_icec edn C_V_EPSATt letiecicl) nupre ot 04617<> 89377]
+6[11.593 vdecicl) xctn E_OT_M_TR
+6[11.515 o_palct:nnscr loaindsloe rmti ep<> 89384]inc_loae o-euealcto ialwdfo hsha
+6[11.538 o_palct:nnscr loaindsloe rmti ep<> 89380]inc_loae o-euealcto ialwdfo hsha
+6[11.542 o_palct:nnscr loaindsloe rmti ep<> 89339]vdecicl) nupre ot 
+6[11.644 <> 89347] s_icec edn C_V_EPSATt letc(:Uspotdicl-16381<3>[ 1819.408820] vid_enc_ioctl(): Unsupported ioctl 0
+<7>[ 1819.441354] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1819.441385] 
+<3>[ 1819.444101] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<> 89425]
+6[11.520 vdecicl) xctn E_OT_M_TP<> 89421]
+6[11.567 mmvd_n:SnigVDETRS_TPt let<> 89533]
+6[11.457 vdecicl) xctn E_OT_M_TP
+<6>[ 1819.545948] 
+<6>[ 1819.545948]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1819.557851] vid_enc_ioctl(): Unsupported ioctl -2146938864
+
+<6>[ 1819.576041] 
+<6>[ 1819.576041]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client<3>[ 1819.626888] init: untracked pid 13861 exited
+ spotdicl-16381<3>[ 1819.841476] vi_en_ot(:Uspotdicl-16381<6>[ 1819.864916] ddl_get_ro:ALD<> 89844]vdecstgtetoycg) e C__NRP_TLFie
+3[11.609 etn E_OT_GSTETOYCGfie
+_csatv aelc s_aea<> 89956][eu_aelcsatv aelc m91ec<> 89956][eu_aelcsatv aelc s_t
+<> 89921]ub emnlvrinso emnlmd ao  io  edr0<> 89924]
+6[11.466 d_e_rpFIE
+3[11.466 i_n_e_e_nrp_f(:GtVDIETOYCR ald<> 89941]stigVNICL()E_NRP_F ald3[11.744 i_n_ot(:Uspotdicl17262
+6[11.875 d_e_rpFIE
+3[11.876 i_n_e_e_nrp_f(:GtVDIETOYCR ald<> 89924]stigVNICL()E_NRP_F ald<3>[ 1820.037082] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1820.045536] 
+<6>[ 1820.045566]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1820.045566] vid_enc_ioctl(): Unsupported ioctl 1074266122
+ ie
+<3>[ 1820.059483] vid_ecicl) nupre ot 04866<3>[ 1820.078986] vid_enc_ioctl(): Unsupprtdicl17262
+.12 i_n_ot(:Uspotdicl-16385 vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1820.153364] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1820.156111] vid_enc_ioctl(: Uspotdicl-16384_PAUSE
+<3>[ 1820.179947] 
+<3>[ 1820.179947]  err: Unsupported API in client state 1
+<3>[ 1820.180192] setting VEN_IOCTL_CMD_PAUSE failed
+ 2.204 i_n_ot(:Uspotdicl17262
+<6>[ 1820.241934] 
+<6>[ 1820.241934]  vid_enc_ioctl(): Executing VEN_IOCTL_CD_EUE<> 80216]
+3[12.495 er nupre P ncin tt 
+3[12.418 e<3>[ 1820.250144] vi_ecicl) nupre ot 04866<3>[ 1820.304623] vid_ec_ot(:Uspotdicl17261
+<> 80313]
+6[12.215 vdecicl) xctn E_OT_M_EUE<> 80316]
+3[12.215 er nupre P ncin tt 
+3[12.227 etn E_OT_M_EUEfie
+<3>[ 1820.326293] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1820.335082] vid_enc_ioctl(): Unsupported ioctl 1074286632
+10326] i_n_ot(:EeuigVNICLCDRSM
+3[12.598 <> 80332] r:UspotdAIi letsae1<> 80335]stigVNICLCDRSM ald<3>[ 1820.391484] vd_ecicl) nupre ot 04617c00222 i_n_ot(:Uspotdicl17261
+3[12.233 i_n_ot(:Uspotdicl17263
+<7>[ 1820.442636] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 
+<7[12.466 ]i_n_ot(:Uspotdicl17263
+00 i_n_ot(:Uspotdicl0<3>[ 1820.547565] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1820.598778] 
+<6>[ 1820.598809]  vid_enc_ioctl():3> 80622]vdecicl) nupre ot 24983
+<6>[ 180.264 <> 80660] i_n_ot(:EeuigVNICLCDSAT<> 80662]inc_loae o-euealcto ialwdfo hsha
+6[12.299 o_palct:nnscr loaindsloe rmti ep<> 80674]inc_loae o-euealcto ialwdfo hsha
+6[12.211 o_palct:nnscr loaindsloe rmti ep<> 80679]inc_loae o-euealcto ialwdfo hsha
+6[12.284 <> 80676] s_icec edn C_V_EPSATt let
+<3>[ 1820.649992] vid_nc_ot(:Uspotdicl-16387<6>[ 1820.664092] <6[12.602 vdecicl) xctn E_OT_M_AS
+3[12.613 <> 80642] r:UspotdAIi letsae1<> 80640]stigVNICLCDPUEfie
+npotdicl-163846[12.058 <> 80724] i_n_ot(:EeuigVNICLCDPUE<> 80727]
+3[12.058 er nupre P ncin tt 
+3[12.070 etn E_OT_M_AS ald<6>[ 1820.708560] 
+<6>[ 1820.708591]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STAR
+<6[12.073 o_palct:nnscr loaindsloe rmti ep<> 80783]inc_loae o-euealcto ialwdfo hsha
+6[12.096 o_palct:nnscr loaindsloe rmti ep<> 80791]inc_loae o-euealcto ialwdfo hsha
+6[12.010 o_palct:nnscr loaindsloe rmti ep<> 80795]
+6[12.071 mmvd_n:SnigVDETRS_TR ocin
+<3>[ 1820.722508] vid_enc_ioctl(): Unsupported ioctl -2146938845
+:edn C_V_EPSATt let<> 80741]vdecicl) nupre ot 24986
+<3>[ 1820.831374] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1820.831405] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1820.906607] vd_n_ot(:Uspotdicl17263
+<3>[ 180.279 i_n_ot(:Uspotdicl17263
+<3>[ 1820.939630] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<7>[ 1820.944849] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1820.944879] 
+<> 81031]vdecicl) nupre ot 24984
+<3>[181062]vdecicl) nupre ot 24984
+<3>[ 1821.172653] vid_enc_ioct():Uspotdicl-16387<3>[ 1821.247062] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1821.254753] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1821.299984] vid_enc_ioctl(): Unsupported ioctl-24984
+<> 81309]vdecicl) nupre ot 04864<6>[ 1821.348084] 
+<6>[ 1821.348084]  vid_enc_ioctl(): Executing ENICLCDSAT<> 81381]
+6[12.415 mmvd_n:SnigVDETRS_TR ocin
+3[12.535 i_n_ot(:Uspotdicl-16385spre ot 24984
+<3>[ 1821.415870] vid_enc_ioctl(): Unsupported ioctl 10748664 > 81474] i_n_ot(:EeuigVNICLCDSAT<> 81477]
+6[12.211 mmvd_n:SnigVDETRS_TR ocin
+<7>[ 1821.445475] us: emnlvrinso emnlmd ao  io  edr0<> 81450]
+<6>[ 1821.448740] 
+<6>[ 1821.448771]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1821.448801] 
+<6>[ 1821.448801]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1821.453898] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1821.523820] 
+<6>[ 1821.523820]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1821.523851] 
+<6>[ 1821.523851]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1821.58272 <> 81527] i_n_ot(:EeuigVNICLCDSAT<> 81520]
+6[12.863 mmvd_n:SnigVDETRS_TR ocin
+<6>[ 1821.607874]
+<> 81677] i_n_ot(:EeuigVNICLCDSAT<> 81670]
+6[12.095 mmvd_n:SnigVDETRS_TR ocinepoet:al_snti_pnsae<> 81600]dlstpo:ALD<> 81603]Fie:dlstpoet
+3[12.942 Stigsiedlvr oefie
+<3>[ 1821.739691] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<6>[ 1821.739691] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1821.739722] ddl_set_prop:FAILED
+<3>[ 1821.739752] Failed: ddl_set_property
+<3>[ 1821.739752]  Setting slice delivery mode failed
+6[12.699 <> 81756] i_n_ot(:EeuigVNICLCDRSM
+3[12.601 <> 81766] r:UspotdAIi letsae3<> 81761]stigVNICLCDRSM ald<6>[ 1821.780497]
+<> 81702] i_n_ot(:EeuigVNICLCDRSM
+3[12.857 i_n_ot(:Uspotdicl17262
+3[12.860 <> 81708] r:UspotdAIi letsae3<> 81700]stigVNICLCDRSM aldt:Uspotdicl17263
+<3>[ 1821.821272] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<> 81847]vdecicl) nupre ot 04866<3>[ 1821.868609] vid_enc_ioct() nupre ot 048667[12.460 s:tria_eso_hwtria_oemjr0mnr0vno 
+7[12.460 t) nupre ot 
+<3>[ 1822.061498] vid_enc_ioct() nupre ot 
+3[12.829 i_n_ot(:Uspotdicl0<> 82065]Mt aaItraei euse
+6[12.879 @yc6
+<6>[182189]Mt aaItraei euse
+6[12.576 eaDt nefc sRqetd
+<3>[ 1822.17978 i_n_ot(:Uspotdicl-02551<> 82153]vdecicl) nupre ot 17649
+
+<3>[ 1822.349244] vid_enc_ioctl(): Unsupported ioctl -2146938864
+
+<3>[ 1822.424446] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1822.430337] viden_ot(:Uspotdicl-16384<>[12.332 i_n_ot(:Uspotdicl-02139rnlvrinso emnlmd ao  io  edr0<> 82477]
+<3>[ 1822.499343] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1822.523759] 
+<6>[ 1822.523790]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<3>[ 1822.523790] vid_enc_ioctl(): Unsupported ioctl -1072411379
+<6>[ 1822.523881] 
+<6>[ 1822.523881]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client<6>[ 1822.539264] Meta Data Interface is Requesed)Uspotdicl-16389<> 82570]vdecicl) nupre ot 24983
+<6>[ 1822.582084] 
+<6>[ 1822.582084]  vid_enc_ioctl(): ExecutingVENICLCDSO
+6[12.814 <> 82521] s_icec edn C_V_EPSO ocin
+<6>[ 1822.586235] 
+<6>[ 1822.586265]  vid_enc_ioctl(): Executing VEN_IOTL_CDSO
+6[12.826 <> 82569] s_icec edn C_V_EPSO ocin
+<6>[ 1822.597588] Meta Data Interface is Requested
+<6>[ 1822.603021] Meta Data Interface is Requested<6>[ 1822.639462] <6>[12.342 vdecicl) xctn E_OT_M_EUE<> 82699]
+3[12.343 er nupre P ncin tt 
+3[12.366 etn E_OT_M_EUEfie
+<3>[ 1822.682587] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1822.710086]vid_n_ot(:Uspotdicl17262
+3[12.148 i_n_ot(:Uspotdicl17262
+<> 82733]vdecicl) nupre ot 04612<> 82736]
+6[12.268 vdecicl) xctn E_OT_M_EUE<> 82739]
+3[12.268 er nupre P ncin tt 
+3[12.279 etn E_OT_M_EUEfie
+2296 vdecicl) xctn E_OT_M_EUE<> 82701]
+3[12.306 er nupre P ncin tt 
+3[12.318 etn E_OT_M_EUEfie
+<3>[ 1822.747962] vid_enc_ioctl(): Unsupported ioctl -146983
+3[12.558 i_n_ot(:Uspotdicl-16387<3>[ 1822.797649] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1822.803021] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1822.853257] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1822.853288] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1822.885762] msm_thermal: Debug em o esr 0--5)1--5)2--4)3--4)4--4)5--4)6--6)7--4)8--4)9--6)<> 82896]vdecicl) nupre ot 04860<6>[ 1822.915641] [debug_wake_locks]active wake lock msm_camera
+6>[ 82957][eu_aelcsatv aelc m91ec<> 82950][eu_aelcsatv aelc s_t
+u:tria_eso_hwtria_oemjr0mnr0vno 
+7[12.491 c17263
+6[12.727 d_e_rpFIE
+3[12.727 ald d_e_rpry<> 83001] etn lc eieymd ald<> 83004]dlstpo:ALD<> 83007]Fie:dlstpoet
+3[12.739 Stigsiedlvr oefie
+<3>[ 1823.150495] id_n_ot(:Uspotdicl17262
+<6>[ 1823.164565] 
+<6>[ 1823.164565]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1823.164596] 
+<6>[ 1823.164596]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client<3>[ 1823.269555] vid_enc_ioctl(): nspotdicl17262
+6[12.656 <> 83298] i_n_ot(:EeuigVNICLCDSO
+6[12.666 <> 83291] s_icec edn C_V_EPSO ocin
+6[12.711 <> 8325SnigVDETRS_TPt let
+3[12.903 i_n_ot(:Uspotdicl17263
+3 83335]vdecicl) nupre ot 04935<> 83338]dlstpo:ALD<> 83338]Fie:dlstpoet
+3[12.557 Stigsiedlvr oefie
+<3>[ 1823.359590] vid_enc_ioctl(): Unsppre ot 04935il17263
+3[12.617 i_n_ot(:Uspotdicl17263
+6] etn lc eieymd aldwemnlmd ao  io  edr0<> 83482]
+
+3[12.772 i_n_ot(:Uspotdicl-16384<6>[ 1823.599664] 
+<6>[ 1823.599664]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1823.599694] 
+<3>[ 1823.599694]  err: Unupre P ncin tt 
+3[12.986 etn E_OT_M_AS ald<3>[ 1823.642697] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1823.642728] vid_enc_ioctl(): Unsupported ioctl -2146938864
+Upotdicl-16384<> 83662]vdecicl) nupre ot 24986
+<3>[ 1823.680695] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1823.680726] 
+<6>[ 1823.680726]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1823.680756] 
+<3>[ 1823.680756]  err: Unsupported API in client state 1
+<3>[ 1823.680787] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1823.686311] 
+<6>[ 1823.686311]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PASE
+3[12.832 <> 83667] r:UspotdAIi letsae1<> 83663]stigVNICLCDPUEfie
+<3>[ 1823.757759] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1823.7613]vdecicl) nupre ot 24984
+<6>[ 1823.798626] 
+<6>[ 1823.798656]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1823.798687] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1823.798809] 
+<3>[ 1823.798809]  err: Unsupported API in client state 1
+<3>[ 1823.798931] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1823.804577] 
+<6>[ 1823.804577]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1823.804608] 
+<3>[ 1823.804608]  err: Unsupported API in client state 1
+<3>[ 1823.804791] setting VEN_IOCTL_CMD_RESUME failed
+E<> 83865]Fie:dlstpoet
+3[12.263 Stigsiedlvr oefie
+<3>[ 1823.840988] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1823.845505] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1823.912833] 
+<6>[ 1823.912833]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1823.912864] ddl_set_prop:FAILED
+<3>[ 1823.912894] Failed: ddl_set_property
+<3>[ 1823.912894]  Setting slice delivery mode failed
+<3>[ 1823.913169] 
+<3>[ 1823.913199]  err: Unsupported API in client state 1
+<3>[ 1823.913413] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1823.916373] ddl_set_prop:FAILED
+<3>[ 1823.91673] ald d_e_rpry<> 83969] etn lc eieymd ald
+3> 83944]vdecicl) nupre ot 24984
+memjr0mnr0vno 
+7[12.413 <6>[ 1824.002410] 
+<6>[ 1824.002410]  vid_enc_ioctl(): Executing VEN_IOCT_CM_AS
+3[12.041 <> 84024] r:UspotdAIi letsae1<> 84028]stigVNICLCDPUEfie
+<6>[ 1824.017243] 
+<6>[ 1824.017243]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1824.017274 
+<> 84077] r:UspotdAIi letsae1<> 84074]stigVNICLCDPUEfie
+3[12.266 i_n_ot(:Uspotdicl-16381<>[12.449 i_n_ot(:Uspotdicl-16381<> 84006]vdecicl) nupre ot 24984
+3[12.119 i_n_ot(:Uspotdicl17262
+3[12.251 i_n_ot(:Uspotdicl-16381<3>[ 1824.129833] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1824.146650] ddl_set_prop:FAILED
+<3>[ 1824.146680] Failed: ddl_set_property
+<3>[ 1824.146772]  Setting slice delivery mode failed
+<6>[ 1824.160262] 
+<6>[ 1824.160262]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1824.160384] 
+<3>[ 1824.160414]  err: Unsupported API in client state 1
+<3>[ 1824.160567] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1824.173752] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1824.193498] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1824.206988] ddl_set_prop:FAILED
+<3>[ 1824.207019] Failed: ddl_set_property
+<3>[ 1824.207080]  Setting slice delivery mode failed
+<6>[ 1824.214649] 
+<6>[ 1824.214649]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<6>[ 1824.214710] ddl_set_prop:FAILED
+<3>[ 1824.214710] Failed: ddl_set_property
+<3>[ 1824.214741]  Setting slice delivery mode failed
+<3>[ 1824.214954] 
+<3>[ 1824.214954]  err: Unsupported API in client state 1
+<3>[ 1824.215137] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1824.230214] 
+<6>[ 1824.230245]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1824.230275] 
+<3>[ 1824.230275]  err: Unsupported API in client state 1
+<3>[ 1824.230459] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1824.258141] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1824.320036] 
+<6>[ 1824.320066]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1824.320097] 
+<6>[ 1824.320097]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1824.359133] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1824.364718] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1824.385899] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1824.399328] 
+<6>[ 1824.399328]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1824.399358] 
+<6>[ 1824.399389]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1824.414619] 
+<6>[ 1824.414649]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1824.414680] 
+<6>[ 1824.414680]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1824.435250] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1824.435281] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1824.448435] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<7>[ 1824.449778] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1824.449809] 
+<3>[ 1824.508377] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1824.513932] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1824.525224] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1824.525255] ddl_set_prop:FAILED
+<3>[ 1824.525285] Failed: ddl_set_property
+<3>[ 1824.525285]  Setting slice delivery mode failed
+<3>[ 1824.570913] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1824.587120] ddl_set_prop:FAILED
+<3>[ 1824.587150] Failed: ddl_set_property
+<3>[ 1824.587211]  Setting slice delivery mode failed
+<3>[ 1824.587486] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1824.590355] 
+<6>[ 1824.590385]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1824.590416] 
+<3>[ 1824.590416]  err: Unsupported API in client state 1
+<3>[ 1824.590660] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1824.603723] ddl_set_prop:FAILED
+<3>[ 1824.603753] Failed: ddl_set_property
+<3>[ 1824.603814]  Setting slice delivery mode failed
+<3>[ 1824.631161] setting VEN_IOCTL_(G)SET_RATE_CTRL_CFG failed
+<6>[ 1824.647336] 
+<6>[ 1824.647336]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1824.647367] 
+<3>[ 1824.647367]  err: Unsupported API in client state 1
+<3>[ 1824.647550] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1824.688936] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1824.692323] 
+<6>[ 1824.692323]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1824.692384] 
+<3>[ 1824.692384]  err: Unsupported API in client state 1
+<3>[ 1824.692568] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1824.721592] 
+<6>[ 1824.721592]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1824.721745] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.721898] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.721989] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.722050] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.722142] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.722813] 
+<6>[ 1824.722813]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1824.729772] setting VEN_IOCTL_(G)SET_RATE_CTRL_CFG failed
+<3>[ 1824.756538] vid_enc_ioctl(): Unsupported ioctl -2147483648
+<3>[ 1824.756569] setting VEN_IOCTL_(G)SET_RATE_CTRL_CFG failed
+<3>[ 1824.770608] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1824.793498] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1824.795818] 
+<6>[ 1824.795818]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1824.795940] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.796062] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.796123] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.796215] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.796306] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.796947] 
+<6>[ 1824.796978]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1824.808270] 
+<6>[ 1824.808270]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1824.808423] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.808514] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.808606] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.808667] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1824.808789] ion_cp_allocate: non-secure allocation disallowed from this heap
+<3>[ 1824.809094] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1824.809461] 
+<6>[ 1824.809461]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1824.831008] vid_enc_ioctl(): Unsupported ioctl -2147483648
+<3>[ 1824.844467] vid_enc_ioctl(): Unsupported ioctl -2147483648
+<3>[ 1824.878467] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1824.905234] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<7>[ 1824.950434] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1824.950465] 
+<3>[ 1824.974087] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1824.991820] ddl_get_prop:FAILED
+<3>[ 1824.991820] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1824.991942] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<3>[ 1825.017365] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1825.022615] Meta Data Interface is Requested
+<6>[ 1825.036074] ddl_get_prop:FAILED
+<3>[ 1825.036105] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1825.036288] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<6>[ 1825.078009] Meta Data Interface is Requested
+<3>[ 1825.083564] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1825.093483] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1825.096932] ddl_get_prop:FAILED
+<3>[ 1825.096963] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1825.097115] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<6>[ 1825.122783] Meta Data Interface is Requested
+<3>[ 1825.131084] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1825.174789] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1825.226277] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1825.240775] app_process (13928): undefined instruction: pc=b659d4e8
+<6>[ 1825.240805] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1825.268762] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1825.293056] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1825.328551] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1825.328551] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1825.345704] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1825.374301] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1825.375827] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1825.392278] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1825.396886] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<6>[ 1825.423408] app_process (13928): undefined instruction: pc=40aab4e8
+<6>[ 1825.423469] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1825.437387] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<7>[ 1825.451060] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1825.451090] 
+<3>[ 1825.463024] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1825.464825] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.494521] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.561757] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1825.577353] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.582908] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.584983] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1825.614130] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.650144] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1825.672149] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1825.793071] init: untracked pid 13925 exited
+<3>[ 1825.794658] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1825.796825] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1825.864519] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1825.925621] [debug_wake_locks]active wake lock msm_camera
+<6>[ 1825.925652] [debug_wake_locks]active wake lock pm8921_eoc
+<6>[ 1825.925652] [debug_wake_locks]active wake lock msm_otg
+<7>[ 1825.951686] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1825.951716] 
+<6>[ 1825.953914] 
+<6>[ 1825.953914]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1825.953944] 
+<6>[ 1825.953944]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1825.956080] 
+<6>[ 1825.956111]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1825.956142] 
+<6>[ 1825.956142]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<3>[ 1826.014191] init: untracked pid 13928 exited
+<6>[ 1826.059972] ddl_get_prop:FAILED
+<3>[ 1826.060002] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1826.060124] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1826.065435] ddl_get_prop:FAILED
+<3>[ 1826.065465] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1826.065618] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1826.239523] 
+<6>[ 1826.239523]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1826.239554] 
+<6>[ 1826.239554]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<3>[ 1826.294033] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1826.294063] ddl_get_prop:FAILED
+<3>[ 1826.294063] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1826.294094] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1826.300228] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1826.342072] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1826.346161] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1826.356996] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1826.357027] 
+<6>[ 1826.357027]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1826.357393] 
+<6>[ 1826.357393]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1826.362215] 
+<6>[ 1826.362215]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1826.362612] 
+<6>[ 1826.362612]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1826.399206] vid_enc_ioctl(): Unsupported ioctl 0
+<7>[ 1826.452281] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1826.452311] 
+<6>[ 1826.568594] 
+<6>[ 1826.568594]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1826.568991] 
+<6>[ 1826.568991]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1826.896871] ddl_get_prop:FAILED
+<3>[ 1826.896901] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1826.897024] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1826.901937] ddl_get_prop:FAILED
+<3>[ 1826.901968] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1826.902059] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<7>[ 1826.952876] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1826.952906] 
+<3>[ 1827.038485] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1827.038516] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1827.044193] ddl_get_prop:FAILED
+<3>[ 1827.044223] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1827.044315] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1827.122355] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1827.234793] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1827.236227] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1827.348664] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1827.353852] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1827.411261] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1827.411292] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1827.415809] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1827.433297] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<7>[ 1827.453501] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1827.453532] 
+<3>[ 1827.489485] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1827.671264] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1827.671295] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1827.685212] 
+<6>[ 1827.685212]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1827.685365] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.685487] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.685578] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.686067] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.686158] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.686860] 
+<6>[ 1827.686860]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1827.691408] 
+<6>[ 1827.691408]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1827.691560] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.691682] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.691744] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.691835] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.691927] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.692568] 
+<6>[ 1827.692568]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1827.700533] ddl_get_prop:FAILED
+<3>[ 1827.700564] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1827.700655] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1827.706332] ddl_get_prop:FAILED
+<3>[ 1827.706363] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1827.706729] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1827.721226] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1827.729802] 
+<6>[ 1827.729802]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1827.729955] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.730077] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.730138] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.730230] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.730321] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1827.730993] 
+<6>[ 1827.730993]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1827.745002] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1827.745032] ddl_get_prop:FAILED
+<3>[ 1827.745063] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1827.745063] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1827.750709] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1827.787547] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1827.846299] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1827.846329] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1827.893056] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1827.893086] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1827.895681] msm_thermal: Debug Temp for Sensors (0 --- 50)(1 --- 54)(2 --- 47)(3 --- 46)(4 --- 46)(5 --- 47)(6 --- 60)(7 --- 46)(8 --- 48)(9 --- 64)
+<3>[ 1827.895864] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1827.928063] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1827.928093] ddl_set_prop:FAILED
+<3>[ 1827.928093] Failed: ddl_set_property
+<3>[ 1827.928185]  Setting slice delivery mode failed
+<6>[ 1827.933526] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1827.933587] ddl_set_prop:FAILED
+<3>[ 1827.933617] Failed: ddl_set_property
+<3>[ 1827.933679]  Setting slice delivery mode failed
+<3>[ 1827.941766] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<7>[ 1827.954127] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1827.954127] 
+<6>[ 1827.976102] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1827.976132] ddl_set_prop:FAILED
+<3>[ 1827.976163] Failed: ddl_set_property
+<3>[ 1827.976254]  Setting slice delivery mode failed
+<6>[ 1828.100015] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1828.100106] ddl_set_prop:FAILED
+<3>[ 1828.100106] Failed: ddl_set_property
+<3>[ 1828.100228]  Setting slice delivery mode failed
+<6>[ 1828.100259] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1828.100289] ddl_set_prop:FAILED
+<3>[ 1828.100289] Failed: ddl_set_property
+<3>[ 1828.100320]  Setting slice delivery mode failed
+<3>[ 1828.115671] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1828.121623] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1828.158095] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1828.158095] ddl_set_prop:FAILED
+<3>[ 1828.158125] Failed: ddl_set_property
+<3>[ 1828.158186]  Setting slice delivery mode failed
+<3>[ 1828.168624] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1828.368472] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1828.373996] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1828.415656] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<7>[ 1828.454844] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1828.454875] 
+<6>[ 1828.479169] ddl_get_prop:FAILED
+<3>[ 1828.479200] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1828.479352] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1828.484907] ddl_get_prop:FAILED
+<3>[ 1828.484907] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1828.485060] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1828.513566] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1828.519334] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1828.535540] ddl_get_prop:FAILED
+<3>[ 1828.535571] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1828.536151] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1828.565053] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1828.598717] 
+<6>[ 1828.598748]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1828.599145] 
+<6>[ 1828.599175]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1828.604486] 
+<6>[ 1828.604486]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1828.604913] 
+<6>[ 1828.604913]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1828.670501] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1828.670501] vid_enc_ioctl(): Unsupported ioctl 0
+<6>[ 1828.676209] 
+<6>[ 1828.676209]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1828.676636] 
+<6>[ 1828.676636]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1828.703036] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1828.706058] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1828.720921] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1828.753303] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1828.753334] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1828.756264] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1828.828475] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1828.912009] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1828.916007] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1828.935632] [debug_wake_locks]active wake lock msm_camera
+<6>[ 1828.935662] [debug_wake_locks]active wake lock pm8921_eoc
+<6>[ 1828.935693] [debug_wake_locks]active wake lock msm_otg
+<7>[ 1828.955592] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1828.955623] 
+<3>[ 1828.964443] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1828.964474] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1828.970669] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1829.011231] ddl_set_prop:FAILED
+<3>[ 1829.011261] Failed: ddl_set_property
+<3>[ 1829.011383]  Setting slice delivery mode failed
+<6>[ 1829.017304] ddl_set_prop:FAILED
+<3>[ 1829.017365] Failed: ddl_set_property
+<3>[ 1829.017457]  Setting slice delivery mode failed
+<6>[ 1829.024904] 
+<6>[ 1829.024904]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1829.024934] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.025057] 
+<3>[ 1829.025057]  err: Unsupported API in client state 1
+<3>[ 1829.025240] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1829.031222] 
+<6>[ 1829.031222]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1829.031252] 
+<3>[ 1829.031252]  err: Unsupported API in client state 1
+<3>[ 1829.031435] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1829.039676] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1829.039706] ddl_get_prop:FAILED
+<3>[ 1829.039737] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1829.039859] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<6>[ 1829.045108] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1829.045139] ddl_get_prop:FAILED
+<3>[ 1829.045169] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1829.045353] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<6>[ 1829.065252] ddl_set_prop:FAILED
+<3>[ 1829.065252] Failed: ddl_set_property
+<3>[ 1829.065343]  Setting slice delivery mode failed
+<6>[ 1829.079017] 
+<6>[ 1829.079017]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1829.079108] 
+<3>[ 1829.079108]  err: Unsupported API in client state 1
+<3>[ 1829.079261] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1829.093392] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1829.093422] ddl_get_prop:FAILED
+<3>[ 1829.093422] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1829.093514] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1829.127056] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.136883] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.182359] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.254539] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1829.276636] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1829.321409] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1829.329223] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1829.342743] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1829.346192] ddl_set_prop:FAILED
+<3>[ 1829.346222] Failed: ddl_set_property
+<3>[ 1829.346314]  Setting slice delivery mode failed
+<6>[ 1829.360323] ddl_set_prop:FAILED
+<3>[ 1829.360384] Failed: ddl_set_property
+<3>[ 1829.360506]  Setting slice delivery mode failed
+<6>[ 1829.360506] ddl_set_prop:FAILED
+<3>[ 1829.360536] Failed: ddl_set_property
+<3>[ 1829.360567]  Setting slice delivery mode failed
+<6>[ 1829.375064] ddl_set_prop:FAILED
+<3>[ 1829.375156] Failed: ddl_set_property
+<3>[ 1829.375217]  Setting slice delivery mode failed
+<3>[ 1829.388554] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1829.388585] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1829.401831] ddl_set_prop:FAILED
+<3>[ 1829.401831] Failed: ddl_set_property
+<3>[ 1829.401953]  Setting slice delivery mode failed
+<3>[ 1829.407477] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1829.415290] ddl_set_prop:FAILED
+<3>[ 1829.415321] Failed: ddl_set_property
+<3>[ 1829.415382]  Setting slice delivery mode failed
+<3>[ 1829.442545] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<7>[ 1829.456401] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1829.456431] 
+<3>[ 1829.510208] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1829.523912] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1829.566579] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1829.595116] 
+<6>[ 1829.595116]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1829.595147] 
+<6>[ 1829.595147]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1829.614466] 
+<6>[ 1829.614466]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1829.614496] 
+<6>[ 1829.614496]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1829.651914] 
+<6>[ 1829.651914]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1829.651945] 
+<6>[ 1829.651975]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1829.756996] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.767312] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.833083] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1829.861773] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1829.881245] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1829.921776] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<7>[ 1829.957118] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1829.957149] 
+<3>[ 1830.019075] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.036380] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.094155] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.184251] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.198473] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.198504] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.212970] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.246299] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.254844] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.275201] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1830.283747] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.285975] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1830.298916] 
+<6>[ 1830.298916]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1830.298946] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.299038] 
+<3>[ 1830.299038]  err: Unsupported API in client state 1
+<3>[ 1830.299221] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1830.312864] 
+<6>[ 1830.312894]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1830.312925] 
+<3>[ 1830.312925]  err: Unsupported API in client state 1
+<3>[ 1830.313199] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1830.327391] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1830.327422] ddl_set_prop:FAILED
+<3>[ 1830.327452] Failed: ddl_set_property
+<3>[ 1830.327452]  Setting slice delivery mode failed
+<6>[ 1830.342896] ddl_set_prop:FAILED
+<3>[ 1830.342926] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.343109] Failed: ddl_set_property
+<3>[ 1830.343170]  Setting slice delivery mode failed
+<3>[ 1830.346314] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.359438] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1830.359438] 
+<6>[ 1830.359468]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1830.359499] 
+<3>[ 1830.359499]  err: Unsupported API in client state 1
+<3>[ 1830.359529] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1830.366000] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1830.376987] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1830.409430] ddl_set_prop:FAILED
+<3>[ 1830.409461] Failed: ddl_set_property
+<3>[ 1830.409644]  Setting slice delivery mode failed
+<6>[ 1830.425118] Meta Data Interface is Requested
+<3>[ 1830.427010] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1830.440011] Meta Data Interface is Requested
+<3>[ 1830.440042] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1830.445475] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1830.454112] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<7>[ 1830.457866] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1830.457896] 
+<6>[ 1830.486097] Meta Data Interface is Requested
+<3>[ 1830.506637] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1830.556477] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.577597] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.605768] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.614710] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.616999] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.628780] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1830.642941] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1830.646085] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1830.659239] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1830.659361] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.695986] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1830.707614] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1830.743598] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.752449] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.752479] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.772073] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.796154] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1830.801647] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.815687] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1830.820662] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.829940] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.845505] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1830.845536] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.860124] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1830.860155] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1830.866290] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1830.880634] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1830.894582] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1830.903189] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1830.917991] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1830.952388] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<7>[ 1830.958675] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1830.958705] 
+<3>[ 1830.962398] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1831.009003] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1831.029116] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1831.034640] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1831.056737] 
+<6>[ 1831.056737]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.056767] 
+<3>[ 1831.056767]  err: Unsupported API in client state 1
+<3>[ 1831.056950] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.074530] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1831.080634] 
+<6>[ 1831.080634]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.080665] 
+<3>[ 1831.080665]  err: Unsupported API in client state 1
+<3>[ 1831.080817] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1831.121806] 
+<6>[ 1831.121806]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.121837] 
+<3>[ 1831.121837]  err: Unsupported API in client state 1
+<3>[ 1831.122111] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.125957] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1831.136608] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1831.179459] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1831.205493] 
+<6>[ 1831.205493]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.205523] 
+<3>[ 1831.205523]  err: Unsupported API in client state 1
+<3>[ 1831.205981] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1831.226247] 
+<6>[ 1831.226247]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.226277] 
+<3>[ 1831.226277]  err: Unsupported API in client state 1
+<3>[ 1831.226399] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.236288] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1831.243979] ps (13974): undefined instruction: pc=b6df94e8
+<6>[ 1831.244010] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1831.251853] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1831.274683] 
+<6>[ 1831.274683]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.275079] 
+<3>[ 1831.275079]  err: Unsupported API in client state 1
+<3>[ 1831.275293] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.309934] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1831.327391] 
+<6>[ 1831.327391]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1831.327422] 
+<6>[ 1831.327452]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1831.343476] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1831.346222] 
+<6>[ 1831.346222]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1831.346253] 
+<6>[ 1831.346253]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1831.358675] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1831.364321] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1831.373874] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1831.388035] 
+<6>[ 1831.388035]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1831.388066] 
+<6>[ 1831.388066]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1831.390630] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1831.405585] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1831.405646] 
+<6>[ 1831.405646]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.405676] 
+<3>[ 1831.405707]  err: Unsupported API in client state 1
+<3>[ 1831.406409] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.411261] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1831.420204] 
+<6>[ 1831.420234]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1831.420234] 
+<6>[ 1831.420265]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1831.420295] 
+<3>[ 1831.420295]  err: Unsupported API in client state 1
+<3>[ 1831.420539] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1831.420570] 
+<3>[ 1831.420570]  err: Unsupported API in client state 1
+<3>[ 1831.420601] setting VEN_IOCTL_CMD_PAUSE failed
+<3>[ 1831.426399] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1831.435586] 
+<6>[ 1831.435586]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1831.435647] 
+<3>[ 1831.435647]  err: Unsupported API in client state 1
+<3>[ 1831.435769] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1831.450724] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1831.456248] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<7>[ 1831.459667] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1831.459697] 
+<3>[ 1831.468365] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1831.473737] 
+<6>[ 1831.473737]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<3>[ 1831.473767] 
+<3>[ 1831.473798]  err: Unsupported API in client state 1
+<3>[ 1831.474042] setting VEN_IOCTL_CMD_PAUSE failed
+<6>[ 1831.488234] 
+<6>[ 1831.488264]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1831.488295] 
+<3>[ 1831.488295]  err: Unsupported API in client state 1
+<3>[ 1831.488539] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1831.493697] ddl_set_prop:FAILED
+<3>[ 1831.493727] Failed: ddl_set_property
+<3>[ 1831.493788]  Setting slice delivery mode failed
+<6>[ 1831.508530] ddl_set_prop:FAILED
+<3>[ 1831.508621] Failed: ddl_set_property
+<3>[ 1831.508682]  Setting slice delivery mode failed
+<6>[ 1831.518357] Meta Data Interface is Requested
+<3>[ 1831.524431] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1831.533160] Meta Data Interface is Requested
+<6>[ 1831.547596] ddl_set_prop:FAILED
+<3>[ 1831.547626] Failed: ddl_set_property
+<3>[ 1831.547687]  Setting slice delivery mode failed
+<3>[ 1831.567526] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1831.577780] Meta Data Interface is Requested
+<3>[ 1831.577933] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1831.650449] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1831.668884] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1831.705752] 
+<6>[ 1831.705783]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1831.705935] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.706119] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.706210] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.706332] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.706454] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.707095] 
+<6>[ 1831.707095]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1831.725743] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1831.737158] 
+<6>[ 1831.737158]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1831.737310] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.737433] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.737494] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.737585] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.737677] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.738379] 
+<6>[ 1831.738379]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1831.786753] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1831.805432] 
+<6>[ 1831.805432]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1831.805585] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.805737] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.805829] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.805920] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.806042] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1831.806744] 
+<6>[ 1831.806744]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1831.819960] 
+<6>[ 1831.819960]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1831.819990] 
+<6>[ 1831.819990]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1831.861773] 
+<6>[ 1831.861773]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1831.861803] 
+<6>[ 1831.861834]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1831.920860] 
+<6>[ 1831.920860]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1831.920921] 
+<6>[ 1831.920921]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1831.932122] app_process (13993): undefined instruction: pc=b65334e8
+<6>[ 1831.932152] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<6>[ 1831.945643] [debug_wake_locks]active wake lock msm_camera
+<6>[ 1831.945673] [debug_wake_locks]active wake lock pm8921_eoc
+<6>[ 1831.945704] [debug_wake_locks]active wake lock msm_otg
+<7>[ 1831.960536] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1831.960567] 
+<3>[ 1831.982603] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1832.034335] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1832.076575] app_process (13993): undefined instruction: pc=40ad54e8
+<6>[ 1832.076605] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1832.125224] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1832.162825] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1832.197954] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1832.361208] 
+<6>[ 1832.361208]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<3>[ 1832.361238] 
+<3>[ 1832.361238]  err: Unsupported API in dev power state 0 OR client state 6
+<3>[ 1832.361422] vid_enc_start_stop(): vcd_encode_start failed. vcd_status = 2147483656
+<3>[ 1832.361574] setting VEN_IOCTL_CMD_START failed
+<3>[ 1832.441660] init: untracked pid 13991 exited
+<7>[ 1832.461254] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1832.461284] 
+<6>[ 1832.483869] 
+<6>[ 1832.483869]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<6>[ 1832.501480] 
+<6>[ 1832.501480]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<3>[ 1832.501510] 
+<3>[ 1832.501510]  err: Unsupported API in dev power state 0 OR client state 6
+<3>[ 1832.501693] vid_enc_start_stop(): vcd_encode_start failed. vcd_status = 2147483656
+<3>[ 1832.501876] setting VEN_IOCTL_CMD_START failed
+<6>[ 1832.506729] ddl_get_prop:FAILED
+<3>[ 1832.506760] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1832.506882] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<6>[ 1832.516312] 
+<6>[ 1832.516312]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<6>[ 1832.530779] ddl_get_prop:FAILED
+<3>[ 1832.530779] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1832.530932] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1832.535876] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1832.553883] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1832.553914] ddl_get_prop:FAILED
+<3>[ 1832.553914] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1832.554066] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<6>[ 1832.624416] 
+<6>[ 1832.624416]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<3>[ 1832.624446] 
+<3>[ 1832.624446]  err: Unsupported API in dev power state 0 OR client state 6
+<3>[ 1832.624660] vid_enc_start_stop(): vcd_encode_start failed. vcd_status = 2147483656
+<3>[ 1832.624843] setting VEN_IOCTL_CMD_START failed
+<6>[ 1832.630031] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1832.630062] ddl_get_prop:FAILED
+<3>[ 1832.630062] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1832.630184] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1832.664702] init: untracked pid 13993 exited
+<3>[ 1832.719975] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1832.725255] 
+<6>[ 1832.725255]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<6>[ 1832.855424] ddl_get_prop:FAILED
+<3>[ 1832.855455] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1832.855577] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1832.860887] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1832.869738] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1832.892934] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1832.905661] msm_thermal: Debug Temp for Sensors (0 --- 52)(1 --- 54)(2 --- 47)(3 --- 46)(4 --- 46)(5 --- 47)(6 --- 60)(7 --- 46)(8 --- 48)(9 --- 64)
+<6>[ 1832.914542] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1832.914573] ddl_get_prop:FAILED
+<3>[ 1832.914603] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1832.914725] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1832.933862] setting VEN_IOCTL_SET_BASE_CFG failed
+<3>[ 1832.942957] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<7>[ 1832.961910] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1832.961940] 
+<3>[ 1833.083473] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<7>[ 1833.462566] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1833.462597] 
+<3>[ 1833.568746] setting VEN_IOCTL_SET_BASE_CFG failed
+<3>[ 1833.817854] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1833.817915] 
+<6>[ 1833.817915]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1833.817945] 
+<3>[ 1833.817945]  err: Unsupported API in client state 3
+<3>[ 1833.817976] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1833.847062] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1833.854417] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1833.866076] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1833.888264] 
+<6>[ 1833.888264]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1833.888295] 
+<3>[ 1833.888295]  err: Unsupported API in client state 3
+<3>[ 1833.888508] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1833.956050] vid_enc_ioctl(): Unsupported ioctl 0
+<7>[ 1833.963344] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1833.963375] 
+<3>[ 1834.118052] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.123363] setting VEN_IOCTL_SET_BASE_CFG failed
+<3>[ 1834.186631] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1834.192766] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1834.192796] ddl_get_prop:FAILED
+<3>[ 1834.192827] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1834.192949] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<6>[ 1834.228231] 
+<6>[ 1834.228231]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1834.228261] 
+<3>[ 1834.228261]  err: Unsupported API in client state 3
+<3>[ 1834.228444] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1834.267816] vid_enc_ioctl(): Unsupported ioctl 0
+<6>[ 1834.267846] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1834.267846] ddl_get_prop:FAILED
+<3>[ 1834.267877] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1834.267907] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1834.274255] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.340546] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.361544] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.393712] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1834.427315] ddl_get_enc_property: unknown prop_id = 0x1
+<6>[ 1834.427346] ddl_get_prop:FAILED
+<3>[ 1834.427346] vid_enc_set_get_live_mode(): Get VCD_I_LIVE Failed
+<3>[ 1834.427468] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1834.433511] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<7>[ 1834.464123] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1834.464153] 
+<6>[ 1834.481824] ddl_get_prop:FAILED
+<3>[ 1834.481855] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1834.482038] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1834.486464] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.523241] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1834.541187] 
+<3>[ 1834.541187]  err: Bad state (3) for encoder
+<6>[ 1834.541370] ddl_get_prop:FAILED
+<3>[ 1834.541492] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1834.541583] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1834.558583] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1834.588615] 
+<3>[ 1834.588615]  err: Bad state (3) for encoder
+<3>[ 1834.609064] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1834.618739] ddl_get_prop:FAILED
+<3>[ 1834.618739] vid_enc_set_get_dbcfg(): Get VCD_I_DEBLOCKING Failed
+<3>[ 1834.618891] setting VEN_IOCTL_SET_DEBLOCKING_CFG failed
+<3>[ 1834.672180] 
+<3>[ 1834.672180]  err: Bad state (3) for encoder
+<3>[ 1834.680146] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1834.687776] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1834.709903] 
+<6>[ 1834.709934]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1834.709964] 
+<3>[ 1834.709964]  err: Unsupported API in client state 3
+<3>[ 1834.710178] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1834.726659] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1834.755897] 
+<6>[ 1834.755897]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1834.755928] 
+<3>[ 1834.755958]  err: Unsupported API in client state 3
+<3>[ 1834.756172] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1834.838669] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1834.864245] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1834.870318] 
+<6>[ 1834.870349]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1834.870379] 
+<3>[ 1834.870379]  err: Unsupported API in client state 3
+<3>[ 1834.870623] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1834.898031] 
+<6>[ 1834.898031]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1834.898061] 
+<6>[ 1834.898061]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1834.906515] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1834.934777] 
+<6>[ 1834.934808]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1834.934838] 
+<6>[ 1834.934838]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1834.955623] [debug_wake_locks]active wake lock msm_camera
+<6>[ 1834.955653] [debug_wake_locks]active wake lock pm8921_eoc
+<6>[ 1834.955653] [debug_wake_locks]active wake lock msm_otg
+<7>[ 1834.964901] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1834.964931] 
+<3>[ 1834.982450] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1834.996734] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1835.002685] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1835.011505] 
+<6>[ 1835.011536]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1835.011567] 
+<6>[ 1835.011567]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1835.025026] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1835.025057] 
+<6>[ 1835.025087]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1835.025087] 
+<6>[ 1835.025118]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1835.038974] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1835.058110] 
+<6>[ 1835.058110]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1835.058141] 
+<6>[ 1835.058171]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1835.111734] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1835.131573] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1835.139538] 
+<6>[ 1835.139538]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1835.139569] 
+<6>[ 1835.139569]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1835.199175] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1835.252830] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1835.323088] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1835.416663] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1835.443002] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<7>[ 1835.465588] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1835.465618] 
+<3>[ 1835.471936] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1835.499648] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1835.541278] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1835.547138] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1835.579551] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1835.607507] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1835.636257] vid_enc_ioctl(): Unsupported ioctl 19457
+<3>[ 1835.687135] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1835.694735] vid_enc_ioctl(): Unsupported ioctl 19457
+<6>[ 1835.741064] 
+<6>[ 1835.741064]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1835.741095] 
+<6>[ 1835.741095]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1835.755867] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1835.755897] ddl_set_prop:FAILED
+<3>[ 1835.755897] Failed: ddl_set_property
+<3>[ 1835.756019]  Setting slice delivery mode failed
+<3>[ 1835.774912] vid_enc_ioctl(): Unsupported ioctl 19457
+<6>[ 1835.796459] 
+<6>[ 1835.796459]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1835.796489] 
+<6>[ 1835.796520]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1835.812055] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1835.812085] ddl_set_prop:FAILED
+<3>[ 1835.812085] Failed: ddl_set_property
+<3>[ 1835.812207]  Setting slice delivery mode failed
+<6>[ 1835.865435] 
+<6>[ 1835.865435]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1835.865527] 
+<6>[ 1835.865557]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1835.884815] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1835.884846] ddl_set_prop:FAILED
+<3>[ 1835.884846] Failed: ddl_set_property
+<3>[ 1835.884937]  Setting slice delivery mode failed
+<7>[ 1835.966396] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1835.966427] 
+<3>[ 1835.976254] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.018495] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.031985] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.070929] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.091499] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.148267] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1836.309812] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1836.330810] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1836.344696] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1836.358217] 
+<6>[ 1836.358217]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1836.364016] 
+<6>[ 1836.364016]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1836.371921] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1836.399938] 
+<6>[ 1836.399938]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1836.400304] 
+<6>[ 1836.400304]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1836.414161] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1836.443125] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<7>[ 1836.467144] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1836.467175] 
+<6>[ 1836.492659] 
+<6>[ 1836.492690]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<3>[ 1836.492690] vid_enc_ioctl(): Unsupported ioctl 1074548758
+<6>[ 1836.493117] 
+<6>[ 1836.493117]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1836.541125] vid_enc_ioctl(): Unsupported ioctl 1074548758
+<3>[ 1836.550160] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1836.607690] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1836.616847] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1836.637295] vid_enc_ioctl(): Unsupported ioctl 1074548758
+<3>[ 1836.645475] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1836.658934] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1836.697298] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1836.698214] 
+<6>[ 1836.698214]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1836.698366] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.698519] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.698580] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.698672] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.698763] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.699404] 
+<6>[ 1836.699435]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1836.703830] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1836.756203] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1836.763527] 
+<6>[ 1836.763527]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1836.763680] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.763833] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.763924] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.764016] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.764138] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.765053] 
+<6>[ 1836.765053]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1836.789378] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1836.839187] 
+<6>[ 1836.839187]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1836.839340] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.839493] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.839584] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.839645] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.839767] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1836.840378] 
+<6>[ 1836.840408]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1836.883961] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1836.921287] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1836.941400] 
+<6>[ 1836.941431]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1836.941461] 
+<3>[ 1836.941461]  err: Unsupported API in client state 3
+<3>[ 1836.941644] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1836.949458] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<7>[ 1836.967770] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1836.967800] 
+<3>[ 1836.979001] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1836.995787] 
+<6>[ 1836.995818]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1836.995818] 
+<3>[ 1836.995849]  err: Unsupported API in client state 3
+<3>[ 1836.996001] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1837.031466] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1837.051884] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1837.060308] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1837.083686] 
+<6>[ 1837.083686]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1837.083717] 
+<3>[ 1837.083717]  err: Unsupported API in client state 3
+<3>[ 1837.083869] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1837.122783] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1837.160231] vid_enc_ioctl(): Unsupported ioctl 1074792761
+<3>[ 1837.195024] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1837.224599] vid_enc_ioctl(): Unsupported ioctl 1074792761
+<6>[ 1837.260338] 
+<6>[ 1837.260338]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1837.260369] 
+<6>[ 1837.260369]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<3>[ 1837.292659] vid_enc_ioctl(): Unsupported ioctl 1074792761
+<3>[ 1837.292690] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1837.310269] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1837.326811] 
+<6>[ 1837.326811]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1837.326842] 
+<6>[ 1837.326842]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1837.360262] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1837.360292] ddl_set_prop:FAILED
+<3>[ 1837.360292] Failed: ddl_set_property
+<3>[ 1837.360384] vid_enc_set_get_live_mode(): Set VCD_I_LIVE Failed
+<3>[ 1837.360567] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1837.366091] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1837.375064] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1837.389409] 
+<6>[ 1837.389409]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_PAUSE
+<6>[ 1837.389439] 
+<6>[ 1837.389439]  msm_vidc_enc: Sending VCD_EVT_RESP_PAUSE to client
+<6>[ 1837.404364] 
+<6>[ 1837.404364]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1837.407080] 
+<6>[ 1837.407080]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1837.419166] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1837.419197] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1837.419197] ddl_set_prop:FAILED
+<3>[ 1837.419227] Failed: ddl_set_property
+<3>[ 1837.419227] vid_enc_set_get_live_mode(): Set VCD_I_LIVE Failed
+<3>[ 1837.419258] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1837.439767] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1837.448160] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<7>[ 1837.468365] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1837.468395] 
+<6>[ 1837.486250] 
+<6>[ 1837.486250]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1837.486616] 
+<6>[ 1837.486647]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1837.500747] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1837.506454] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1837.506485] ddl_set_prop:FAILED
+<3>[ 1837.506515] Failed: ddl_set_property
+<3>[ 1837.506637] vid_enc_set_get_live_mode(): Set VCD_I_LIVE Failed
+<3>[ 1837.506760] setting VEN_IOCTL_(G)SET_LIVE_MODE failed
+<3>[ 1837.516984] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1837.529162] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1837.552082] 
+<6>[ 1837.552082]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1837.552479] 
+<6>[ 1837.552479]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1837.557942] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1837.566824] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1837.580253] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1837.586082] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1837.604028] 
+<6>[ 1837.604058]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1837.604058] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1837.604211] 
+<3>[ 1837.604211]  err: Unsupported API in client state 1
+<3>[ 1837.604364] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1837.618434] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1837.638119] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1837.654814] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1837.654844] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<6>[ 1837.670959] 
+<6>[ 1837.670959]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1837.670990] 
+<3>[ 1837.670990]  err: Unsupported API in client state 1
+<3>[ 1837.671142] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1837.695772] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1837.695803] vid_enc_ioctl(): Unsupported ioctl 1074286630
+<3>[ 1837.730443] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1837.748206] 
+<6>[ 1837.748206]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1837.748359] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.748511] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.748603] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.748664] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.748756] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.749427] 
+<6>[ 1837.749427]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1837.753822] 
+<6>[ 1837.753822]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1837.753852] 
+<3>[ 1837.753883]  err: Unsupported API in client state 1
+<3>[ 1837.754066] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1837.764565] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1837.817304] 
+<6>[ 1837.817304]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1837.817457] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.817548] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.817640] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.817732] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.817823] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.818495] 
+<6>[ 1837.818495]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1837.841324] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<3>[ 1837.877887] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1837.883534] 
+<6>[ 1837.883534]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1837.883686] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.883808] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.883900] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.883961] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.884083] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1837.884724] 
+<6>[ 1837.884724]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1837.905111] 
+<6>[ 1837.905142]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1837.905172] 
+<6>[ 1837.905172]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1837.915733] msm_thermal: Debug Temp for Sensors (0 --- 50)(1 --- 54)(2 --- 47)(3 --- 46)(4 --- 46)(5 --- 47)(6 --- 60)(7 --- 46)(8 --- 48)(9 --- 64)
+<3>[ 1837.958492] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1837.964168] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1837.965633] [debug_wake_locks]active wake lock msm_camera
+<6>[ 1837.965664] [debug_wake_locks]active wake lock pm8921_eoc
+<6>[ 1837.965694] [debug_wake_locks]active wake lock msm_otg
+<7>[ 1837.969082] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1837.969113] 
+<6>[ 1837.987608] 
+<6>[ 1837.987608]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1837.987639] 
+<6>[ 1837.987639]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1837.993010] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1838.028994] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1838.029024] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1838.057561] 
+<6>[ 1838.057561]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1838.057591] 
+<6>[ 1838.057591]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1838.063024] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1838.083259] Meta Data Interface is Requested
+<3>[ 1838.100320] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1838.138836] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1838.160231] Meta Data Interface is Requested
+<6>[ 1838.235311] Meta Data Interface is Requested
+<3>[ 1838.386174] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1838.407751] 
+<6>[ 1838.407751]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1838.407782] 
+<6>[ 1838.407782]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1838.431435] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<6>[ 1838.450022] app_process (14057): undefined instruction: pc=b65f54e8
+<6>[ 1838.450053] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<7>[ 1838.469738] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1838.469769] 
+<3>[ 1838.489638] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1838.503921] 
+<6>[ 1838.503921]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1838.503952] 
+<6>[ 1838.503952]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1838.509445] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1838.527239] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1838.527269] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1838.577078] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1838.588096] 
+<6>[ 1838.588127]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<3>[ 1838.588157] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1838.588218] 
+<6>[ 1838.588249]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1838.603997] vid_enc_ioctl(): Unsupported ioctl 0
+<6>[ 1838.603997] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1838.604028] ddl_set_prop:FAILED
+<3>[ 1838.604058] Failed: ddl_set_property
+<3>[ 1838.604058]  Setting slice delivery mode failed
+<3>[ 1838.605951] vid_enc_ioctl(): Unsupported ioctl -2146938841
+<3>[ 1838.630916] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1838.661711] app_process (14057): undefined instruction: pc=40ae74e8
+<6>[ 1838.661773] Code: ea000002 00000000 f26ee1fe e12fff1e (ee190f1d) 
+<3>[ 1838.663237] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1838.713810] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1838.727788] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1838.727819] ddl_set_prop:FAILED
+<3>[ 1838.727819] Failed: ddl_set_property
+<3>[ 1838.727941]  Setting slice delivery mode failed
+<3>[ 1838.744239] vid_enc_ioctl(): Unsupported ioctl 0
+<3>[ 1838.746192] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1838.797588] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1838.830825] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<6>[ 1838.836196] ddl_set_enc_property:Fails_as_not_in_open_state
+<6>[ 1838.836227] ddl_set_prop:FAILED
+<3>[ 1838.836257] Failed: ddl_set_property
+<3>[ 1838.836319]  Setting slice delivery mode failed
+<3>[ 1838.866137] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1838.888417] 
+<6>[ 1838.888417]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1838.888447] 
+<3>[ 1838.888447]  err: Unsupported API in client state 3
+<3>[ 1838.888630] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1838.927147] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<3>[ 1838.932458] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<7>[ 1838.970395] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1838.970425] 
+<3>[ 1838.999999] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1839.005523] 
+<6>[ 1839.005523]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1839.005585] 
+<3>[ 1839.005585]  err: Unsupported API in client state 3
+<3>[ 1839.005829] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1839.018403] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<3>[ 1839.077918] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1839.088814] vid_enc_ioctl(): Unsupported ioctl -2146938837
+<3>[ 1839.111856] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1839.134228] init: untracked pid 14054 exited
+<3>[ 1839.141766] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1839.142255] Meta Data Interface is Requested
+<6>[ 1839.164046] 
+<6>[ 1839.164046]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1839.164077] 
+<3>[ 1839.164077]  err: Unsupported API in client state 3
+<3>[ 1839.164260] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1839.190385] ddl_get_prop:FAILED
+<3>[ 1839.190385] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1839.190538] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<3>[ 1839.195879] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<6>[ 1839.226430] Meta Data Interface is Requested
+<3>[ 1839.249412] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1839.261498] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1839.261498] vid_enc_ioctl(): Unsupported ioctl 1074266122
+<6>[ 1839.266228] ddl_get_prop:FAILED
+<3>[ 1839.266290] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1839.266412] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<3>[ 1839.286219] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1839.298611] vid_enc_ioctl(): Unsupported ioctl -2146938845
+<3>[ 1839.363100] init: untracked pid 14057 exited
+<6>[ 1839.363527] 
+<6>[ 1839.363527]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1839.363558] Meta Data Interface is Requested
+<3>[ 1839.366061] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1839.366244] 
+<6>[ 1839.366274]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1839.392583] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1839.411597] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1839.416022] ddl_get_prop:FAILED
+<3>[ 1839.416053] vid_enc_set_get_entropy_cfg(): Get VCD_I_ENTROPY_CTRL Failed
+<3>[ 1839.416145] setting VEN_IOCTL_(G)SET_ENTROPY_CFG failed
+<3>[ 1839.438455] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<6>[ 1839.462688] 
+<6>[ 1839.462719]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1839.463085] 
+<6>[ 1839.463115]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1839.466045] vid_enc_ioctl(): Unsupported ioctl 0
+<7>[ 1839.471203] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1839.471234] 
+<3>[ 1839.508988] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1839.509018] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1839.537066] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1839.542621] vid_enc_ioctl(): Unsupported ioctl 1074286632
+<3>[ 1839.562887] vid_enc_ioctl(): Unsupported ioctl 0
+<6>[ 1839.612391] 
+<6>[ 1839.612391]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1839.616236] 
+<6>[ 1839.616236]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1839.649778] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1839.668456] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1839.670349] vid_enc_ioctl(): Unsupported ioctl 1074266117
+<3>[ 1839.684449] vid_enc_ioctl(): Unsupported ioctl 0
+<6>[ 1839.734014] Meta Data Interface is Requested
+<3>[ 1839.735998] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<6>[ 1839.775095] 
+<6>[ 1839.775095]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1839.775125] 
+<3>[ 1839.775156]  err: Unsupported API in client state 1
+<3>[ 1839.775308] setting VEN_IOCTL_CMD_RESUME failed
+<6>[ 1839.830916] 
+<6>[ 1839.830916]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1839.831069] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.831222] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.831313] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.831374] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.831466] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.832168] 
+<6>[ 1839.832168]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<6>[ 1839.835830] Meta Data Interface is Requested
+<6>[ 1839.858690] 
+<6>[ 1839.858690]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1839.858720] 
+<3>[ 1839.858720]  err: Unsupported API in client state 1
+<3>[ 1839.858904] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1839.864153] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1839.875934] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1839.887806] vid_enc_ioctl(): Unsupported ioctl 37380
+<6>[ 1839.909293] 
+<6>[ 1839.909293]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1839.909445] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.909567] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.909628] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.909720] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.909812] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1839.915122] 
+<6>[ 1839.915122]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1839.930688] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1839.956935] vidc_insert_addr_table(): get_ION_handle failed
+<6>[ 1839.962673] Meta Data Interface is Requested
+<7>[ 1839.971829] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1839.971860] 
+<3>[ 1839.982603] vid_enc_ioctl(): Unsupported ioctl 37380
+<6>[ 1839.982603] 
+<6>[ 1839.982633]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1839.982664] 
+<3>[ 1839.982664]  err: Unsupported API in client state 1
+<3>[ 1839.982664] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1839.985746] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1840.015778] vid_enc_ioctl(): Unsupported ioctl 1074030350
+<3>[ 1840.035098] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1840.035128] 
+<6>[ 1840.035159]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1840.035311] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.035433] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.035556] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.035708] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.035830] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.036746] 
+<6>[ 1840.036776]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1840.036807] vidc_insert_addr_table(): get_ION_handle failed
+<3>[ 1840.050358] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1840.056218] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<3>[ 1840.084846] vid_enc_ioctl(): Unsupported ioctl 1074030350
+<3>[ 1840.084876] vid_enc_ioctl(): Unsupported ioctl 37380
+<3>[ 1840.100137] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1840.100167] 
+<6>[ 1840.100167]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1840.100625] 
+<6>[ 1840.100625]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1840.116160] 
+<6>[ 1840.116160]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1840.116190] 
+<6>[ 1840.116221]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1840.130565] vidc_insert_addr_table(): get_ION_handle failed
+<3>[ 1840.146894] vid_enc_ioctl(): Unsupported ioctl -2146938839
+<6>[ 1840.161513] 
+<6>[ 1840.161513]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1840.161971] 
+<6>[ 1840.161971]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1840.201342] 
+<6>[ 1840.201373]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<3>[ 1840.201403] vid_enc_ioctl(): Unsupported ioctl 1074030350
+<6>[ 1840.201525] 
+<6>[ 1840.201525]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1840.207416] 
+<6>[ 1840.207416]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1840.207446] 
+<3>[ 1840.207477]  err: Unsupported API in client state 1
+<3>[ 1840.207599] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1840.221577] vid_enc_ioctl(): Unsupported ioctl 1074286634
+<6>[ 1840.278345] 
+<6>[ 1840.278345]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1840.278376] 
+<3>[ 1840.278376]  err: Unsupported API in client state 1
+<3>[ 1840.278559] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1840.286311] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1840.301235] 
+<6>[ 1840.301235]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1840.301663] 
+<6>[ 1840.301693]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<6>[ 1840.318418] 
+<6>[ 1840.318418]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_STOP
+<6>[ 1840.318449] 
+<6>[ 1840.318449]  msm_vidc_enc: Sending VCD_EVT_RESP_STOP to client
+<3>[ 1840.354341] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1840.391484] 
+<6>[ 1840.391484]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_RESUME
+<3>[ 1840.391515] 
+<3>[ 1840.391545]  err: Unsupported API in client state 1
+<3>[ 1840.395849] setting VEN_IOCTL_CMD_RESUME failed
+<3>[ 1840.461071] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<7>[ 1840.472516] usb: terminal_version_show terminal_mode major 0 minor 0 vendor 0
+<7>[ 1840.472546] 
+<3>[ 1840.473157] vid_enc_ioctl(): Unsupported ioctl 1074266112
+<6>[ 1840.484236] 
+<6>[ 1840.484236]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1840.484388] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.484480] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.484571] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.484632] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.484724] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.485426] 
+<6>[ 1840.485426]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1840.520189] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<3>[ 1840.528582] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<6>[ 1840.542499] 
+<6>[ 1840.542499]  vid_enc_ioctl(): Executing VEN_IOCTL_CMD_START
+<6>[ 1840.542652] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.542774] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.542835] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.542926] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.543018] ion_cp_allocate: non-secure allocation disallowed from this heap
+<6>[ 1840.543720] 
+<6>[ 1840.543720]  msm_vidc_enc: Sending VCD_EVT_RESP_START to client
+<3>[ 1840.614619] vid_enc_ioctl(): Unsupported ioctl 1074286626
+<3>[ 1840.633083] vid_enc_ioctl(): Unsupported ioctl -2146938864
+<1>[ 1840.655363] Unable to handle kernel paging request at virtual address 010100d0
+<1>[ 1840.655485] pgd = cef8c000
+<1>[ 1840.655577] [010100d0] *pgd=00000000
+<0>[ 1840.655729] [1:     trinity-c2: 8607] Internal error: Oops: 805 [#1] PREEMPT SMP ARM

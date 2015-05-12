@@ -44,7 +44,6 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/capability.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/videodev2.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/ioctl.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/ioctl.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm/ioctl.h \
@@ -68,7 +67,9 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/endian.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/endian.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/machine/endian.h \
- include/syscall.h include/locks.h include/types.h
+ include/syscall.h include/locks.h include/types.h include/ioctl_types.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/inttypes.h \
+ /home/diego/android-dev/fuzzer-android/trinity-android19/jni/config.h
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/fcntl.h:
 
@@ -158,8 +159,6 @@
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h:
 
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/videodev2.h:
-
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/ioctl.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/ioctl.h:
@@ -211,3 +210,9 @@ include/syscall.h:
 include/locks.h:
 
 include/types.h:
+
+include/ioctl_types.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/inttypes.h:
+
+/home/diego/android-dev/fuzzer-android/trinity-android19/jni/config.h:

@@ -53,23 +53,27 @@
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm/errno.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm-generic/errno.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/fcntl.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/fcntl.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm/fcntl.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm-generic/fcntl.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/unistd.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/select.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/time.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/capability.h \
+ /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h \
  include/arch.h include/types.h include/arch-arm.h \
  /home/diego/android-dev/fuzzer-android/trinity-android19/jni/config.h \
  include/fd.h include/list.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/stdio.h \
  include/files.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/stat.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/time.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/stat.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/endian.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/endian.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/machine/endian.h \
  include/ioctls.h include/syscall.h include/locks.h include/log.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/unistd.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/select.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/sysconf.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/capability.h \
- /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h \
  include/exit.h include/shm.h include/child.h include/epoll.h \
  include/eventfd.h include/memfd.h include/net.h \
  /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/socket.h \
@@ -207,6 +211,26 @@
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm-generic/errno-base.h:
 
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/fcntl.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/fcntl.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm/fcntl.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/asm-generic/fcntl.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/unistd.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/select.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/time.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/sysconf.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/capability.h:
+
+/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h:
+
 include/arch.h:
 
 include/types.h:
@@ -225,8 +249,6 @@ include/files.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/stat.h:
 
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/time.h:
-
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/stat.h:
 
 /home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/endian.h:
@@ -242,16 +264,6 @@ include/syscall.h:
 include/locks.h:
 
 include/log.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/unistd.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/select.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/sys/sysconf.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/linux/capability.h:
-
-/home/diego/Scaricati/android-ndk-r10d/platforms/android-14/arch-arm/usr/include/pathconf.h:
 
 include/exit.h:
 

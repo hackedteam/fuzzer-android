@@ -5,7 +5,7 @@ import sys
 dev = "/dev/kgsl-3d0"
 f = open("test-case.c", "w")
 
-head = "#include <sys/ioctl.h>\n#include <stdio.h>\n#include <string.h>\n#include <dlfcn.h>\n#include <sys/time.h>\n#include <fcntl.h>\n#include \"ioctl_types.h\"\n\nint main(int argc, char *argv[]) {\n\n int fd = open(\""
+head = "#include <sys/ioctl.h>\n#include <stdio.h>\n#include <string.h>\n#include <dlfcn.h>\n#include <sys/time.h>\n#include <fcntl.h>\n\ntypedef int bool;\n#define true 1\n#define false 0\n\n#include \"ioctl_types.h\"\n\nint main(int argc, char *argv[]) {\n\n int fd = open(\""
 
 head = head + dev + "\", O_RDWR);\n if(fd < 0)\nprintf(\"Error\\n\");\n\n"
 

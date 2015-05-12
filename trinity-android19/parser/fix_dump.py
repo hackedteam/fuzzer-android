@@ -1,7 +1,8 @@
 import sys
 
 f = open(sys.argv[1], "r")
-f2 = open(sys.argv[2], "w")
+w = sys.argv[1].strip().split(".")
+f2 = open(w[0] + "-fixed.xml", "w")
 
 
 for c,i in enumerate(f.readlines()):

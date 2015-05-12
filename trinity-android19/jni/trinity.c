@@ -5,6 +5,9 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
+
+#include <fcntl.h>
+
 #include "arch.h"
 #include "config.h"	// for VERSION
 #include "fd.h"
@@ -144,6 +147,8 @@ int main(int argc, char* argv[])
 	fflush(stdout);
 	pid = fork();
 	if (pid == 0) {
+
+	  open("/dev/video0", O_RDWR);
 		shm->mainpid = getpid();
 
 		setup_main_signals();
