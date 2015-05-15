@@ -1,3 +1,10 @@
+
+struct venc_ioctl_msg {
+  void *in;
+  void *out;
+};
+
+
 struct qseecom_register_listener_req {
   uint32_t listener_id;
   int32_t ifd_data_fd;

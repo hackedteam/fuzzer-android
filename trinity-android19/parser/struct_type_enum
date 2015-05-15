@@ -1,3 +1,4 @@
+STRUCT_venc_ioctl_msg,
 STRUCT_qseecom_register_listener_req,
 STRUCT_qseecom_send_cmd_req,
 STRUCT_qseecom_ion_fd_info,
